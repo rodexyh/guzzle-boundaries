@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "cities": [
+    {
+      "slot": "calgary313",
+      "displayName": "Calgary",
+      "status": "active",
+      "source": {
+        "url": "https://data.calgary.ca/api/geospatial/surr-xmvs?method=export&format=GeoJSON",
+        "file": "calgary313.geojson",
+        "sha256": "ff9794aea998143dac5832cace15a76d986c665daac7788d824f83866b60e4f3"
+      },
+      "boundary": {
+        "url": "https://data.calgary.ca/api/geospatial/erra-cqp9?method=export&format=GeoJSON",
+        "file": "calgary313-boundary.geojson",
+        "sha256": "4dc36314c24ad4f72179f2f9c0549dd7b9edda479420b93c1744bf438af1c286"
+      },
+      "idField": "comm_code",
+      "nameField": "name",
+      "filter": {
+        "field": "class",
+        "excludeValues": [
+          "Residual Sub Area"
+        ]
+      },
+      "licenceKey": "calgary",
+      "note": "313 是源数据集的要素数（槽位版次）。43 个 Residual Sub Area 被过滤掉：它们的 name 是 05G / 01B 这种编号，不是地名 —— 一枚写着 Unlocked 05G 的章说不出话。"
+    },
+    {
+      "slot": "airdrie56",
+      "displayName": "Airdrie",
+      "status": "active",
+      "source": {
+        "url": "https://services1.arcgis.com/bctnJobT0aahg98G/arcgis/rest/services/Neighbourhoods_Airdrie/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "airdrie56.geojson",
+        "sha256": "e0f8ebe0799e3e8eeb1d59d1be19759a768da86db124a73d23c97b1ffc3c016c"
+      },
+      "boundary": {
+        "url": "https://services1.arcgis.com/bctnJobT0aahg98G/arcgis/rest/services/Airdrie_Boundary/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "airdrie56-boundary.geojson",
+        "sha256": "06199634d003543dde4215f7c94da75a229d52a59b134bbd3ffc3da071166a3c"
+      },
+      "idField": "NAME3",
+      "nameField": "NAME",
+      "licenceKey": "airdrie",
+      "note": "56 个全收，不按 TYPE 过滤。只留 Urban 的 48 个会让 inside 掉到 0.39（8 个 Rural 占 52 km² / 86 km²，其中 ANNEXATION AREA 一个就 49 km²）—— 划分闸会当场拒，而那正是它在那里的理由。"
+    },
+    {
+      "slot": "londonON42",
+      "displayName": "London",
+      "status": "active",
+      "source": {
+        "url": "https://maps.london.ca/server/rest/services/OpenData/OpenData_Community/MapServer/18/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "londonON42.geojson",
+        "sha256": "31cd524dbb66c0356fcf259aed70978f4c44426342ca431f513b82417bb1c50b"
+      },
+      "boundary": {
+        "url": "https://maps.london.ca/server/rest/services/OpenData/OpenData_BaseMaps/MapServer/51/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "londonON42-boundary.geojson",
+        "closedLineString": true,
+        "sha256": "52fc9f983faaf30dfdca530f24229cc3a158012dd8dcd6dac4e0577503326740"
+      },
+      "idField": "GIS_ID",
+      "nameField": "GIS_FeatureKey",
+      "licenceKey": "londonON",
+      "note": "GIS_ID 是 JSON 数字不是字符串（键写成 londonON42:37）。市界那一层叫 Street Map - City Boundary，发布成 LineString（909 点，首尾逐字节相同）—— 因此 closedLineString: true，而管线会要求它真的闭合。"
+    },
+    {
+      "slot": "toronto158",
+      "displayName": "Toronto",
+      "status": "parked",
+      "source": {
+        "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/neighbourhoods/resource/0719053b-28b7-48ea-b863-068823a93aaa",
+        "file": "toronto158.geojson"
+      },
+      "idField": "AREA_LONG_CODE",
+      "nameField": "AREA_NAME",
+      "licenceKey": "toronto",
+      "note": "计划附录 A：数据与署名原文都已核（Open Government Licence – Toronto 给出了逐字示例措辞）。**市界图层没核过，因此 boundary 这一格是空的** —— 填一个没验过的 URL 会让 parked 那句『随时能加回来』变成假话。加回来的动作：核一份市界图层、补上 boundary、把 status 改成 active。"
+    }
+  ]
+}

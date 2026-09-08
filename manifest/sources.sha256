@@ -1,0 +1,28 @@
+# Fingerprints of the raw source files each pack was built from.
+# The raw GeoJSON itself is not in this repository; these are what it hashed to.
+# Format: <sha256>  <slot>/<file>
+
+e0f8ebe0799e3e8eeb1d59d1be19759a768da86db124a73d23c97b1ffc3c016c  airdrie56/airdrie56.geojson
+06199634d003543dde4215f7c94da75a229d52a59b134bbd3ffc3da071166a3c  airdrie56/airdrie56-boundary.geojson
+ff9794aea998143dac5832cace15a76d986c665daac7788d824f83866b60e4f3  calgary313/calgary313.geojson
+4dc36314c24ad4f72179f2f9c0549dd7b9edda479420b93c1744bf438af1c286  calgary313/calgary313-boundary.geojson
+# edmonton-osm: osmBase=2026-09-07T04:53:06Z unstitched=8
+6f5b1abcd9aa6380e317ed29920089a458dcc6e259d0997830e8958f40dae6a9  edmonton-osm/edmonton-osm.geojson
+feac2b5c493e6d5b9ede0d6e19a69271e237ae9a1582b84cab8e03943aa38a14  edmonton-osm/edmonton-osm-boundary.geojson
+31cd524dbb66c0356fcf259aed70978f4c44426342ca431f513b82417bb1c50b  londonON42/londonON42.geojson
+52fc9f983faaf30dfdca530f24229cc3a158012dd8dcd6dac4e0577503326740  londonON42/londonON42-boundary.geojson
+# richmond-osm: osmBase=2026-09-07T04:36:35Z unstitched=0
+98f2485c536c3940c913514671b253e223ce7e8ea13e29c9c7e5a910f84f001e  richmond-osm/richmond-osm.geojson
+5a2048c0867ed033b74552b4dd1427b1e5989838d2871c7ab2749a2bd7c34e43  richmond-osm/richmond-osm-boundary.geojson
+# surrey-osm: osmBase=2026-09-07T04:37:40Z unstitched=0
+cc51f7ca2f65a772e9f8c280d3bc11f8614a5ed688dd7ce9590e55486db3c83a  surrey-osm/surrey-osm.geojson
+75f4d5a138bc902e8673ce6ff7364f0f895100551771148ccc975ef796af8d11  surrey-osm/surrey-osm-boundary.geojson
+# toronto-osm: osmBase=2026-09-07T04:37:40Z unstitched=0
+65b9bbcf22dcdb93bde514f00143eb52c10734be6eab41ceb28b0a81278d7e38  toronto-osm/toronto-osm.geojson
+3d247d6780927f3427c19d30ceade7dc292feeca2cfd557c53d658f54f9480f1  toronto-osm/toronto-osm-boundary.geojson
+# vancouver-osm: osmBase=2026-09-07T04:18:09Z unstitched=0
+e4e42ae66bb4f4afc7d44c074018897169ce9e8d18ef7b24bc1c4c495658bf87  vancouver-osm/vancouver-osm.geojson
+15b516e76c32f76958acedb0efa7fec9709b31f8cc34148b504b50ad42a3d1ef  vancouver-osm/vancouver-osm-boundary.geojson
+# winnipeg-osm: osmBase=2026-09-07T04:54:06Z unstitched=4
+5f8539885360ff80d409573022286f22bc1410412e1bb0882424eca48e2991cb  winnipeg-osm/winnipeg-osm.geojson
+a0ef141e7297707d1ad0af6529134ca171a9e0f9ec3bfe9e357bc2644ddc0ca5  winnipeg-osm/winnipeg-osm-boundary.geojson
