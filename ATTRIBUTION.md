@@ -19,8 +19,34 @@ which differs by city and is confirmed by hand for each one). They are a derived
 database and are therefore themselves distributed under the ODbL; `LICENSE` in this
 repository is that licence.
 
+The place-name tiles in `packs/regions/<code>-names/` are derived from named
+OpenStreetMap features (towns, lakes, parks, mountains and the like) and are part of
+the same ODbL database. Where a feature carries a Wikidata ID, the ID is stored with
+it (Wikidata is CC0).
+
 The Guzzle app shows this as: *"Neighbourhood boundaries © OpenStreetMap
 contributors, available under the Open Database License."*
+
+## Wikimedia Commons photos
+
+Some place-name tiles carry a photo for a place, in their `place_photos` table.
+Every photo comes from [Wikimedia Commons](https://commons.wikimedia.org) and is used
+under **its own licence** — public domain, CC0, CC BY or CC BY-SA, in whichever
+version its Commons page states. **These photos are not covered by the ODbL**, and
+redistributing one means following the licence recorded next to it.
+
+Each photo's row records what its licence asks for: the author (`author`), the
+licence and its URL (`license`, `licenseUrl`), the Commons file page it came from
+(`source`), and what was changed from the original (`changes` — for example
+scaled down and converted to HEIC). `credit` is the line the app shows with the photo.
+
+## Place introductions
+
+Some place-name tiles carry a short introduction for a place, in their
+`place_intros` table. These were written for the Guzzle app in its own words; they
+are not copied from Wikipedia or any other source. The facts in them were checked
+against public references (Wikipedia, Wikidata, official sites) before they were
+included.
 
 ## City of Airdrie
 

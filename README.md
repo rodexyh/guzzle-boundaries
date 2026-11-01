@@ -17,7 +17,7 @@ Two kinds of pack live here:
   inside the app itself; it is published here as well because the licences of the
   data in it are worth being able to check.
 
-Generated from `index.json` of 2026-09-08T22:45:14Z.
+Generated from `index.json` of 2026-10-31T17:50:06Z.
 
 ## Licence
 
@@ -30,6 +30,10 @@ their municipalities' own open-data portals and are governed by **their publishe
 own terms**, not by the ODbL. Those terms are set out per source in
 [`ATTRIBUTION.md`](ATTRIBUTION.md) — read that file before redistributing anything
 here.
+
+Photos inside the place-name tiles, where there are any, come from Wikimedia Commons
+and stay under **their own licences**, not the ODbL; each photo's author, licence and
+source are stored next to it, and `ATTRIBUTION.md` explains the columns.
 
 The build pipeline that produces these packs is **not** in this repository and is
 not covered by this licence. It lives in the Guzzle app repository; the ODbL
@@ -61,9 +65,18 @@ The app fetches `index.json` first, then the one pack it needs.
 | Region | Cities | Pack size (gzipped) | Name tiles | Places (summed over tiles) | sha256 |
 | --- | --- | --- | --- | --- | --- |
 | `ca-ab` | Edmonton | 117,594 B | 171 | 6,727 | `fb937550290ccb72…` |
-| `ca-bc` | Richmond, Surrey, Vancouver | 57,307 B | — | — | `68e4ac8f303c6b09…` |
-| `ca-mb` | Winnipeg | 71,590 B | — | — | `5745918cd874c84f…` |
-| `ca-on` | Toronto | 69,769 B | — | — | `c4546e03cfe4d482…` |
+| `ca-bc` | Richmond, Surrey, Vancouver | 57,307 B | 317 | 18,446 | `68e4ac8f303c6b09…` |
+| `ca-mb` | Winnipeg | 71,590 B | 161 | 6,440 | `5745918cd874c84f…` |
+| `ca-nb` | — | — | 29 | 2,650 | — |
+| `ca-nl` | — | — | 103 | 5,614 | — |
+| `ca-ns` | — | — | 24 | 8,980 | — |
+| `ca-nt` | — | — | 386 | 2,269 | — |
+| `ca-nu` | — | — | 818 | 2,535 | — |
+| `ca-on` | Toronto | 69,769 B | 218 | 37,076 | `c4546e03cfe4d482…` |
+| `ca-pe` | — | — | 7 | 642 | — |
+| `ca-qc` | — | — | 278 | 38,100 | — |
+| `ca-sk` | — | — | 172 | 4,893 | — |
+| `ca-yt` | — | — | 246 | 1,437 | — |
 
 ## Same bytes as the CDN
 
@@ -73,9 +86,15 @@ byte-for-byte the files served there**, at matching paths:
 | Here | Served as |
 | --- | --- |
 | `index.json` | `boundaries/v1/index.json` |
-| `packs/regions/<code>.sqlite.gz` | `boundaries/v1/regions/<code>.sqlite.gz` |
+| `packs/regions/<code>-<sha16>.sqlite.gz` | `boundaries/v1/regions/<code>-<sha16>.sqlite.gz` |
+| `packs/regions/<code>-names/<tile>-<sha16>.sqlite.gz` | `boundaries/v1/regions/<code>-names/<tile>-<sha16>.sqlite.gz` |
 
-`index.json` of this build has sha256 `a8fd2ac2c5a4e049836fd4110e625d4882bad87d2c431cb60da2d58c609b0537`, and it carries the
+`<sha16>` is the first 16 hex digits of the file's own sha256, so a file name
+never changes its contents: a rebuilt province gets a new name, and the old
+object stays on the CDN for any phone still holding the previous index.
+Older releases used fixed names (`<code>.sqlite.gz`); those objects are left in place.
+
+`index.json` of this build has sha256 `b4074913f9d4d203a74353a208f2693126c4d4aae741d82225d569d81e5a721a`, and it carries the
 sha256 of every pack. That one number is checked in three places: against the file
 in this repository, against the object on the CDN right after it is uploaded, and
 on the phone after the download. A pack whose bytes do not match its entry in the
