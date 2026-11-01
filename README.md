@@ -94,7 +94,7 @@ never changes its contents: a rebuilt province gets a new name, and the old
 object stays on the CDN for any phone still holding the previous index.
 Older releases used fixed names (`<code>.sqlite.gz`); those objects are left in place.
 
-`index.json` of this build has sha256 `b4074913f9d4d203a74353a208f2693126c4d4aae741d82225d569d81e5a721a`, and it carries the
+`index.json` of this build has sha256 `553f2956fb8dc740c8e128805984c868e2a5f643b727fbcbe94f07183d7ef455`, and it carries the
 sha256 of every pack. That one number is checked in three places: against the file
 in this repository, against the object on the CDN right after it is uploaded, and
 on the phone after the download. A pack whose bytes do not match its entry in the
