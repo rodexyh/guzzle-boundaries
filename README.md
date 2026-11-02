@@ -17,7 +17,7 @@ Two kinds of pack live here:
   inside the app itself; it is published here as well because the licences of the
   data in it are worth being able to check.
 
-Generated from `index.json` of 2026-10-31T17:50:06Z.
+Generated from `index.json` of 2026-10-31T21:23:06Z.
 
 ## Licence
 
@@ -64,17 +64,17 @@ The app fetches `index.json` first, then the one pack it needs.
 
 | Region | Cities | Pack size (gzipped) | Name tiles | Places (summed over tiles) | sha256 |
 | --- | --- | --- | --- | --- | --- |
-| `ca-ab` | Edmonton | 117,594 B | 171 | 6,727 | `fb937550290ccb72…` |
-| `ca-bc` | Richmond, Surrey, Vancouver | 57,307 B | 317 | 18,446 | `68e4ac8f303c6b09…` |
-| `ca-mb` | Winnipeg | 71,590 B | 161 | 6,440 | `5745918cd874c84f…` |
+| `ca-ab` | Edmonton | 117,906 B | 171 | 6,727 | `bab727dfd2e3e516…` |
+| `ca-bc` | Burnaby, Richmond, Saanich, Surrey, Vancouver, Victoria | 82,871 B | 317 | 18,446 | `86afeb02bd54bef9…` |
+| `ca-mb` | Winnipeg | 71,886 B | 161 | 6,440 | `91d0214f204e98bf…` |
 | `ca-nb` | — | — | 29 | 2,650 | — |
 | `ca-nl` | — | — | 103 | 5,614 | — |
 | `ca-ns` | — | — | 24 | 8,980 | — |
 | `ca-nt` | — | — | 386 | 2,269 | — |
 | `ca-nu` | — | — | 818 | 2,535 | — |
-| `ca-on` | Toronto | 69,769 B | 218 | 37,076 | `c4546e03cfe4d482…` |
+| `ca-on` | Kitchener, Oshawa, Toronto, Windsor | 109,287 B | 218 | 37,076 | `9e5b24b486d1e31c…` |
 | `ca-pe` | — | — | 7 | 642 | — |
-| `ca-qc` | — | — | 278 | 38,100 | — |
+| `ca-qc` | Laval, Lévis, Montréal, Québec | 125,128 B | 278 | 38,100 | `68a24244a9ec5516…` |
 | `ca-sk` | — | — | 172 | 4,893 | — |
 | `ca-yt` | — | — | 246 | 1,437 | — |
 
@@ -94,7 +94,7 @@ never changes its contents: a rebuilt province gets a new name, and the old
 object stays on the CDN for any phone still holding the previous index.
 Older releases used fixed names (`<code>.sqlite.gz`); those objects are left in place.
 
-`index.json` of this build has sha256 `553f2956fb8dc740c8e128805984c868e2a5f643b727fbcbe94f07183d7ef455`, and it carries the
+`index.json` of this build has sha256 `3de867ca019cce0f204447d53689ba42ac5afff8a9629300ca1a5837a83b600b`, and it carries the
 sha256 of every pack. That one number is checked in three places: against the file
 in this repository, against the object on the CDN right after it is uploaded, and
 on the phone after the download. A pack whose bytes do not match its entry in the

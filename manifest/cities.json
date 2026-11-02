@@ -258,6 +258,316 @@
       "nameField": "name",
       "licenceKey": "osm",
       "note": "对照条目，不出包（设计稿 §2：OSM al10 269 区对官方 270 区 239 个逐格相同、只缺 Canada Olympic Park）。Calgary 走官方内置包 calgary313；两条 active 同名会撞 duplicateCity 闸，parked 正是'核过、不装'的意思。"
+    },
+    {
+      "slot": "kitchener-osm",
+      "displayName": "Kitchener",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-on",
+      "osm": {
+        "relation": 2062153,
+        "adminLevel": 10,
+        "extract": {
+          "file": "ontario.osm.pbf",
+          "sha256": "c5e8408040f6b70aafa8cbece42aad02a97e9a65a896ca446adc9a53f709d1d7"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "kitchener-osm.geojson",
+        "sha256": "37b7f800d6e3953797ba1e739049c188301cd7e656e506284fcc44dc8b854e86"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "kitchener-osm-boundary.geojson",
+        "sha256": "2e48a3f624a4a145bef1a73c87214ecea4cd71a3cef39e386e467ecc1d074e45"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-on（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-on/report.md。"
+    },
+    {
+      "slot": "windsor-osm",
+      "displayName": "Windsor",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-on",
+      "osm": {
+        "relation": 7025718,
+        "adminLevel": 10,
+        "extract": {
+          "file": "ontario.osm.pbf",
+          "sha256": "c5e8408040f6b70aafa8cbece42aad02a97e9a65a896ca446adc9a53f709d1d7"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "windsor-osm.geojson",
+        "sha256": "e4861ef4e4360661f788b3f6e15e6528d378eb3f1521ba627b947832609a3077"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "windsor-osm-boundary.geojson",
+        "sha256": "a99c18da1e5acde20830335a5430995815e908e4b9cef6b54dab8a57a55fb4cf"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-on（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-on/report.md。"
+    },
+    {
+      "slot": "oshawa-osm",
+      "displayName": "Oshawa",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-on",
+      "osm": {
+        "relation": 333748,
+        "adminLevel": 10,
+        "extract": {
+          "file": "ontario.osm.pbf",
+          "sha256": "c5e8408040f6b70aafa8cbece42aad02a97e9a65a896ca446adc9a53f709d1d7"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "oshawa-osm.geojson",
+        "sha256": "52414c7498ffd2fc7bb580b207b2802f8a079f7192ed546042b81483686e3699"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "oshawa-osm-boundary.geojson",
+        "sha256": "0df91af89910e43f15e86d84116c176a32b4552b1921b2a7804f6f0f379ecf91"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-on（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-on/report.md。"
+    },
+    {
+      "slot": "montreal-osm",
+      "displayName": "Montréal",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-qc",
+      "osm": {
+        "relation": 1634158,
+        "adminLevel": 10,
+        "extract": {
+          "file": "quebec.osm.pbf",
+          "sha256": "4656bee5ef6073d0ca58f8217bc1b2b26e0c5cfa2acb4decd5333b893a501c63"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "montreal-osm.geojson",
+        "sha256": "b5ac825c576d4375e2384b536e34f794d949716db5cdd642af0f74c0b1d0a54f"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "montreal-osm-boundary.geojson",
+        "sha256": "9b3e4a5d77e192f5ee775168e65a7f46a07827a635ecf5e2d86814f85a970699"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-qc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-qc/report.md。"
+    },
+    {
+      "slot": "quebec-osm",
+      "displayName": "Québec",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-qc",
+      "osm": {
+        "relation": 2319206,
+        "adminLevel": 10,
+        "extract": {
+          "file": "quebec.osm.pbf",
+          "sha256": "4656bee5ef6073d0ca58f8217bc1b2b26e0c5cfa2acb4decd5333b893a501c63"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "quebec-osm.geojson",
+        "sha256": "36a41896111bc32154b1031e67047b30348f7b236bfc1aa7bed61568c073ae39"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "quebec-osm-boundary.geojson",
+        "sha256": "2926bb3a31ab66c8e8f72d86336a61f33655d94462a2643690770f974bbc7340"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-qc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-qc/report.md。"
+    },
+    {
+      "slot": "laval-osm",
+      "displayName": "Laval",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-qc",
+      "osm": {
+        "relation": 1438336,
+        "adminLevel": 10,
+        "extract": {
+          "file": "quebec.osm.pbf",
+          "sha256": "4656bee5ef6073d0ca58f8217bc1b2b26e0c5cfa2acb4decd5333b893a501c63"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "laval-osm.geojson",
+        "sha256": "40e5fd5d2cca0a6189fd0203b143cd94e2575a9e77b6808f1bfe12584be07b94"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "laval-osm-boundary.geojson",
+        "sha256": "0c17f5daee890888d5bc45908f14d79c985c07356e9716ec9eee47cd116e81ac"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-qc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-qc/report.md。"
+    },
+    {
+      "slot": "levis-osm",
+      "displayName": "Lévis",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-qc",
+      "osm": {
+        "relation": 8164410,
+        "adminLevel": 10,
+        "extract": {
+          "file": "quebec.osm.pbf",
+          "sha256": "4656bee5ef6073d0ca58f8217bc1b2b26e0c5cfa2acb4decd5333b893a501c63"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "levis-osm.geojson",
+        "sha256": "0960afcdd26e015d6f7e303bdd8bbc0b1ce11c9e2ca75baf68b5658e24845c90"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "levis-osm-boundary.geojson",
+        "sha256": "ec505e5fec17ec15c0353c9258eb2c10234db66f3efb0dea90edb31b6bc2e663"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-qc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-qc/report.md。"
+    },
+    {
+      "slot": "burnaby-osm",
+      "displayName": "Burnaby",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-bc",
+      "osm": {
+        "relation": 2221119,
+        "adminLevel": 10,
+        "extract": {
+          "file": "british-columbia.osm.pbf",
+          "sha256": "ff4c11d34cce1baa54b81a7fd36e3cd369209d85f71692e9c1c1e6e227335e17"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "burnaby-osm.geojson",
+        "sha256": "9d39cda394f971e2445306253cfffb70df2f6ac70a7bda6a6658db45c858cd4a"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "burnaby-osm-boundary.geojson",
+        "sha256": "3c8f6538f118e45e2c78d866f77ed2735dab1ed548319ebe137e86a08268ade7"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-bc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-bc/report.md。"
+    },
+    {
+      "slot": "saanich-osm",
+      "displayName": "Saanich",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-bc",
+      "osm": {
+        "relation": 2221059,
+        "adminLevel": 10,
+        "extract": {
+          "file": "british-columbia.osm.pbf",
+          "sha256": "ff4c11d34cce1baa54b81a7fd36e3cd369209d85f71692e9c1c1e6e227335e17"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "saanich-osm.geojson",
+        "sha256": "ec3212186264677df5bba389e072c8c0d1bccced4156f0895274fc27ea2e632c"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "saanich-osm-boundary.geojson",
+        "sha256": "c9118763f2e0e9466d67792369d9af741df94410db538817b421e8639eba80e1"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-bc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-bc/report.md。"
+    },
+    {
+      "slot": "victoria-osm",
+      "displayName": "Victoria",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-bc",
+      "osm": {
+        "relation": 2221062,
+        "adminLevel": 10,
+        "extract": {
+          "file": "british-columbia.osm.pbf",
+          "sha256": "ff4c11d34cce1baa54b81a7fd36e3cd369209d85f71692e9c1c1e6e227335e17"
+        },
+        "osmBase": "2026-10-31T21:23:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "victoria-osm.geojson",
+        "sha256": "dd8bdd718cfe6b8a0eb24e225fab23612b7e0a8377e01697b11b4a60d53e1866"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "victoria-osm-boundary.geojson",
+        "sha256": "c5f277e8ad797fa475316ccf42e337230dfeaca2231b40b19f84c7682f4c6161"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "批 t1-ca-bc（batch.py）：admin_level=10，候选总表 build/batch/t1-ca-bc/report.md。"
     }
   ]
 }
