@@ -12,6 +12,8 @@ ff9794aea998143dac5832cace15a76d986c665daac7788d824f83866b60e4f3  calgary313/cal
 # edmonton-osm: osmBase=2026-09-07T04:53:06Z unstitched=8
 6f5b1abcd9aa6380e317ed29920089a458dcc6e259d0997830e8958f40dae6a9  edmonton-osm/edmonton-osm.geojson
 feac2b5c493e6d5b9ede0d6e19a69271e237ae9a1582b84cab8e03943aa38a14  edmonton-osm/edmonton-osm-boundary.geojson
+796b15e853a33ca09f18ba3b46ea0bf005e63f8a4d7aa0c78bc24999019446ec  hamilton234/hamilton234.geojson
+b55b5850040a82beae9d8caf5be1175b259ee40a37a5bad844a21581b4b2a9f3  hamilton234/hamilton234-boundary.geojson
 # kitchener-osm: osmBase=2026-10-31T21:23:06Z unstitched=0
 37b7f800d6e3953797ba1e739049c188301cd7e656e506284fcc44dc8b854e86  kitchener-osm/kitchener-osm.geojson
 2e48a3f624a4a145bef1a73c87214ecea4cd71a3cef39e386e467ecc1d074e45  kitchener-osm/kitchener-osm-boundary.geojson
@@ -29,6 +31,8 @@ b5ac825c576d4375e2384b536e34f794d949716db5cdd642af0f74c0b1d0a54f  montreal-osm/m
 # oshawa-osm: osmBase=2026-10-31T21:23:06Z unstitched=0
 52414c7498ffd2fc7bb580b207b2802f8a079f7192ed546042b81483686e3699  oshawa-osm/oshawa-osm.geojson
 0df91af89910e43f15e86d84116c176a32b4552b1921b2a7804f6f0f379ecf91  oshawa-osm/oshawa-osm-boundary.geojson
+5e73da7bd98825a25b7dc62fac0c3f445943996561c5e72ec9f2142b02392b8e  ottawa116/ottawa116.geojson
+c8852ed1910f9f072d859681dc0299d24c976b3626d7da37f288ba1930391235  ottawa116/ottawa116-boundary.geojson
 # quebec-osm: osmBase=2026-10-31T21:23:06Z unstitched=0
 36a41896111bc32154b1031e67047b30348f7b236bfc1aa7bed61568c073ae39  quebec-osm/quebec-osm.geojson
 2926bb3a31ab66c8e8f72d86336a61f33655d94462a2643690770f974bbc7340  quebec-osm/quebec-osm-boundary.geojson

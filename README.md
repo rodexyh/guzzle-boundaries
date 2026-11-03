@@ -25,7 +25,8 @@ Generated from `index.json` of 2026-10-31T21:23:06Z.
 [Open Database License (ODbL) 1.0](https://opendatacommons.org/licenses/odbl/1-0/).**
 The full text is in [`LICENSE`](LICENSE).
 
-Three of the cities are not OSM-derived: Calgary, Airdrie and London ON come from
+Some cities are not OSM-derived: Calgary, Airdrie and London ON (in the bundled
+pack), and any city in a province pack whose `licenceKey` is not `osm`, come from
 their municipalities' own open-data portals and are governed by **their publishers'
 own terms**, not by the ODbL. Those terms are set out per source in
 [`ATTRIBUTION.md`](ATTRIBUTION.md) — read that file before redistributing anything
@@ -72,7 +73,7 @@ The app fetches `index.json` first, then the one pack it needs.
 | `ca-ns` | — | — | 24 | 8,980 | — |
 | `ca-nt` | — | — | 386 | 2,269 | — |
 | `ca-nu` | — | — | 818 | 2,535 | — |
-| `ca-on` | Kitchener, Oshawa, Toronto, Windsor | 109,287 B | 218 | 37,076 | `9e5b24b486d1e31c…` |
+| `ca-on` | Hamilton, Kitchener, Oshawa, Ottawa, Toronto, Windsor | 371,816 B | 218 | 37,076 | `fba7b8402aa7cff0…` |
 | `ca-pe` | — | — | 7 | 642 | — |
 | `ca-qc` | Laval, Lévis, Montréal, Québec | 125,128 B | 278 | 38,100 | `68a24244a9ec5516…` |
 | `ca-sk` | — | — | 172 | 4,893 | — |
@@ -94,7 +95,7 @@ never changes its contents: a rebuilt province gets a new name, and the old
 object stays on the CDN for any phone still holding the previous index.
 Older releases used fixed names (`<code>.sqlite.gz`); those objects are left in place.
 
-`index.json` of this build has sha256 `3de867ca019cce0f204447d53689ba42ac5afff8a9629300ca1a5837a83b600b`, and it carries the
+`index.json` of this build has sha256 `0907387cbd8d495661aa715bac978cf762dd38db974914e3638a122f2c86b617`, and it carries the
 sha256 of every pack. That one number is checked in three places: against the file
 in this repository, against the object on the CDN right after it is uploaded, and
 on the phone after the download. A pack whose bytes do not match its entry in the
