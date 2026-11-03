@@ -711,7 +711,8 @@
         "WEST CENTRETOWN": "West Centretown",
         "WESTBORO": "Westboro",
         "WHITEHAVEN - WOODPARK - GLABAR PARK": "Whitehaven - Woodpark - Glabar Park"
-      }
+      },
+      "retrievedAt": "2026-11-03T01:56:24Z"
     },
     {
       "slot": "hamilton234",
@@ -755,7 +756,8 @@
         "4200": "Glanbrook",
         "Central Business Dis": "Central Business District",
         "Hamilton Golf & Club": "Hamilton Golf and Country Club"
-      }
+      },
+      "retrievedAt": "2026-11-03T01:56:25Z"
     },
     {
       "slot": "boise-tiger2024",
@@ -783,8 +785,8 @@
           "tracts.geojson": "d58c9eae83f0cd0bb73b9c0266368e92ff5554b6482f71f093a18ae91b6de634",
           "city.geojson": "6089597a7748e6d117222f76c47cef2b2dd727b7d856cdd1803cf33318b34a72",
           "gnis.txt": "56c687d382a71825549907f22f351920f01b6ed4e3e01b7d7288bf1856c07f83",
-          "osm-names.json": "335614ef1521411fe0a7654bf2a8be6d6e729df66ae88594a8dd6c586a1f880b",
-          "osm-polys.json": "aa99264999364acdeaa3969648e33206c54f1613cab5f24882d07c59d731d7eb",
+          "osm-names.json": "27fb3217088f76fbb60dcdcf14bfb8ab6dff19a1b32bb43040c7af5654158275",
+          "osm-polys.json": "1bec12438d2e1550c12437b03b88c2cec99caafdab267803466868d2e6135f86",
           "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
         }
       },
@@ -795,7 +797,603 @@
         "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
         "licenceName": "Public domain · ODbL 1.0"
       },
-      "note": "美国兜底城（US-2A）：出包闸都过了，核完了、等棒 5 用户看图点头再改 active（不写 draft：draft 会让 main 上 build.sh 整批停，主线 11-02 定）"
+      "note": "美国兜底城（US-2A）：用户 11-02 夜在模拟器上看过解锁卡、社区清单与署名、名字过关；批级评审 P2-1 后用户裁先退回 parked——六份料今天重造不出同一份（OSM 按当天取、料不在仓库），active 会让谁的默认 build.sh 都缺料停下；等取料能原样重造再改 active"
+    },
+    {
+      "slot": "milton26",
+      "displayName": "Milton",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://api.milton.ca/arcgis/rest/services/Datasets/Neighbourhoods/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "milton26.geojson",
+        "sha256": "6b65e0d71efe6b4707a21be9ef4aad1015a999df5f2da491b4a877bd4feacf5c"
+      },
+      "boundary": {
+        "url": "https://api.milton.ca/arcgis/rest/services/Datasets/MiltonBoundary/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "milton26-boundary.geojson",
+        "sha256": "4f52802bb3a4b45439c18bc9e97271458aad9bbe7928e771de2df30f97ca7b5f"
+      },
+      "idField": "OBJECTID",
+      "nameField": "NAME",
+      "licenceKey": "miltonON",
+      "attribution": {
+        "publisher": "Town of Milton",
+        "licenceName": "Open Government Licence – Milton",
+        "statement": "Contains information licensed under the Open Government Licence – Milton."
+      },
+      "note": "COV-1D（#1064 ①）：Town of Milton「Neighbourhoods」（市府正式社区层，每日更新），许可 OGL – Milton v2.0（永久、可商用；无专用署名句时须印「Contains information licensed under the Open Government Licence – Milton.」）。401 Industrial Area · Derry Green Industrial 是真工业区名，照收（#1066 准则 8）。来源调研 docs/design-refs/coverage-ca/cov-1d-sources.md。",
+      "retrievedAt": "2026-11-03T01:56:26Z"
+    },
+    {
+      "slot": "guelph23",
+      "displayName": "Guelph",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://gismaps.guelph.ca/hosting/rest/services/OpenData/OpenData2/FeatureServer/17/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "guelph23.geojson",
+        "sha256": "651e91b00a7cda09c903db1ba3ebcd2833363411638b3e30307f15132f25b2ce"
+      },
+      "boundary": {
+        "url": "https://gismaps.guelph.ca/hosting/rest/services/OpenData/OpenData1/FeatureServer/3/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "guelph23-boundary.geojson",
+        "sha256": "fbf112c48b566ba12775adf96411ea492c6a63d5aa6178ad60fd54d4a86207dd"
+      },
+      "idField": "OBJECTID",
+      "nameField": "AREA_NAME",
+      "licenceKey": "guelphON",
+      "attribution": {
+        "publisher": "City of Guelph",
+        "licenceName": "Open Government Licence – City of Guelph",
+        "statement": "Contains information licensed under the Open Government Licence – City of Guelph."
+      },
+      "note": "COV-1D（#1064 ①）：City of Guelph「Guelph Areas」（2013 年市府与 WDG Public Health 合画，2026-03 进开放目录），许可按门户「未另注即 OGL」推断为 OGL – City of Guelph v2.0（数据集页许可栏空）。滤掉 Non-Residential - A / B / C 三块（占位名，#1066 准则 8；剔后 inside 81.5 %）。",
+      "filter": {
+        "field": "AREA_NAME",
+        "excludeValues": [
+          "Non-Residential - A",
+          "Non-Residential - B",
+          "Non-Residential - C"
+        ]
+      },
+      "retrievedAt": "2026-11-03T01:56:27Z"
+    },
+    {
+      "slot": "cambridge38",
+      "displayName": "Cambridge",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://maps.cambridge.ca/arcgispub03/rest/services/OpenData1/MapServer/18/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "cambridge38.geojson",
+        "sha256": "fa6ab6076e1b95e969dce36a023ccdaef72972559a01a1b4e084cb8106b83851"
+      },
+      "boundary": {
+        "url": "https://services5.arcgis.com/LTaPSxJTf948f8sm/arcgis/rest/services/MunicipalBoundary/FeatureServer/0/query?where=LTIER%3D%27CITY%20OF%20CAMBRIDGE%27&outFields=*&outSR=4326&f=geojson",
+        "file": "cambridge38-boundary.geojson",
+        "sha256": "3e7acee409fb7f5a84e7d6a936afaf95d7d19629f023b3d3f017998084b58f5f"
+      },
+      "idField": "NHOOD_ID",
+      "nameField": "NHOOD_NAME",
+      "licenceKey": "cambridgeON",
+      "attribution": {
+        "publisher": "City of Cambridge",
+        "licenceName": "Open Government Licence – City of Cambridge",
+        "statement": "Contains information licensed under the Open Government Licence – City of Cambridge."
+      },
+      "note": "COV-1D（#1064 ①）：City of Cambridge「Planning Neighbourhoods」（规划部统计用社区），许可 OGL – City of Cambridge v2.0。源名字全大写 ⇒ 改名表首字母大写（ST ANDREWS HILLS → St. Andrews Hills、RIVERBANK NO 3 → Riverbank No. 3 两条手写）。滤掉 INDUSTRIAL PARK（分类标签，#1066 准则 8）。市界层装着周边 19 镇，URL 里按 LTIER 取本市一块。",
+      "renames": {
+        "RIVERBANK NO 3": "Riverbank No. 3",
+        "MIDDLE BLOCK": "Middle Block",
+        "KOSSUTH": "Kossuth",
+        "MAPLE GROVE": "Maple Grove",
+        "BEAVERDALE": "Beaverdale",
+        "CHILLIGO": "Chilligo",
+        "BLACKBRIDGE": "Blackbridge",
+        "HILLCREST": "Hillcrest",
+        "SILVERHEIGHTS": "Silverheights",
+        "RIVER FLATS": "River Flats",
+        "CENTENNIAL": "Centennial",
+        "DOWNTOWN HESPELER": "Downtown Hespeler",
+        "CAMBRIAN HILLS": "Cambrian Hills",
+        "COOPER": "Cooper",
+        "NORTHVIEW": "Northview",
+        "SHADES MILLS": "Shades Mills",
+        "BLAIR": "Blair",
+        "PRESTON HEIGHTS": "Preston Heights",
+        "ROYAL OAK": "Royal Oak",
+        "ST ANDREWS HILLS": "St. Andrews Hills",
+        "ELGIN PARK": "Elgin Park",
+        "BRIARDEAN": "Briardean",
+        "BRANCHTON PARK": "Branchton Park",
+        "SOUTHVIEW": "Southview",
+        "SOUTHWOOD": "Southwood",
+        "GLENVIEW": "Glenview",
+        "CITY CORE": "City Core",
+        "EASTVIEW": "Eastview",
+        "VICTORIA HIGHLANDS": "Victoria Highlands",
+        "WESTVIEW": "Westview",
+        "LINCOLN OAKS": "Lincoln Oaks",
+        "RIVERVIEW": "Riverview",
+        "LANGS FARM": "Langs Farm",
+        "CENTRAL PARK": "Central Park",
+        "RIVERSIDE": "Riverside",
+        "PARKLAWN": "Parklawn",
+        "ALLENDALE": "Allendale"
+      },
+      "filter": {
+        "field": "NHOOD_NAME",
+        "excludeValues": [
+          "INDUSTRIAL PARK"
+        ]
+      },
+      "retrievedAt": "2026-11-03T01:56:29Z"
+    },
+    {
+      "slot": "waterloo26",
+      "displayName": "Waterloo",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://services.arcgis.com/ZpeBVw5o1kjit7LT/arcgis/rest/services/DistrictPlans/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "waterloo26.geojson",
+        "sha256": "783adf8d31d5469c720d0ec9e9f682e1c6b2c00f09ccd93739470743e12564f3"
+      },
+      "boundary": {
+        "url": "https://services.arcgis.com/ZpeBVw5o1kjit7LT/arcgis/rest/services/CityBoundary/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "waterloo26-boundary.geojson",
+        "sha256": "69c3ea24e1c6054b71f98f1175bb2d17871f115d7845a92b5baad8dd0e57acc9"
+      },
+      "idField": "OBJECTID",
+      "nameField": "DISTNAME",
+      "licenceKey": "waterlooON",
+      "attribution": {
+        "publisher": "City of Waterloo",
+        "licenceName": "Waterloo Open Data User Licence"
+      },
+      "note": "COV-1D（#1064 ①）：City of Waterloo「District Plans」（规划片区，名字是居民用的社区名，2016 年后没更新），许可按门户唯一许可推断为 Waterloo Open Data User Licence（不强制署名）。PLANNINGDI 有 9 条空 ⇒ id 用 OBJECTID。滤掉 Rural East（占位名，#1066 准则 8）。",
+      "filter": {
+        "field": "DISTNAME",
+        "excludeValues": [
+          "Rural East"
+        ]
+      },
+      "retrievedAt": "2026-11-03T01:56:30Z"
+    },
+    {
+      "slot": "ajax28",
+      "displayName": "Ajax",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://ajaxmaps.ajax.ca/gisernie/rest/services/Public/Ajax_Open_Data/MapServer/17/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "ajax28.geojson",
+        "sha256": "5115129ab995cdb7e19521a9ab66a61dbc054ccd38683b52649eef9d2e8b7dcf"
+      },
+      "boundary": {
+        "url": "https://maps.durham.ca/arcgis/rest/services/Open_Data/Durham_OpenData/MapServer/1/query?where=NAME%3D%27Ajax%27&outFields=*&outSR=4326&f=geojson",
+        "file": "ajax28-boundary.geojson",
+        "sha256": "4a65e819c52c85dd46345178f7a72f5e81012c7bf58691499e6c1a91a3aa1e3d"
+      },
+      "idField": "OBJECTID",
+      "nameField": "NAME",
+      "licenceKey": "ajaxON",
+      "attribution": {
+        "publisher": "Town of Ajax",
+        "licenceName": "Town of Ajax Open Data Licence"
+      },
+      "note": "COV-1D（#1064 ①）：Town of Ajax「Ajax Neighbourhoods」，许可 Town of Ajax Open Data Licence v1.0（不强制署名）。市界取 Durham Region 那一层（Ajax 门户没有市界面）。一条名字字段写坏（整段历史文字、截在 100 字）⇒ 改名 Pickering Village（按内容推断；用户 11-02 夜看模拟器图答「留着」）。滤掉 Central Employment Area（分类标签）；三个 Business Area 是真名字、照收。",
+      "renames": {
+        "The recorded history of Pickering Villages starts with the first known European settler, an Irishman": "Pickering Village"
+      },
+      "filter": {
+        "field": "NAME",
+        "excludeValues": [
+          "Central Employment Area"
+        ]
+      },
+      "retrievedAt": "2026-11-03T01:56:31Z"
+    },
+    {
+      "slot": "kingston42",
+      "displayName": "Kingston",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://services1.arcgis.com/5GRYvurYYUwAecLQ/arcgis/rest/services/Neighbourhood_Boundaries/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "kingston42.geojson",
+        "sha256": "31933325c9f32e0a89bf4beaddb4d29432daa7d9605a58473c3514a4f621dd68"
+      },
+      "boundary": {
+        "url": "https://services1.arcgis.com/5GRYvurYYUwAecLQ/arcgis/rest/services/CityofKingstonBoundary/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "kingston42-boundary.geojson",
+        "sha256": "755bcac6f3a9c11f059c0b8fd4a8411e40d7e2fb0265cafa676f68159f55b02c"
+      },
+      "idField": "GLOBALID",
+      "nameField": "HOODNAME",
+      "licenceKey": "kingstonON",
+      "attribution": {
+        "publisher": "City of Kingston",
+        "licenceName": "Open Data Licence – City of Kingston",
+        "statement": "Contains information licensed under the Open Data Licence – City of Kingston."
+      },
+      "note": "COV-1D（#1064 ①）：City of Kingston「Neighbourhood Boundaries」，许可 City of Kingston Open Data Licence 1.0（基于 OGL-Ontario；强制署名「Contains information licensed under the Open Data Licence – City of Kingston.」）。Kingston Penitentiary 一格都不占、被零格排除；CFB Kingston · Collins Bay Penitentiary 照收（真地名）。",
+      "retrievedAt": "2026-11-03T01:56:32Z"
+    },
+    {
+      "slot": "stcatharines74",
+      "displayName": "St. Catharines",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://niagaraopendata.ca/dataset/d9389832-34a2-4fa1-9c3a-450adcf1c7d6/resource/07d749a7-3b98-45f5-ba7f-526edf4e2903/download/nbhdboundaries2011.json",
+        "file": "stcatharines74.geojson",
+        "sha256": "53f9a3552c747a31766ddefe0a7f6bce49b711104bda6c7f252db94198751997"
+      },
+      "boundary": {
+        "url": "https://services1.arcgis.com/WxiLK82TWf8W3O3f/arcgis/rest/services/OpenData_Municipal_Boundaries/FeatureServer/26/query?where=Name%3D%27St.%20Catharines%27&outFields=*&outSR=4326&f=geojson",
+        "file": "stcatharines74-boundary.geojson",
+        "sha256": "870d1baf39a53bde7ad2837154d550c592459e18e228ce185fee19ae50d057e6"
+      },
+      "idField": "NBH_ID",
+      "nameField": "NBH_NAME",
+      "licenceKey": "niagaraRegionON",
+      "attribution": {
+        "publisher": "Niagara Region",
+        "licenceName": "Open Government Licence – Niagara Region",
+        "statement": "Contains information licensed under the Open Government Licence - Niagara Region"
+      },
+      "note": "COV-1D（#1064 ①）：Niagara Region「Neighbourhood Boundaries 2011」（每块约 3 000 人、沿 2011 普查小区拼、按居民认知命名），全区 74 块按 NBH_MUNICIPALITY 排除另外 11 个市镇、留本市 19 块；许可 OGL 2.0 – Niagara Region（强制署名）。市界取 Niagara Region 那一层（市府自己那份的许可页不存在）。",
+      "filter": {
+        "field": "NBH_MUNICIPALITY",
+        "excludeValues": [
+          "Fort Erie",
+          "Grimsby",
+          "Lincoln",
+          "Niagara Falls",
+          "Niagara-on-the-Lake",
+          "Pelham",
+          "Port Colborne",
+          "Thorold",
+          "Wainfleet",
+          "Welland",
+          "West Lincoln"
+        ]
+      },
+      "retrievedAt": "2026-11-03T01:56:34Z"
+    },
+    {
+      "slot": "coquitlam13",
+      "displayName": "Coquitlam",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-bc",
+      "source": {
+        "url": "https://services2.arcgis.com/Q6Lq3evZUGfPrN7o/arcgis/rest/services/Planning_and_Development/FeatureServer/1/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "coquitlam13.geojson",
+        "sha256": "b23d362fb7db2f6926382775ebd579ce1450eb88d6c11b0cae8c67aeb610aa96"
+      },
+      "boundary": {
+        "url": "https://services2.arcgis.com/Q6Lq3evZUGfPrN7o/arcgis/rest/services/Cadastral/FeatureServer/11/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "coquitlam13-boundary.geojson",
+        "sha256": "b392153ca582b0c4253b617972414cd3c3bf6ade786a1fb050d01387a62646c1"
+      },
+      "idField": "GIS_ID",
+      "nameField": "NAMES",
+      "licenceKey": "coquitlamBC",
+      "attribution": {
+        "publisher": "City of Coquitlam",
+        "licenceName": "Open Government Licence – Coquitlam",
+        "statement": "Contains information licensed under the Open Government Licence – Coquitlam."
+      },
+      "note": "COV-1D（#1064 ①）：City of Coquitlam「Community_Profile_Boundaries」，许可 OGL – Coquitlam（采用 OGL-BC 2.0；无专用署名句时须印「Contains information licensed under the Open Government Licence – Coquitlam.」）。源名字全大写 ⇒ 改名表 13 条（三条拼名用「 / 」）。",
+      "renames": {
+        "RANCH PARK": "Ranch Park",
+        "EAGLE RIDGE": "Eagle Ridge",
+        "MAILLARDVILLE": "Maillardville",
+        "NORTHEAST COQUITLAM": "Northeast Coquitlam",
+        "CAPE HORN": "Cape Horn",
+        "RIVER HEIGHTS": "River Heights",
+        "CITY CENTRE": "City Centre",
+        "WESTWOOD PLATEAU": "Westwood Plateau",
+        "AUSTIN HEIGHTS": "Austin Heights",
+        "CENTRAL COQUITLAM": "Central Coquitlam",
+        "HOCKADAY NESTOR": "Hockaday / Nestor",
+        "MAYFAIR/PACIFIC REACH": "Mayfair / Pacific Reach",
+        "CARIBOO/BURQUITLAM": "Cariboo / Burquitlam"
+      },
+      "retrievedAt": "2026-11-03T01:56:36Z"
+    },
+    {
+      "slot": "abbotsford22",
+      "displayName": "Abbotsford",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-bc",
+      "source": {
+        "url": "https://services8.arcgis.com/ZYlQy38aWlfDG1Qh/arcgis/rest/services/Development_Layers_External_Feature/FeatureServer/3/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "abbotsford22.geojson",
+        "sha256": "bf5c967065d9cff62eeb54387a1547883e62135d8056e196bd863c3d157dcc01"
+      },
+      "boundary": {
+        "url": "https://services8.arcgis.com/ZYlQy38aWlfDG1Qh/arcgis/rest/services/City_of_Abbotsford_Boundary_Polygon/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "abbotsford22-boundary.geojson",
+        "sha256": "284389dcbf97ebfa8e3ffaa5463fcecfee0123819c0eafca4e1011f64eabf764"
+      },
+      "idField": "GlobalID",
+      "nameField": "NAME",
+      "licenceKey": "abbotsfordBC",
+      "attribution": {
+        "publisher": "City of Abbotsford",
+        "licenceName": "Open Government Licence – City of Abbotsford",
+        "statement": "Contains information licenced under the Open Government Licence – City of Abbotsford."
+      },
+      "note": "COV-1D（#1064 ①）：City of Abbotsford「Community Boundaries」，许可 OGL – City of Abbotsford v2（强制署名，原文拼 licenced）。Sumas Way · UDistrict 是当地实际用的片区名，照收。",
+      "retrievedAt": "2026-11-03T01:56:37Z"
+    },
+    {
+      "slot": "troisrivieres29",
+      "displayName": "Trois-Rivières",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-qc",
+      "source": {
+        "url": "https://www.donneesquebec.ca/recherche/dataset/a7383b8a-4ebf-4e2d-ac31-2c9fa3050f06/resource/7a144527-1c93-4e01-949b-4b78fe4d4288/download/quartier-nom-populaire-v3r.json",
+        "file": "troisrivieres29.geojson",
+        "sha256": "b3b5f0d3ca6642cbc327bab405f4660b4a1f0aac4bb9d35bd99e6aa2b26b20e3"
+      },
+      "boundary": {
+        "url": "https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/SDA_WMS/MapServer/2/query?where=MUS_NM_MUN%3D%27Trois-Rivi%C3%A8res%27&outFields=*&outSR=4326&f=geojson",
+        "file": "troisrivieres29-boundary.geojson",
+        "sha256": "230203c1d9057fb576906d326e40dce64ee37f2351b4cc8b1d1fa59d4fe5350d"
+      },
+      "idField": "ID",
+      "nameField": "NOM",
+      "licenceKey": "troisRivieresQC",
+      "attribution": {
+        "publisher": "Ville de Trois-Rivières",
+        "licenceName": "Creative Commons Attribution 4.0"
+      },
+      "note": "COV-1D（#1064 ①）：Ville de Trois-Rivières「Quartier (nom populaire)」（方法说明：按居民公认的名字与边界划），Données Québec CC BY 4.0（注明作者 ＋ 许可链接）。市界取省级 SDA（MERN）那一层（市府没有单独的市界数据集）。「du Monarque」小写开头照原样（同 Lévis 先例）。",
+      "retrievedAt": "2026-11-03T01:56:38Z"
+    },
+    {
+      "slot": "longueuil24",
+      "displayName": "Longueuil",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-qc",
+      "source": {
+        "url": "https://www.donneesquebec.ca/recherche/dataset/8d486ac4-022c-4687-8bff-90df0566ef80/resource/f97982f3-021b-4ac5-a6da-6afdf04b57d1/download/quartiers.json",
+        "file": "longueuil24.geojson",
+        "sha256": "26f31690d4b13ca6f4a498e4904372c1a8af4b63cafe89f2045313ad2c6680f5"
+      },
+      "boundary": {
+        "url": "https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/SDA_WMS/MapServer/2/query?where=MUS_NM_MUN%3D%27Longueuil%27&outFields=*&outSR=4326&f=geojson",
+        "file": "longueuil24-boundary.geojson",
+        "sha256": "4a4e95b62f38bb76fefa09a5b629abe9b82ba7955901f55da5e98fbb025210bc"
+      },
+      "idField": "NOM",
+      "nameField": "NOM",
+      "licenceKey": "longueuilQC",
+      "attribution": {
+        "publisher": "Ville de Longueuil",
+        "licenceName": "Creative Commons Attribution 4.0"
+      },
+      "note": "COV-1D（#1064 ① · #1066 ③）：Ville de Longueuil「Quartiers (anciens)」（社会学意义的街区，非行政划分；2026-02-09 市府还更新过），Données Québec CC BY 4.0。源数据只有 NOM 一个字段 ⇒ id 也用它。名字今天仍在用（房产挂牌、选区名、社区机构，核实见来源表附录 C）。滤掉 Zone Aéroportuaire（分类标签）。市界取省级 SDA 那一层。",
+      "filter": {
+        "field": "NOM",
+        "excludeValues": [
+          "Zone Aéroportuaire"
+        ]
+      },
+      "retrievedAt": "2026-11-03T01:56:39Z"
+    },
+    {
+      "slot": "whitby10",
+      "displayName": "Whitby",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://maps.durham.ca/arcgis/rest/services/Open_Data/Durham_OpenData/MapServer/12/query?where=MUNICIPALITY%3D%27Whitby%27&outFields=*&outSR=4326&f=geojson",
+        "file": "whitby10.geojson",
+        "sha256": "54af7b7e54db7f9da562a4eaae4fc7f380fbf76198517304ccd0e2846471aecd"
+      },
+      "boundary": {
+        "url": "https://maps.durham.ca/arcgis/rest/services/Open_Data/Durham_OpenData/MapServer/1/query?where=NAME%3D%27Whitby%27&outFields=*&outSR=4326&f=geojson",
+        "file": "whitby10-boundary.geojson",
+        "sha256": "050859346d80622c251d174bc95d342a847ebdbbeaead3706a5df07789aa90fc"
+      },
+      "idField": "NEIGH_ID",
+      "nameField": "COMMON_NAME",
+      "licenceKey": "durhamRegionON",
+      "attribution": {
+        "publisher": "The Regional Municipality of Durham",
+        "licenceName": "Region of Durham Open Data Licence"
+      },
+      "note": "COV-1D（#1064 ② · #1066 追记一）：Region of Durham「Health Neighbourhoods」Whitby 那 10 块（区卫生局分析街坊，名字取 COMMON_NAME），许可 Region of Durham Open Data Licence v1.0（不强制署名）。🔴 overlapExceptions：21 Williamsburg × 22 Whitby Brock North 沿 Cochrane Street 两侧各描一边，互压 8.70 m（1004 m² 细条、最宽 9.7 m，里面只有路面与自行车道）；切掉细条前后两份包 1215 格逐格差集为 0 ⇒ 绑这一份源数据（sha）、上限 10 m 放行，源一换就停。证据与图：docs/design-refs/coverage-ca/cov-1d-sources.md §2 · cov-1d-whitby-overlap.svg。",
+      "overlapExceptions": [
+        {
+          "between": [
+            "21",
+            "22"
+          ],
+          "sourceSha256": "54af7b7e54db7f9da562a4eaae4fc7f380fbf76198517304ccd0e2846471aecd",
+          "maxDepthMeters": 10
+        }
+      ],
+      "retrievedAt": "2026-11-03T01:56:41Z"
+    },
+    {
+      "slot": "seattle94",
+      "displayName": "Seattle",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-wa",
+      "source": {
+        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/nma_nhoods_sub/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "seattle94.geojson",
+        "sha256": "71438aa4763f64561539d53fd90c9b14de3a0dd8943e77f8200fa691d17964f0"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%275363000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "seattle94-boundary.geojson",
+        "sha256": "8afa37a972e6f7e05b64712d8eb508c2a4fb1a86bc01981fd60b0b955de2b269"
+      },
+      "idField": "S_HOOD",
+      "nameField": "S_HOOD",
+      "licenceKey": "seattleWA",
+      "attribution": {
+        "publisher": "City of Seattle",
+        "licenceName": "Open Data Commons PDDL 1.0"
+      },
+      "note": "US-2B（#1066 准则，来源表 docs/design-refs/coverage-us/us2b-sources.md #18）：市书记处社区地图集 nma_nhoods_sub，94 块全收，PDDL 1.0（门户条款不要求署名、无赔偿）。idField 用 S_HOOD：源里唯一稳定的键（OBJECTID 换版会变）。市界取人口普查局 ACS2025 500K 综合版 incorporated place（按海岸线裁过；全分辨率版含水面，Boston inside 只有 53%）。parked：美国只走索引 v2（#1063 追记二），用户在模拟器上看过、主线排好 v2 发布再改 active。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+    },
+    {
+      "slot": "boston26",
+      "displayName": "Boston",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-ma",
+      "source": {
+        "url": "https://gis.bostonplans.org/hosting/rest/services/Hosted/Boston_Neighborhood_Boundaries/FeatureServer/5/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "boston26.geojson",
+        "sha256": "1cf752bf06e22e89dad4e3518cc2dec546b9e5a6f229819ff0e279978acec87c"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%272507000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "boston26-boundary.geojson",
+        "sha256": "da90c7db6049b1209ee1811e595db0f03ec33eafdb91899cf8bb707885d54f76"
+      },
+      "idField": "neighborhood_id",
+      "nameField": "name",
+      "filter": {
+        "field": "name",
+        "excludeValues": [
+          "Harbor Islands"
+        ]
+      },
+      "licenceKey": "bostonMA",
+      "attribution": {
+        "publisher": "City of Boston",
+        "licenceName": "Open Data Commons PDDL 1.0"
+      },
+      "note": "US-2B（来源表 #25）：规划局 BPDA Neighborhoods（gis.bostonplans.org 源 FeatureServer 层 5；data.boston.gov 那条下载地址 302 跳 S3，fingerprints.py 的 curl 不跟跳转、会入册一份 HTML 的指纹），26 块剔 Harbor Islands；PDDL 1.0（CKAN ＋ 源条目两处一致）。零格排除 2 块后包里 23 区。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+    },
+    {
+      "slot": "minneapolis87",
+      "displayName": "Minneapolis",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-mn",
+      "source": {
+        "url": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Minneapolis_Neighborhoods/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "minneapolis87.geojson",
+        "sha256": "a62c816ecda333ea38f4841944fae454c7e8182de1a9266d72211e8a8622e0cf"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%272743000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "minneapolis87-boundary.geojson",
+        "sha256": "e4976250b3f198eed754fbfb45850ec13628007344cb40e4ec53a9b333272e72"
+      },
+      "idField": "BDNUM",
+      "nameField": "BDNAME",
+      "renames": {
+        "Sumner - Glenwood": "Sumner-Glenwood",
+        "Lind - Bohanon": "Lind-Bohanon",
+        "Webber - Camden": "Webber-Camden",
+        "Prospect Park - East River Road": "Prospect Park-East River Road",
+        "Willard - Hay": "Willard-Hay",
+        "Near - North": "Near North",
+        "Steven's Square - Loring Heights": "Steven's Square-Loring Heights",
+        "Mid - City Industrial": "Mid-City Industrial",
+        "Bryn - Mawr": "Bryn Mawr",
+        "Cedar - Isles - Dean": "Cedar-Isles-Dean",
+        "Nicollet Island - East Bank": "Nicollet Island-East Bank"
+      },
+      "licenceKey": "minneapolisMN",
+      "attribution": {
+        "publisher": "City of Minneapolis",
+        "licenceName": "CC0 1.0"
+      },
+      "note": "US-2B（来源表 #46）：市正式社区 87 块，条目写放弃全部版权、门户链 CC0 1.0；OSM al10 也过闸（86 块），按 #1066 准则 3 取官方（原件、2025-12 更新、多一块）。renames 只把源里「X - Y」的空格写法整理成市方自己的写法，不改名。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+    },
+    {
+      "slot": "baltimore279",
+      "displayName": "Baltimore",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-md",
+      "source": {
+        "url": "https://baltegis.baltimorecity.gov/server/rest/services/CityView/Neighborhoods/FeatureServer/0/query?where=1%3D1&outFields=OBJECTID,Name,GlobalID&outSR=4326&f=geojson",
+        "file": "baltimore279.geojson",
+        "sha256": "9d45ae3d0535438628e24b2e1d903aa214ef5c3bcf1266b53ed1b53cff0569b9"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%272404000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "baltimore279-boundary.geojson",
+        "sha256": "fcc0784f9ef9d79084e9b09a53ddb42139db884b82c6c82474e3f6647a5c214a"
+      },
+      "idField": "GlobalID",
+      "nameField": "Name",
+      "licenceKey": "baltimoreMD",
+      "attribution": {
+        "publisher": "Baltimore City Department of Planning",
+        "licenceName": "Baltimore City Open Data Program (City Code Art. 1 §9-8)"
+      },
+      "note": "US-2B（来源表 #30）：规划局 NSA 社区统计区 279 块全收（工业区 / 大公园用的都是市方正式名，#1066 准则 5 留着）；许可依据是市法典 Art. 1 §9-8(b)「no restrictions on copying, publishing, further distributing, modifying … commercial」，数据集在 Open Baltimore 目录组内归法典管（数据集本身没标许可，依据链在 us2b-sources-evidence.md 复核 C）。只取 OBJECTID,Name,GlobalID 三列。零格排除 10 块后包里 269 区。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+    },
+    {
+      "slot": "phoenix-osm",
+      "displayName": "Phoenix",
+      "status": "parked",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "us-az",
+      "osm": {
+        "relation": 111257,
+        "adminLevel": 10,
+        "osmBase": "2026-11-03T02:36:30Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "phoenix-osm.geojson",
+        "sha256": "32078f9be838fc89b60795ac8fa0cc22492e34f57f539d14b0bb48a1bc64073b"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "phoenix-osm-boundary.geojson",
+        "sha256": "9b4752ba11984022336f81337944f1d3008f33300b1017cd105dab0882846af2"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "licenceKey": "osm",
+      "note": "US-2B（来源表 #5）：OSM admin_level 10 ＝ 市规划的 16 个 urban villages（Ahwatukee Foothills · Maryvale · Laveen …，本地通用名）。al9 没有；官方协会层 672 块是可撤回授权 ＋ 赔偿，不收。偏粗（每块约 80 km²），出包验收时与普查兜底比一次体验再定 active。 用户 11-02 夜看过模拟器图：先缓，等普查兜底版出来两版并排再定。"
     }
   ]
 }
