@@ -17,7 +17,7 @@ Two kinds of pack live here:
   inside the app itself; it is published here as well because the licences of the
   data in it are worth being able to check.
 
-Generated from `index.json` of 2026-11-03T01:56:41Z.
+Generated from `index.json` of 2026-11-05T07:52:48Z.
 
 ## Licence
 
@@ -65,7 +65,7 @@ The app fetches `index.json` first, then the one pack it needs.
 
 | Region | Cities | Pack size (gzipped) | Name tiles | Places (summed over tiles) | sha256 |
 | --- | --- | --- | --- | --- | --- |
-| `ca-ab` | Edmonton | 117,906 B | 171 | 6,727 | `bab727dfd2e3e516…` |
+| `ca-ab` | Edmonton, Red Deer | 134,785 B | 171 | 6,727 | `2125a1676bd684cc…` |
 | `ca-bc` | Abbotsford, Burnaby, Coquitlam, Richmond, Saanich, Surrey, Vancouver, Victoria | 136,974 B | 317 | 18,446 | `48a83040669861fb…` |
 | `ca-mb` | Winnipeg | 71,886 B | 161 | 6,440 | `91d0214f204e98bf…` |
 | `ca-nb` | — | — | 29 | 2,650 | — |
@@ -76,7 +76,7 @@ The app fetches `index.json` first, then the one pack it needs.
 | `ca-on` | Ajax, Cambridge, Guelph, Hamilton, Kingston, Kitchener, Milton, Oshawa, Ottawa, St. Catharines, Toronto, Waterloo, Whitby, Windsor | 533,997 B | 218 | 37,076 | `254f6c7e7fe3789a…` |
 | `ca-pe` | — | — | 7 | 642 | — |
 | `ca-qc` | Laval, Lévis, Longueuil, Montréal, Québec, Trois-Rivières | 165,056 B | 278 | 38,100 | `655bc888ff0dd100…` |
-| `ca-sk` | — | — | 172 | 4,893 | — |
+| `ca-sk` | Regina, Saskatoon | 44,897 B | 172 | 4,893 | `f9b5d963089647fb…` |
 | `ca-yt` | — | — | 246 | 1,437 | — |
 
 ## Same bytes as the CDN
@@ -95,7 +95,7 @@ never changes its contents: a rebuilt province gets a new name, and the old
 object stays on the CDN for any phone still holding the previous index.
 Older releases used fixed names (`<code>.sqlite.gz`); those objects are left in place.
 
-`index.json` of this build has sha256 `25be802e39ec2e5d6f2aa377595aa9416795d81fcf5e44b27e41eb3d4b56b471`, and it carries the
+`index.json` of this build has sha256 `f0791e61bd4ea698f6c13eb9d484b24f8c9593cfc32fa1198418ab1973a8e760`, and it carries the
 sha256 of every pack. That one number is checked in three places: against the file
 in this repository, against the object on the CDN right after it is uploaded, and
 on the phone after the download. A pack whose bytes do not match its entry in the

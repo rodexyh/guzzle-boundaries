@@ -781,6 +781,22 @@
           43.615,
           -116.2023
         ],
+        "cityNames": [
+          "Boise",
+          "Boise City"
+        ],
+        "fetch": {
+          "stateFips": "16",
+          "stateAbbr": "ID",
+          "tigerPlace": "Boise City",
+          "tigerLsad": "25",
+          "counties": [
+            "001"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.0,
+          "bbox": "43.5094,-116.3657,43.6923,-116.0942"
+        },
         "inputs": {
           "tracts.geojson": "d58c9eae83f0cd0bb73b9c0266368e92ff5554b6482f71f093a18ae91b6de634",
           "city.geojson": "6089597a7748e6d117222f76c47cef2b2dd727b7d856cdd1803cf33318b34a72",
@@ -788,8 +804,13 @@
           "osm-names.json": "27fb3217088f76fbb60dcdcf14bfb8ab6dff19a1b32bb43040c7af5654158275",
           "osm-polys.json": "1bec12438d2e1550c12437b03b88c2cec99caafdab267803466868d2e6135f86",
           "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "geos": "3.11.4",
+          "shapely": "2.0.7"
         }
       },
+      "retrievedAt": "2026-11-03T00:16:07Z",
       "idField": "id",
       "nameField": "name",
       "licenceKey": "census-osm",
@@ -1269,7 +1290,8 @@
         "publisher": "City of Seattle",
         "licenceName": "Open Data Commons PDDL 1.0"
       },
-      "note": "US-2B（#1066 准则，来源表 docs/design-refs/coverage-us/us2b-sources.md #18）：市书记处社区地图集 nma_nhoods_sub，94 块全收，PDDL 1.0（门户条款不要求署名、无赔偿）。idField 用 S_HOOD：源里唯一稳定的键（OBJECTID 换版会变）。市界取人口普查局 ACS2025 500K 综合版 incorporated place（按海岸线裁过；全分辨率版含水面，Boston inside 只有 53%）。parked：美国只走索引 v2（#1063 追记二），用户在模拟器上看过、主线排好 v2 发布再改 active。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+      "note": "US-2B（#1066 准则，来源表 docs/design-refs/coverage-us/us2b-sources.md #18）：市书记处社区地图集 nma_nhoods_sub，94 块全收，PDDL 1.0（门户条款不要求署名、无赔偿）。idField 用 S_HOOD：源里唯一稳定的键（OBJECTID 换版会变）。市界取人口普查局 ACS2025 500K 综合版 incorporated place（按海岸线裁过；全分辨率版含水面，Boston inside 只有 53%）。parked：美国只走索引 v2（#1063 追记二），用户在模拟器上看过、主线排好 v2 发布再改 active。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。",
+      "retrievedAt": "2026-11-04T07:56:16Z"
     },
     {
       "slot": "boston26",
@@ -1301,7 +1323,8 @@
         "publisher": "City of Boston",
         "licenceName": "Open Data Commons PDDL 1.0"
       },
-      "note": "US-2B（来源表 #25）：规划局 BPDA Neighborhoods（gis.bostonplans.org 源 FeatureServer 层 5；data.boston.gov 那条下载地址 302 跳 S3，fingerprints.py 的 curl 不跟跳转、会入册一份 HTML 的指纹），26 块剔 Harbor Islands；PDDL 1.0（CKAN ＋ 源条目两处一致）。零格排除 2 块后包里 23 区。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+      "note": "US-2B（来源表 #25）：规划局 BPDA Neighborhoods（gis.bostonplans.org 源 FeatureServer 层 5；data.boston.gov 那条下载地址 302 跳 S3，fingerprints.py 的 curl 不跟跳转、会入册一份 HTML 的指纹），26 块剔 Harbor Islands；PDDL 1.0（CKAN ＋ 源条目两处一致）。零格排除 2 块后包里 23 区。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。",
+      "retrievedAt": "2026-11-04T07:56:20Z"
     },
     {
       "slot": "minneapolis87",
@@ -1340,7 +1363,8 @@
         "publisher": "City of Minneapolis",
         "licenceName": "CC0 1.0"
       },
-      "note": "US-2B（来源表 #46）：市正式社区 87 块，条目写放弃全部版权、门户链 CC0 1.0；OSM al10 也过闸（86 块），按 #1066 准则 3 取官方（原件、2025-12 更新、多一块）。renames 只把源里「X - Y」的空格写法整理成市方自己的写法，不改名。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+      "note": "US-2B（来源表 #46）：市正式社区 87 块，条目写放弃全部版权、门户链 CC0 1.0；OSM al10 也过闸（86 块），按 #1066 准则 3 取官方（原件、2025-12 更新、多一块）。renames 只把源里「X - Y」的空格写法整理成市方自己的写法，不改名。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。",
+      "retrievedAt": "2026-11-04T07:56:21Z"
     },
     {
       "slot": "baltimore279",
@@ -1366,7 +1390,8 @@
         "publisher": "Baltimore City Department of Planning",
         "licenceName": "Baltimore City Open Data Program (City Code Art. 1 §9-8)"
       },
-      "note": "US-2B（来源表 #30）：规划局 NSA 社区统计区 279 块全收（工业区 / 大公园用的都是市方正式名，#1066 准则 5 留着）；许可依据是市法典 Art. 1 §9-8(b)「no restrictions on copying, publishing, further distributing, modifying … commercial」，数据集在 Open Baltimore 目录组内归法典管（数据集本身没标许可，依据链在 us2b-sources-evidence.md 复核 C）。只取 OBJECTID,Name,GlobalID 三列。零格排除 10 块后包里 269 区。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。"
+      "note": "US-2B（来源表 #30）：规划局 NSA 社区统计区 279 块全收（工业区 / 大公园用的都是市方正式名，#1066 准则 5 留着）；许可依据是市法典 Art. 1 §9-8(b)「no restrictions on copying, publishing, further distributing, modifying … commercial」，数据集在 Open Baltimore 目录组内归法典管（数据集本身没标许可，依据链在 us2b-sources-evidence.md 复核 C）。只取 OBJECTID,Name,GlobalID 三列。零格排除 10 块后包里 269 区。市界同 seattle94 那条。parked 理由同 seattle94。 用户 11-02 夜看过模拟器图：可以上线（改 active 与 v2 发布同一步，主线排）。",
+      "retrievedAt": "2026-11-04T07:56:25Z"
     },
     {
       "slot": "phoenix-osm",
@@ -1394,6 +1419,5133 @@
       "nameField": "name",
       "licenceKey": "osm",
       "note": "US-2B（来源表 #5）：OSM admin_level 10 ＝ 市规划的 16 个 urban villages（Ahwatukee Foothills · Maryvale · Laveen …，本地通用名）。al9 没有；官方协会层 672 块是可撤回授权 ＋ 赔偿，不收。偏粗（每块约 80 km²），出包验收时与普查兜底比一次体验再定 active。 用户 11-02 夜看过模拟器图：先缓，等普查兜底版出来两版并排再定。"
+    },
+    {
+      "slot": "phoenix-tiger2024",
+      "displayName": "Phoenix",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-az",
+      "source": {
+        "url": "census",
+        "file": "phoenix-tiger2024.geojson",
+        "sha256": "f82ceb8eb86d117063c5c5fdf82933c3379b68c8b9bc3a43627d187789b7e189"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "phoenix-tiger2024-boundary.geojson",
+        "sha256": "a6c74a59297126577ca6e659fae49d14dbfe2d5a64cc434e4a6f130971491355"
+      },
+      "census": {
+        "center": [
+          33.4484,
+          -112.074
+        ],
+        "cityNames": [
+          "Phoenix"
+        ],
+        "fetch": {
+          "stateFips": "04",
+          "stateAbbr": "AZ",
+          "tigerPlace": "Phoenix",
+          "tigerLsad": "25",
+          "counties": [
+            "013"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.2753,-112.3391,33.9334,-111.9105"
+        },
+        "inputs": {
+          "tracts.geojson": "2fbab34064068f756c15bae8d9e29e09290682b37b5b40023cc667b45a547452",
+          "city.geojson": "3082dd171ca3fda3526b0d0a8fd4360eb6433fc7830353e19e9b0b24c470ae1f",
+          "gnis.txt": "58e1bb60abd2ac9e443505bf1e66d99849c469afbd875a94be439a07f1cbde69",
+          "osm-names.json": "727023c8ed7ec156ef5f42e53388cd74804881157947ae99bf6797b7867aa2cd",
+          "osm-polys.json": "a794b561c07dce2ce7896ab5e3010b5097f795b6669bc403188c5d57313ee45f",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Cobblestone Square",
+          "El Camino Dr.",
+          "Hyde Park Lodge",
+          "Kuban",
+          "Minnesota Court",
+          "Playa Margarita",
+          "PV",
+          "Sky Crossing",
+          "Sun Ray",
+          "Sunburst Homes",
+          "Trail Inn Lodge",
+          "TRE Campana",
+          "Villas Plaza",
+          "Young America Homes"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:24:06Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "denver-tiger2024",
+      "displayName": "Denver",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-co",
+      "source": {
+        "url": "census",
+        "file": "denver-tiger2024.geojson",
+        "sha256": "6d54ae0631720e189fde41893bdbcab890f43e4b519cb687f33114ceaeb0e54a"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "denver-tiger2024-boundary.geojson",
+        "sha256": "1ba34b539c1ca9964bcb719f107a04414d74635b7561decb291edd4936137c97"
+      },
+      "census": {
+        "center": [
+          39.7392,
+          -104.9847
+        ],
+        "cityNames": [
+          "Denver"
+        ],
+        "fetch": {
+          "stateFips": "08",
+          "stateAbbr": "CO",
+          "tigerPlace": "Denver",
+          "tigerLsad": "25",
+          "counties": [
+            "031"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "39.5993,-105.1249,39.9292,-104.5846"
+        },
+        "inputs": {
+          "tracts.geojson": "617ecc20668a56fd30d12930e41a9a605d15c281b3f3bcc9cda3ec315d0a107e",
+          "city.geojson": "62ae608f3640915bbc1ecd22dde0e1a7f814dcf0b915b1c408f78314d0b19f14",
+          "gnis.txt": "e0ebbd7266169c62ee12c06cdef6479fc5e55500487f06acdc8aa563780255ef",
+          "osm-names.json": "88d5ea73541535fc75518a0c34b93dd46384b415b106f27fd3d6649eb9c18af2",
+          "osm-polys.json": "838fbd5fc1bdcff37d5fb6b4cd5b1624d69502e95133a3246d1689e06b84973b",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Babi Yar",
+          "City of Brest",
+          "City of Chennai",
+          "Cook",
+          "Denver Connection",
+          "Fairway Villas",
+          "Four Mile Historic",
+          "Havana And Cornell",
+          "Inspire",
+          "Mile High Vista",
+          "Oak Reserve",
+          "Rosamond"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:27:06Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "portland-tiger2024",
+      "displayName": "Portland",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-or",
+      "source": {
+        "url": "census",
+        "file": "portland-tiger2024.geojson",
+        "sha256": "954cbc9e42ac67115bca577364426d54c741cccb200d7e4b5f468f06139dcb85"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "portland-tiger2024-boundary.geojson",
+        "sha256": "dc238194e6109ae27de942d33b77e3a34c9ad39c3ae0a53187b47ac21a4f84fe"
+      },
+      "census": {
+        "center": [
+          45.5235,
+          -122.6762
+        ],
+        "cityNames": [
+          "Portland"
+        ],
+        "fetch": {
+          "stateFips": "41",
+          "stateAbbr": "OR",
+          "tigerPlace": "Portland",
+          "tigerLsad": "25",
+          "counties": [
+            "005",
+            "051",
+            "067"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "45.4175,-122.8517,45.6679,-122.4570"
+        },
+        "inputs": {
+          "tracts.geojson": "95db447428bc9941057675fb4c3be32a8c87cb0bfc6ea4dc5635d719d01b96c1",
+          "city.geojson": "6d751c67525c7feec598fd709787c46059d7c87587409782a76eeae19f00fcb3",
+          "gnis.txt": "f42d245e73fd07aeb0eb40c18c53ce6cbdcb8456754acd2ac966a93042bc392d",
+          "osm-names.json": "9cce1566de5fa4ac9a5d7f25c9f948d8b648bdbe3098ca003a0e902f26b0b7d0",
+          "osm-polys.json": "c17b33375d6d643d5ea162f1ef9bd70d01bd1b0f003a419acdb599f6e888c7aa",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        }
+      },
+      "retrievedAt": "2026-11-04T06:28:05Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "chicago-tiger2024",
+      "displayName": "Chicago",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-il",
+      "source": {
+        "url": "census",
+        "file": "chicago-tiger2024.geojson",
+        "sha256": "0e5b5d0b590b8c6a2348f519d2e026cd06f7ef30402c629d80d3a836ed17c4f1"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "chicago-tiger2024-boundary.geojson",
+        "sha256": "d2fef03a8b22d066b1efac9b221c65ac789701f9cfa998b3f4a3457ca29c192c"
+      },
+      "census": {
+        "center": [
+          41.8837,
+          -87.6319
+        ],
+        "cityNames": [
+          "Chicago"
+        ],
+        "fetch": {
+          "stateFips": "17",
+          "stateAbbr": "IL",
+          "tigerPlace": "Chicago",
+          "tigerLsad": "25",
+          "counties": [
+            "031",
+            "043"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "41.6293,-87.9551,42.0381,-87.5087"
+        },
+        "inputs": {
+          "tracts.geojson": "bfd4454a9aa2eac215577a532ca8cd9cba2598e7777074578c4ff21ff5cbdda6",
+          "city.geojson": "0aafea1eab26b95b43079f0ac5de113a72a666781bf0c074767dcba061b30333",
+          "gnis.txt": "cf6fe48d0857fcfc689ab3a308ecb763e8bee1afa7ff4e67225d4013bf2fc155",
+          "osm-names.json": "49b8fa357d53706589cfaeebca990ba79eda9be5066519a1e34da2fd9f5f33d6",
+          "osm-polys.json": "6d91a6a1f44053b68cfe14b0c3cd8faf4d1805c072d5ea5fe92de0920adf25f6",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Canal Trustees",
+          "Cityfront Place",
+          "Dolands Addition",
+          "Fifty Acres",
+          "Frances Cabrini Homes",
+          "Green Bay",
+          "Ironworkers Addition to South Chicago",
+          "Locks",
+          "Mexico",
+          "Peterson Park (39th Ward)",
+          "Poverty Row",
+          "William Green Homes"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:31:13Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "washington-dc-tiger2024",
+      "displayName": "Washington, D.C.",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-dc",
+      "source": {
+        "url": "census",
+        "file": "washington-dc-tiger2024.geojson",
+        "sha256": "7f4afe14a64355df34265e2429d6be51820021da3dec492cf114d0f94570ece5"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "washington-dc-tiger2024-boundary.geojson",
+        "sha256": "26f76b969c9714f7606a1e4119568097aa03bdb7d31873c856c6897de476e59d"
+      },
+      "census": {
+        "center": [
+          38.8951,
+          -77.0364
+        ],
+        "cityNames": [
+          "Washington",
+          "District of Columbia"
+        ],
+        "fetch": {
+          "stateFips": "11",
+          "stateAbbr": "DC",
+          "tigerPlace": "Washington",
+          "tigerLsad": "25",
+          "counties": [
+            "001"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "38.7766,-77.1348,39.0108,-76.8944"
+        },
+        "inputs": {
+          "tracts.geojson": "8c33222201ddc916fbebed6e3f4243da17c288a2121ec26b8396ffd8a79e8b0f",
+          "city.geojson": "4ec83bc71cbe81a451ca916804fefa67f3227412694bc38d97d0fffd0b0a4b11",
+          "gnis.txt": "cd672338b6481b3a3af8251851accb3d70fb2b11c7dc5f76e61cfdbcc7da37a7",
+          "osm-names.json": "bf01ae53706f118bb473736caf5b1abb5a60c365180372718dec71876bd25128",
+          "osm-polys.json": "7eb6addcd799dab19c9f37c1d004aa96de4195453575dff51f165fd7ad7b26d2",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "George Washington University"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:32:18Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "san-francisco-tiger2024",
+      "displayName": "San Francisco",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "san-francisco-tiger2024.geojson",
+        "sha256": "c0024b88a8b6532da92388216ac2a22cb9ba69d2e6c31df0e47f6b9ea11dca28"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "san-francisco-tiger2024-boundary.geojson",
+        "sha256": "85ee1c10ece8ca07a3e4859df58e6fe9e216d785b4cf5fcc03d4d0a9d3fd21c6"
+      },
+      "census": {
+        "center": [
+          37.775,
+          -122.4194
+        ],
+        "cityNames": [
+          "San Francisco"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "San Francisco",
+          "tigerLsad": "25",
+          "counties": [
+            "075"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "37.6248,-123.1888,37.9448,-122.2668"
+        },
+        "inputs": {
+          "tracts.geojson": "509f6783cc65eda1a25dd928043dccd35fc0f873e0c6c0bc9e9da91cff30ee19",
+          "city.geojson": "3670244738001e14f562d93f2283a4d13ef9126707667a2f954f802a2efa04c8",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "9405f8fd30bd747822a4eec8f4c250ebb843744b54238b841d63925c7fc9c55a",
+          "osm-polys.json": "7d4717eb7a0b2daf87fcc8ec3a91c89eba6f8c04bf15f4aa956d480705faa797",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Banneker Homes",
+          "Diamond Heights Village",
+          "Frederick Douglass Haynes Gardens",
+          "Friendship Village",
+          "Laguna Heights",
+          "Malcolm X Square",
+          "Oceanview",
+          "Opera Plaza",
+          "Park Merced",
+          "Park View Commons",
+          "Thomas Paine Square",
+          "Valencia Gardens",
+          "Victoria Mews",
+          "Village Square",
+          "Vista Del Monte"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:47:43Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "oakland-tiger2024",
+      "displayName": "Oakland",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "oakland-tiger2024.geojson",
+        "sha256": "38ce8330f36448c527db7787e70d433030719c523495786c1c3d22d876e7f763"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "oakland-tiger2024-boundary.geojson",
+        "sha256": "a9b2f9718c803eca24920c504a59da7fe61f5264535e3bc20460672c4a0915f1"
+      },
+      "census": {
+        "center": [
+          37.8044,
+          -122.2708
+        ],
+        "cityNames": [
+          "Oakland"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Oakland",
+          "tigerLsad": "25",
+          "counties": [
+            "001"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "37.6167,-122.3709,37.9004,-122.0998"
+        },
+        "inputs": {
+          "tracts.geojson": "2778839c862d47afb96735947272e6d42ac66ad6e637bb1f5dd9948f2a47718a",
+          "city.geojson": "b100b02df6409f34e77c08f4e46b2f998dd6dbc5b10f62067bbe43b474155618",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "f55b7e2c8cd5eebe56e253cd58fcac649954190b9295930745f0d729a838313e",
+          "osm-polys.json": "f7b414ffe91e3fd5c579d7e004e108f7b368ed6bc08851a15847d88f98c85885",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        }
+      },
+      "retrievedAt": "2026-11-04T06:38:28Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "detroit-tiger2024",
+      "displayName": "Detroit",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-mi",
+      "source": {
+        "url": "census",
+        "file": "detroit-tiger2024.geojson",
+        "sha256": "798f17e2a06e5f715d6f9bdc899bef34a19eb8079e1406718b9eb2ea49187670"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "detroit-tiger2024-boundary.geojson",
+        "sha256": "1539b6e454ba1351515207539fdf472295e583418d0b13fa3210a0bef24d7689"
+      },
+      "census": {
+        "center": [
+          42.3314,
+          -83.0458
+        ],
+        "cityNames": [
+          "Detroit"
+        ],
+        "fetch": {
+          "stateFips": "26",
+          "stateAbbr": "MI",
+          "tigerPlace": "Detroit",
+          "tigerLsad": "25",
+          "counties": [
+            "163"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "42.2400,-83.3028,42.4652,-82.8954"
+        },
+        "inputs": {
+          "tracts.geojson": "3ba57ee9351e76c82f881f24cdff14fe70d8f652bb95a96b69c1e122b42f67da",
+          "city.geojson": "2de08ad07857f50ac765e6cdac928f953838fb9c1d38935f9ccccf092edb6189",
+          "gnis.txt": "10e1092ed07b1d8b2316fd2fdb7012d6545e503d6d4321e754ed5429f3fd6d50",
+          "osm-names.json": "85505e9e1354fe59dfc2dba89d17577a63617cf2f23aeaf49bdc19daf6ec59f6",
+          "osm-polys.json": "9a6718e38702d5dded1852d9f9787477e42e71a3a5828704d31d4d0341609a38",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "City Airport",
+          "Ford-Lodge Interchange"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:39:32Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "atlanta-tiger2024",
+      "displayName": "Atlanta",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ga",
+      "source": {
+        "url": "census",
+        "file": "atlanta-tiger2024.geojson",
+        "sha256": "58940eef73d3ec7a96551e1c858cab7ec6f63c96ac8d63348b401940bdd6328f"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "atlanta-tiger2024-boundary.geojson",
+        "sha256": "79e64b41ee673ec14d2e4cdd97e65fb0f792c8b8debcc1954f8db3ff7add91bf"
+      },
+      "census": {
+        "center": [
+          33.749,
+          -84.388
+        ],
+        "cityNames": [
+          "Atlanta"
+        ],
+        "fetch": {
+          "stateFips": "13",
+          "stateAbbr": "GA",
+          "tigerPlace": "Atlanta",
+          "tigerLsad": "25",
+          "counties": [
+            "089",
+            "121"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.6329,-84.5659,33.9018,-84.2746"
+        },
+        "inputs": {
+          "tracts.geojson": "c49c60ca17f043c7754a5c449187a9c340928487aaabbdd4a8c5b2b8b68a4a37",
+          "city.geojson": "5b94a1528b4e20cd190e06da2eef27c867d9e97ea71573766d070584d3268c0c",
+          "gnis.txt": "1c8deef04bb0314db2702b910704076a8afa753a2938e1f85bb639384bff2d78",
+          "osm-names.json": "2a6e37f19115cb51f9f986d5bd1dc9c89b1843f78f7ee05cd7aef88b183f13a4",
+          "osm-polys.json": "8970bb5008e1a7fcd1976b9aa289b9ebccb20e1cdec487830cf220454d0536cb",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Belt Junction",
+          "Emory Point",
+          "Hillside Cottages",
+          "Joel Chandler Harris Homes",
+          "Madison Yards",
+          "Oakland Junction",
+          "Resurgens Plaza",
+          "Taco Town",
+          "Tyler Perry Studios Soundstages"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:40:34Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "las-vegas-tiger2024",
+      "displayName": "Las Vegas",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nv",
+      "source": {
+        "url": "census",
+        "file": "las-vegas-tiger2024.geojson",
+        "sha256": "9a808f029c2fde5b1570fd113b35e0ed8523e09d924381691ab4102ffe8f3a62"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "las-vegas-tiger2024-boundary.geojson",
+        "sha256": "197cadfd2481e05fa19c77ed29bbf4dbea9f24da9372da0ee3a873d985aea671"
+      },
+      "census": {
+        "center": [
+          36.175,
+          -115.1372
+        ],
+        "cityNames": [
+          "Las Vegas"
+        ],
+        "fetch": {
+          "stateFips": "32",
+          "stateAbbr": "NV",
+          "tigerPlace": "Las Vegas",
+          "tigerLsad": "25",
+          "counties": [
+            "003"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "36.1146,-115.4216,36.4165,-115.0472"
+        },
+        "inputs": {
+          "tracts.geojson": "5902069906892905a7e7e592895b4274a1fcacdeb1fbb36f33bf53eb566b006a",
+          "city.geojson": "e913c778040d1cbf48aa816f602c53f21edbdd4b387270b29a1919bab887f9dc",
+          "gnis.txt": "96950d2737b9cd2ed2da9889ad852f021f1adcb56d22dc78b1e875f43c0a5a62",
+          "osm-names.json": "26ba670f46defa648d3ac00a388de7ddc033dac2481ac9004be26ba255861642",
+          "osm-polys.json": "31e33498779ae5e39e59a1f167e3367ea594416590e0a16b4012e123cb3afb4b",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Charleston Curve",
+          "The Crossing"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:42:36Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "los-angeles-tiger2024",
+      "displayName": "Los Angeles",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "los-angeles-tiger2024.geojson",
+        "sha256": "4a2bedf4ffbcf04dcc3f6ac4ee25c6a7e16e28a46f278f41507806252b503cf5"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "los-angeles-tiger2024-boundary.geojson",
+        "sha256": "ca788ae446f99845d46b4f1f9dc3af6e28b93a3513628d5db5a16c1862710de3"
+      },
+      "census": {
+        "center": [
+          34.0522,
+          -118.2437
+        ],
+        "cityNames": [
+          "Los Angeles"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Los Angeles",
+          "tigerLsad": "25",
+          "counties": [
+            "037"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.6887,-118.6832,34.3523,-118.1403"
+        },
+        "inputs": {
+          "tracts.geojson": "ea90689efbc33311fa8447b4281b96b9140478b57a64f99223021089fbed8f28",
+          "city.geojson": "f70be1aa152a6eb44997236fecdc30edd639338652345bffe3e2476c895df623",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "61183117212535e7c996ade4daf1c621f93b964c7f3d33e2a574786c9daaa52d",
+          "osm-polys.json": "7d3af51fdc765a99241414e9668ec188398ead05bda6fca2981d7e3fe4533b85",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Aliso Village",
+          "Avalon Gardens",
+          "Brooklyn",
+          "Browmstones",
+          "Bunker Hill Towers",
+          "Calabasas",
+          "Culver Junction",
+          "Dayton Avenue",
+          "Deadmans Curve",
+          "Dolanco Junction",
+          "Financial Dirstict",
+          "Friendship",
+          "Gardena",
+          "Gemco",
+          "Glendale Junction",
+          "Granada Hills Recreation Center aka Petit",
+          "Hacienda Village",
+          "Hamlin Street",
+          "Harding Street",
+          "Hog Farm",
+          "Home Junction",
+          "Imperial Courts",
+          "Jordan Downs",
+          "Lower East Side",
+          "Mickey Rooney Memorial Square",
+          "Mission Junction",
+          "Naud Junction",
+          "New York Streets",
+          "Nickerson Gardens",
+          "Ninth Street Junction",
+          "Oak Pointe",
+          "Parklabrea",
+          "Parkside Industrial Center",
+          "Pico Gardens",
+          "Pueblo de Los Ángeles Historical Monument",
+          "Ramona Gardens",
+          "Redondo Junction",
+          "Remington Place",
+          "San Fernando Gardens",
+          "San Fernando Mall",
+          "Seventh Street",
+          "SoHo",
+          "Soto Street Junction",
+          "South Chicago",
+          "Super Nintendo World",
+          "Taylor Junction",
+          "Tulsa",
+          "Upper East Side",
+          "Valley Plaza",
+          "Vanowen Place",
+          "Victory",
+          "Viking",
+          "Watson Junction",
+          "Woodlake Avenue"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:49:47Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "long-beach-tiger2024",
+      "displayName": "Long Beach",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "long-beach-tiger2024.geojson",
+        "sha256": "b5666830e2ccbadc3950be6b00c0c4e55ce0ee663b26888db3dcc87fbaa304c8"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "long-beach-tiger2024-boundary.geojson",
+        "sha256": "70dcbc3418ddcc8eda032c479cafb046274bc23b344ed2e2ebb8980e3d53948a"
+      },
+      "census": {
+        "center": [
+          33.767,
+          -118.1892
+        ],
+        "cityNames": [
+          "Long Beach"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Long Beach",
+          "tigerLsad": "25",
+          "counties": [
+            "037"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.6756,-118.2640,33.9005,-118.0482"
+        },
+        "inputs": {
+          "tracts.geojson": "ea90689efbc33311fa8447b4281b96b9140478b57a64f99223021089fbed8f28",
+          "city.geojson": "e1ccacc360692920a39162c339e66eb0a412fe47cd2f989905529e0ff3c54d69",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "da1849e1477b9eebcbb4ba083b6cb0df9c483112f2965a1f89bd10dd14fb335e",
+          "osm-polys.json": "c0f8068cc2a1992b254128c7e7f5d9453cf3dca882650d42aee5f27f17044e68",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Admiral Kidd",
+          "American Gold Star Manor",
+          "Captain Raymond Collins",
+          "Douglas Junction",
+          "Drake Chavez Greenbelt",
+          "El Dorado East Regional",
+          "Eugene Field",
+          "Hardfact Hill",
+          "Pan American",
+          "Rainbow Lagoon",
+          "Shoreline Aquatic"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:07:06Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "san-diego-tiger2024",
+      "displayName": "San Diego",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "san-diego-tiger2024.geojson",
+        "sha256": "f48173cf270aa54983c4535f3f3347b900153de4d2d7b34f49ce51a19e695349"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "san-diego-tiger2024-boundary.geojson",
+        "sha256": "b177f5f985ea3fe35d751e1cf97768632602f887dd2a2beea8e9b53a5088639e"
+      },
+      "census": {
+        "center": [
+          32.7153,
+          -117.1573
+        ],
+        "cityNames": [
+          "San Diego"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "San Diego",
+          "tigerLsad": "25",
+          "counties": [
+            "073"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.5198,-117.3248,33.1292,-116.8907"
+        },
+        "inputs": {
+          "tracts.geojson": "e9d19ab5bddff3db12d8baf790fb4255dac38febfdd0fd55178398e131a439c7",
+          "city.geojson": "3434d7207c5b74add6e9b48b6b753c068f1735ea4ea0ed526674611800285f89",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "73cd976bc5508348afb1c3bcf1b9860f9f4e4d5e636b0349f20a235c839bd388",
+          "osm-polys.json": "216d32e91522df399358414f68993ce644bbf1d438f2d05c04467bfd25b3a204",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Auberge",
+          "Awikilkil",
+          "Awil-Nyawa",
+          "Bel Etage",
+          "Carmel Center",
+          "Chaip (La Punta)",
+          "Elvira",
+          "Emat Kuseyaay",
+          "Hapai",
+          "Hatam's Village",
+          "Las Chollas (Choyas)",
+          "Merge 56",
+          "Northern Frontier",
+          "Onap (San Buenaventura)",
+          "Plaza Sorrento",
+          "Point Loma Naval Base",
+          "Point Loma Naval Station",
+          "Rancho Bernardo Business Park",
+          "Rancho Penasquitos",
+          "Rancho Peñasquitos Town Center",
+          "Rhodes Crossing",
+          "Sabre Springs Town Center",
+          "Scripps Gateway",
+          "Sinyau-Pichkara",
+          "Sinyweche",
+          "University Square"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:52:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "san-jose-tiger2024",
+      "displayName": "San Jose",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "san-jose-tiger2024.geojson",
+        "sha256": "afcaab03f700e4f0e3f7710e19ce9dd560ca6c7edb66599c21562a5b2321a6da"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "san-jose-tiger2024-boundary.geojson",
+        "sha256": "b3c448a99d0c307f44051f28c8cbd9aeb960d5118307300e2f8bc4a9b5018984"
+      },
+      "census": {
+        "center": [
+          37.3394,
+          -121.895
+        ],
+        "cityNames": [
+          "San Jose"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "San Jose",
+          "tigerLsad": "25",
+          "counties": [
+            "085"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "37.1081,-122.0607,37.4842,-121.5709"
+        },
+        "inputs": {
+          "tracts.geojson": "5d0e7cc5eb22c7f172b9eabc5ea5157ce0116bba82e6711a42dbe9bf8d6127cf",
+          "city.geojson": "5de7a8e3f350b1fc2a007c6fdf3d62e6acd8163f7d36ac8e2839f482818eff22",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "f1be7188004965ad04ff27e2a3954d1b01ab7fd4207fc54f5401434722a31493",
+          "osm-polys.json": "71ea77b010975031af319e4b56dd2fca8536957ad0057792810d5ab640ab30e5",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Berryessa Siding",
+          "Cottle House",
+          "Glider",
+          "Majestic Way",
+          "Parkview III",
+          "Ramac",
+          "Strawberry Square"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:53:48Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "sacramento-tiger2024",
+      "displayName": "Sacramento",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "sacramento-tiger2024.geojson",
+        "sha256": "1ac296543ceb3b2cef23d3b546acccbb3f0674d8df17f9108ff1abbbc8de3dd6"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "sacramento-tiger2024-boundary.geojson",
+        "sha256": "85c46a94efab947948fd559859657e1c1c2db16fd3d1d55f739c999f22576ad1"
+      },
+      "census": {
+        "center": [
+          38.5816,
+          -121.4944
+        ],
+        "cityNames": [
+          "Sacramento"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Sacramento",
+          "tigerLsad": "25",
+          "counties": [
+            "067"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "38.4229,-121.5751,38.7006,-121.3477"
+        },
+        "inputs": {
+          "tracts.geojson": "4b3f03f12f1bdba6b235d199b4a18dc87f36d4861f2b42293eb3ab3ae7cb8b78",
+          "city.geojson": "c90c5e0c90f9b83e36ba969442e545fbe03d77f45c583db11aec0bd534261d7f",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "164bbf1acc2b7997c0917a4731036537d70620ece47490c6c7878b585b0ec938",
+          "osm-polys.json": "1b007b923db9203ecd53c2918579ee0f0c511e04e3e5e45e434e9ecc45ff65e7",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Pusu'ne"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:56:50Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "fresno-tiger2024",
+      "displayName": "Fresno",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "fresno-tiger2024.geojson",
+        "sha256": "818aaeae5d9d0fc7e982462b6ce1b57ff6c6ac691d2f39816f789403d0b01531"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "fresno-tiger2024-boundary.geojson",
+        "sha256": "f3f826ee8521a8c4407893eaf4c54cf810d458e449e2df09bbf15af69e90f04e"
+      },
+      "census": {
+        "center": [
+          36.7477,
+          -119.7724
+        ],
+        "cityNames": [
+          "Fresno"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Fresno",
+          "tigerLsad": "25",
+          "counties": [
+            "019"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "36.6477,-119.9494,36.9262,-119.6355"
+        },
+        "inputs": {
+          "tracts.geojson": "9ad5138c9943266c01d13a1e14fcdeaa4c3278e471bbc0d8d0305b9b57c8431e",
+          "city.geojson": "1e477bf90bd90f9179c8fd499649267e32cc1b855e70c163187abba20b20139c",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "57cb36bef47e0281b1ca879b5115f2752f34c38d375e989e65a51e92e6b8cdf8",
+          "osm-polys.json": "d6388063552a715eedb9b0cf475cfd3452d5130801640960c7cfb9d006f28ccd",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Biola Junction",
+          "Centennial",
+          "Courthouse",
+          "Einstein",
+          "El Capitan Senior",
+          "Fort Washington",
+          "Harvest",
+          "Lone Star",
+          "Manchester Gate",
+          "Melody",
+          "Vang Pao",
+          "Viking"
+        ]
+      },
+      "retrievedAt": "2026-11-04T06:57:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "bakersfield-tiger2024",
+      "displayName": "Bakersfield",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "bakersfield-tiger2024.geojson",
+        "sha256": "525304ef8bf0cf5700dd4754b67282fe2d70b3afe38f651a76b7ba2ed807d915"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "bakersfield-tiger2024-boundary.geojson",
+        "sha256": "6fad7d0d80ecee49ba4eb316d60be091091998b43519b32a24c752c2b592a189"
+      },
+      "census": {
+        "center": [
+          35.3733,
+          -119.0187
+        ],
+        "cityNames": [
+          "Bakersfield"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Bakersfield",
+          "tigerLsad": "25",
+          "counties": [
+            "029"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.1790,-119.2803,35.4630,-118.7577"
+        },
+        "inputs": {
+          "tracts.geojson": "4730efa52aa0fee23a4e71bf2159361c3594a18f8e2e70a863c916c23b56b2c4",
+          "city.geojson": "d973dd299b147a91c5ab6eb081988cb6d0e90d76d17b63ab2df56bc2e085553b",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "9b8b0b7b72475a9e6515d9ad896b877f5b0f0a8ecc4aa22d3cacc6ba70d105b7",
+          "osm-polys.json": "3422fb74ee2000268defcbf8eff0199617e28472c61be01b417b1e4841d91f77",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Aera",
+          "Castle",
+          "City in the Hills",
+          "College",
+          "Colonel Howard Nichols",
+          "Crescent",
+          "Discovery",
+          "Frank West",
+          "Kern River Parkway",
+          "Oil City",
+          "Oil Junction",
+          "Patriots",
+          "Polo Community",
+          "Stella I Hills",
+          "Veterans"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:00:56Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "mesa-tiger2024",
+      "displayName": "Mesa",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-az",
+      "source": {
+        "url": "census",
+        "file": "mesa-tiger2024.geojson",
+        "sha256": "f5f6ceab45dd2e681bf1913a217b7a0b0df68fdb541ebd15d30645535936a8f6"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "mesa-tiger2024-boundary.geojson",
+        "sha256": "330b121f4f495c4bf5d8c61fb4b77c6e996fef48d3d154007b630d7776540ad5"
+      },
+      "census": {
+        "center": [
+          33.4223,
+          -111.8226
+        ],
+        "cityNames": [
+          "Mesa"
+        ],
+        "fetch": {
+          "stateFips": "04",
+          "stateAbbr": "AZ",
+          "tigerPlace": "Mesa",
+          "tigerLsad": "25",
+          "counties": [
+            "013"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.2624,-111.9095,33.5282,-111.5656"
+        },
+        "inputs": {
+          "tracts.geojson": "2fbab34064068f756c15bae8d9e29e09290682b37b5b40023cc667b45a547452",
+          "city.geojson": "5a673304eb8732bf78fd9956f1773c1c038754fc28d98ff7e188c5b88f44becd",
+          "gnis.txt": "58e1bb60abd2ac9e443505bf1e66d99849c469afbd875a94be439a07f1cbde69",
+          "osm-names.json": "f23c9dc565839fea84ce5f57df60d33273d619a5e0f26e978127dad1b796bd4f",
+          "osm-polys.json": "88ab774cd9f18e9a53b9ec0626947d82c88850aca1ebc8b443ef06fda054becc",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Clubhouse",
+          "Princess",
+          "Trail Riders Holiday Park"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:01:57Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "tucson-tiger2024",
+      "displayName": "Tucson",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-az",
+      "source": {
+        "url": "census",
+        "file": "tucson-tiger2024.geojson",
+        "sha256": "ed27a6d8a6da4916a984a9caec31f4c6f248526009869aba72b2211f1a02be34"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "tucson-tiger2024-boundary.geojson",
+        "sha256": "9401d93a447823659de6032d12c2edbbff4a39776ceb6ccb6a315f4ed79156b6"
+      },
+      "census": {
+        "center": [
+          32.2217,
+          -110.9265
+        ],
+        "cityNames": [
+          "Tucson"
+        ],
+        "fetch": {
+          "stateFips": "04",
+          "stateAbbr": "AZ",
+          "tigerPlace": "Tucson",
+          "tigerLsad": "25",
+          "counties": [
+            "019"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "31.9755,-111.0738,32.3359,-110.6912"
+        },
+        "inputs": {
+          "tracts.geojson": "38443617c0384b9b566d5ae7b914d213d75497b967b14fbeffc63f2fa9812042",
+          "city.geojson": "7e0fa78149191806cf823378cad77364aa2e098e1afe1166db5faca54a456831",
+          "gnis.txt": "58e1bb60abd2ac9e443505bf1e66d99849c469afbd875a94be439a07f1cbde69",
+          "osm-names.json": "076ff7bb7277443e36d7dfba92125fead2c60c4e01385b03ca9ae376cd7c0e30",
+          "osm-polys.json": "6d9612d45e4dc83e028bed71a8fc6f0f56ea831dcba83b0a274b0007deec733d",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Bravo",
+          "Orange Grove Mobile Estates",
+          "Pima Prickly",
+          "Soleng Tom"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:03:04Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "albuquerque-tiger2024",
+      "displayName": "Albuquerque",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nm",
+      "source": {
+        "url": "census",
+        "file": "albuquerque-tiger2024.geojson",
+        "sha256": "3929070c8f670820b59b58004c0f505408d4417bd11b66770e9d8029bf153d45"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "albuquerque-tiger2024-boundary.geojson",
+        "sha256": "0c55a39f75bc0f58ee6b5724f3f36824a11bc3610514fbdc33c17c1e002e5e4a"
+      },
+      "census": {
+        "center": [
+          35.0845,
+          -106.6511
+        ],
+        "cityNames": [
+          "Albuquerque"
+        ],
+        "fetch": {
+          "stateFips": "35",
+          "stateAbbr": "NM",
+          "tigerPlace": "Albuquerque",
+          "tigerLsad": "25",
+          "counties": [
+            "001"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "34.9318,-106.8878,35.2330,-106.4562"
+        },
+        "inputs": {
+          "tracts.geojson": "9bf5fc93431413fdc8c2e424a84d2d5f3cd322180774dfc56ea779775bb0afb0",
+          "city.geojson": "256a0404baebc4f0a6fbe5ee29e6f3639eccd66eaff0f86c72aa321a3ef37a90",
+          "gnis.txt": "5c86d0d0603228a586167d10709c142d40c6fed61bd0fcd43d982de570aea464",
+          "osm-names.json": "fb887099fa97594f5dc910095c730fc9251d77c4e293a73792a248dcf923d04e",
+          "osm-polys.json": "eebcf11b6d1ab3464f391e6a9a522a1039f5c89e98cebac79fca603150939992",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Anaya Rudolfo",
+          "Balloon Fiesta",
+          "Comanche",
+          "Governor Bent",
+          "Journal Center",
+          "Mission Avenue",
+          "Painted Sky",
+          "Stardust Skies",
+          "Tower"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:04:04Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "san-antonio-tiger2024",
+      "displayName": "San Antonio",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "san-antonio-tiger2024.geojson",
+        "sha256": "2b500b1d81cd97ddfda10c7f6f1f31e5e1ec6902eec84fed58d3f1a97a5d0c92"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "san-antonio-tiger2024-boundary.geojson",
+        "sha256": "6230187d2fd2960586dd6f4080fbb0ac48bb7ffe2f491396eb0889b7cff85b72"
+      },
+      "census": {
+        "center": [
+          29.4241,
+          -98.4936
+        ],
+        "cityNames": [
+          "San Antonio"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "San Antonio",
+          "tigerLsad": "25",
+          "counties": [
+            "029",
+            "325"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "29.1703,-98.8285,29.7461,-98.2077"
+        },
+        "inputs": {
+          "tracts.geojson": "b8beb6ca6b40fd3c64c4ae337bc04b1824593ae918bfe03876c0322f1c169cbc",
+          "city.geojson": "f171e1bbcf3920c780a88e0dec955ca2da5a02b00360e43995313ef98f18928c",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "fc2261f13269e94fe0e13a207bb5b5ff2cb9688fc4935bc5825ccb379ebc39c8",
+          "osm-polys.json": "fa8f57593980bee699cdc0a17c148050d84348115917758aa126a8e747b1683a",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Bike",
+          "Cathedral Rock Nature",
+          "Fiesta Bay Boardwalk",
+          "Freedom",
+          "Madison on Dietrich Center",
+          "Milam Wesley Tealer",
+          "Perales STEAM",
+          "Phoenix",
+          "Salado Junction",
+          "Shorts Corner",
+          "Specht Store",
+          "Summer Hill",
+          "The Woods of Sonterra"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:10:06Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "dallas-tiger2024",
+      "displayName": "Dallas",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "dallas-tiger2024.geojson",
+        "sha256": "b3e51811b4ac3fc5b0009b3a97967ef0c586fb94eb3186084ad43f270315ad42"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "dallas-tiger2024-boundary.geojson",
+        "sha256": "6a99291d0ded31a146d808fb79e208a8c4ac259e2b1d89ae06a8cadb0429ed8b"
+      },
+      "census": {
+        "center": [
+          32.7831,
+          -96.8067
+        ],
+        "cityNames": [
+          "Dallas"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Dallas",
+          "tigerLsad": "25",
+          "counties": [
+            "085",
+            "113",
+            "121",
+            "257",
+            "397"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.5982,-97.0155,33.0388,-96.4487"
+        },
+        "inputs": {
+          "tracts.geojson": "c20bf0bf4fbda6bcd126b6513ca6e319b3d5130592fc6321fb410fb089d76092",
+          "city.geojson": "1892e7f0dac4e4aedb7ddb97249f64562a0b1b130e2f3069b295377452bc5624",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "6c4addf5fd10e68a900853ab6f99a796cfc2433fc562b2ebb88d6c66b75271da",
+          "osm-polys.json": "e1e4bea9805af37749771f1736de1e207a0506c8fda2f7190a00b56726d22e5f",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Adelfa Callejo",
+          "Ascher Silberstein",
+          "Beckley - Saner",
+          "College",
+          "Dallas Junction",
+          "Ferguson Road",
+          "Harry Stone",
+          "JFK Junction",
+          "Leonidas Gonzalez Cigarroa MD",
+          "MP Junction",
+          "Nash/Davis",
+          "Obadiah Knight",
+          "SP Junction",
+          "The Estates of Coast Royale",
+          "The Village",
+          "Thurgood Marshall",
+          "TRE Junction",
+          "Trinity Junction",
+          "Umphrey Lee",
+          "University Crossing",
+          "Urban Park",
+          "Village Apartments",
+          "Wantmore Junction",
+          "West Dallas Housing",
+          "Zacha Junction"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:12:03Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "austin-tiger2024",
+      "displayName": "Austin",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "austin-tiger2024.geojson",
+        "sha256": "543796a7866bf79a791b722a9386f2d2d216f3a86d71091154b1f25ccc9047f9"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "austin-tiger2024-boundary.geojson",
+        "sha256": "13317f20f963515796794604ff6f2e6ae8e7f9da4a6ce462f0550988590fea3a"
+      },
+      "census": {
+        "center": [
+          30.2672,
+          -97.7431
+        ],
+        "cityNames": [
+          "Austin"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Austin",
+          "tigerLsad": "25",
+          "counties": [
+            "209",
+            "453",
+            "491"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "30.0606,-97.9534,30.5316,-97.5126"
+        },
+        "inputs": {
+          "tracts.geojson": "c0863592dcb781e10ee6605eebaa3a5be896e8d1a26270f0dc34bd6d00ce601d",
+          "city.geojson": "cd99ec004f2683b00346dec1fa7380167441745271f1b675c3525ce43bd10f92",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "c610493de19c1771d59654f2f6462ef2c199e7c6e1b869e147b6b03950409773",
+          "osm-polys.json": "6f4234a8737c71714f04a85f2874eff5f7fbf81719459e399b1fb24f0566f555",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Bilbrook Neighborhood",
+          "Canturbury Trails",
+          "Commons Ford Ranch Metropolitan",
+          "Hangout",
+          "Moccasin Neighborhood",
+          "Sunset Valley",
+          "Trailhead Neighborhood"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:13:05Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "fort-worth-tiger2024",
+      "displayName": "Fort Worth",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "fort-worth-tiger2024.geojson",
+        "sha256": "b79bab6ef25c6c269f63ec2fa10e6bbb07eeb947a2dc66f55a4484969150b47d"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "fort-worth-tiger2024-boundary.geojson",
+        "sha256": "c4db9eef715961a6c0a9465433e00704d203b5984bdbd5c53f0fab819ecee812"
+      },
+      "census": {
+        "center": [
+          32.7254,
+          -97.3208
+        ],
+        "cityNames": [
+          "Fort Worth"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Fort Worth",
+          "tigerLsad": "25",
+          "counties": [
+            "121",
+            "367",
+            "439",
+            "497"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.5356,-97.6152,33.0642,-97.0188"
+        },
+        "inputs": {
+          "tracts.geojson": "1fde9fa26cd912f9ec4e46a57b47baf19e16a15169fe3dd484cdb2de242ac4f9",
+          "city.geojson": "c5b76cebf607c16bab404dcb5c38b4c7cde07dc7b359a8c8b6848bfe93d46344",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "8e4bdfd33793cde603b6498704f0c6dbcf296c06caee3863f98d3b433a158f64",
+          "osm-polys.json": "4df4af235bb8148207b5b85f8e3a10643c6ffb0147276751c7e7c1cba70edc70",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Arrow S.",
+          "Belt Junction",
+          "Covey Homes Litsey Creek",
+          "Dallas Park",
+          "Dalwor Junction",
+          "Freedom",
+          "Heritage",
+          "Independence",
+          "Lone Star",
+          "Lowery Road",
+          "Midlothian Junction",
+          "Ninnie Baird",
+          "Parque Unidad/Unity",
+          "Plover Circle",
+          "Purina Junction",
+          "Quanah Parker",
+          "River",
+          "Rufino Mendoza",
+          "South Ney Junction",
+          "Z. Boaz South Community"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:15:05Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "el-paso-tiger2024",
+      "displayName": "El Paso",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "el-paso-tiger2024.geojson",
+        "sha256": "ab12674e742ecd9961009a9a3c6c1ef2c045202d1954439e295c1f5c02c8fa10"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "el-paso-tiger2024-boundary.geojson",
+        "sha256": "df7f335c4644e047ab899f0f36596a64c3ed2c98611794f344ea4fc39dd1bb12"
+      },
+      "census": {
+        "center": [
+          31.7587,
+          -106.4869
+        ],
+        "cityNames": [
+          "El Paso"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "El Paso",
+          "tigerLsad": "25",
+          "counties": [
+            "141"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "31.6075,-106.6509,32.0166,-106.1842"
+        },
+        "inputs": {
+          "tracts.geojson": "74dd1afe32f91b8b2b6fd03ceb35d8aee72f251600ef19b269e7fdf7e6028aad",
+          "city.geojson": "32980103960beb87019b0226a620f01cac40813273f1b834febf64b4f7e710d7",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "b492f40ea03ecddb34b899014dc777031124f4f7cba38fd5b6eee32ddb076b20",
+          "osm-polys.json": "ca5abae200fb2b417abfd4de67ae1a88ade967eaccae4b32ab38042edde5e8d3",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Arlington",
+          "Blackie Chesher",
+          "Braden Aboud Memorial",
+          "Burning Mesquite",
+          "LTC Robert \"Bob\" Chisolm",
+          "Northeast Regional",
+          "Smuggler's Pass",
+          "Westside Community",
+          "Zach White"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:17:17Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "arlington-tiger2024",
+      "displayName": "Arlington",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "arlington-tiger2024.geojson",
+        "sha256": "534d2b5e3f6c2899b6fdc14438bca4aa78c0842d91feebaeb18f2167a22504eb"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "arlington-tiger2024-boundary.geojson",
+        "sha256": "94bf117269604595800ab684c391e24fedcb3de70f24e4e681b1e03cc2738df9"
+      },
+      "census": {
+        "center": [
+          32.7357,
+          -97.1081
+        ],
+        "cityNames": [
+          "Arlington"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Arlington",
+          "tigerLsad": "25",
+          "counties": [
+            "439"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.5719,-97.2489,32.8321,-97.0222"
+        },
+        "inputs": {
+          "tracts.geojson": "ec1682151f8d6857d41668a19e5a5797a11d0f8c8ff018e15439c834cd3dc81b",
+          "city.geojson": "3c4e64016b3dc8d7d0e606ba3ac392135b574bccac98fc7c77638f4a55570d74",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "9d08e014317cd3dcc51d71a5dec5bee74b02af15a6fc2bb9d967a9ca58b08eef",
+          "osm-polys.json": "8a1e12c7dfe202c6a61c62ddd16f04a1c8dd3081053cadab54fbc22b08aa674c",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Boomtown",
+          "France",
+          "Gotham City",
+          "Mexico",
+          "Old South",
+          "Parkway Central",
+          "Spain",
+          "Sublet Creek Linear",
+          "Texas",
+          "The Green at College",
+          "University Park Village",
+          "Viridian"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:19:21Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "oklahoma-city-tiger2024",
+      "displayName": "Oklahoma City",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ok",
+      "source": {
+        "url": "census",
+        "file": "oklahoma-city-tiger2024.geojson",
+        "sha256": "48fb2adce9b173166cdef3f82bd8d341e378929baa2093cc979e9d0a6d870736"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "oklahoma-city-tiger2024-boundary.geojson",
+        "sha256": "8ae2f9ff71c9ede415ab051fc3743b3f3ca9cb8fa4578eeb6e37a1030011dd99"
+      },
+      "census": {
+        "center": [
+          35.4676,
+          -97.5164
+        ],
+        "cityNames": [
+          "Oklahoma City"
+        ],
+        "fetch": {
+          "stateFips": "40",
+          "stateAbbr": "OK",
+          "tigerPlace": "Oklahoma City",
+          "tigerLsad": "25",
+          "counties": [
+            "017",
+            "027",
+            "109",
+            "125"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.2757,-97.8487,35.6899,-97.1097"
+        },
+        "inputs": {
+          "tracts.geojson": "245dd216892b220baeb0b4d31c1caca95d93ea1950009f2931e9b391f1651620",
+          "city.geojson": "8b4ffce5a7ed98b3a6e8f3c17c4598743ae8a9016439d34b02514cbc3faceeae",
+          "gnis.txt": "1818d2fb3ace18869d06587096331228f0a914f6f7d808f793f9b843d90426e9",
+          "osm-names.json": "5e0ae27887db771e6cefafc6b03a865e718d5e19af146a1a588c888ed867d4ee",
+          "osm-polys.json": "4e5fb92367ce2a2f96af5cf2ec92cd301b2b562d51256aa707ed379c48f1c2c4",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Columbus",
+          "Dolese Youth",
+          "Edmond Gardens",
+          "Lake Stanley Draper Mountain Bike",
+          "Merrel Medley",
+          "River",
+          "Stand Watie",
+          "Stars and Stripes"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:20:21Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "tulsa-tiger2024",
+      "displayName": "Tulsa",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ok",
+      "source": {
+        "url": "census",
+        "file": "tulsa-tiger2024.geojson",
+        "sha256": "91ea7c3aee5dccb673c36c305997048a347b0cacc15db0b8a7a94b3d21893adf"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "tulsa-tiger2024-boundary.geojson",
+        "sha256": "7c184ac7be529810f98b859ad18076f04720ff2f232eeea86f93d7ee0ee159b2"
+      },
+      "census": {
+        "center": [
+          36.154,
+          -95.9928
+        ],
+        "cityNames": [
+          "Tulsa"
+        ],
+        "fetch": {
+          "stateFips": "40",
+          "stateAbbr": "OK",
+          "tigerPlace": "Tulsa",
+          "tigerLsad": "25",
+          "counties": [
+            "113",
+            "131",
+            "143",
+            "145"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.9533,-96.0896,36.3515,-95.6666"
+        },
+        "inputs": {
+          "tracts.geojson": "9147d36c74a42986faac26a5ef28c9b0c0789b85e625b63f4ed5631d3642c7f7",
+          "city.geojson": "5e77730c17d3c0389cdf5f2874617cb87d94235d25665b03272b6503692bfb42",
+          "gnis.txt": "1818d2fb3ace18869d06587096331228f0a914f6f7d808f793f9b843d90426e9",
+          "osm-names.json": "8dad358681d04f964b488a02d77f3a18073367b52d5afc2c488a178e6af79b8e",
+          "osm-polys.json": "4e7043cc4224d0724336303c085f9f56ba1a761cd8e0f6684afcf0bf52b00a1e",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Briarglen Plaza",
+          "Madison Court",
+          "Mayo Plaza",
+          "Park Plaza 6 & 7",
+          "Southern Plaza"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:21:22Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "kansas-city-tiger2024",
+      "displayName": "Kansas City",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-mo",
+      "source": {
+        "url": "census",
+        "file": "kansas-city-tiger2024.geojson",
+        "sha256": "a97a960e06f957e40834ea6ac2fd3ad9e30343fef0ec668d82e83978b473fe23"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "kansas-city-tiger2024-boundary.geojson",
+        "sha256": "ad28f7788171e9a06badce465a5a22f4548352ba9e88d9d0f4ae15cb65fb370f"
+      },
+      "census": {
+        "center": [
+          39.0997,
+          -94.5786
+        ],
+        "cityNames": [
+          "Kansas City"
+        ],
+        "fetch": {
+          "stateFips": "29",
+          "stateAbbr": "MO",
+          "tigerPlace": "Kansas City",
+          "tigerLsad": "25",
+          "counties": [
+            "037",
+            "047",
+            "095",
+            "165"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "38.8093,-94.7806,39.3712,-94.3704"
+        },
+        "inputs": {
+          "tracts.geojson": "fd4f4fe81993bddb6d8aacac0e8ba699d86dde6dea11ba5de747a77322dd3266",
+          "city.geojson": "393ff34e31bd2567942b648b38e35cbfeacac7a0230094a712decd67f0281f74",
+          "gnis.txt": "89f7adfcbc2ada76ec45afd45c03476977385dfc3a455375a9ff2c2debd760e3",
+          "osm-names.json": "3ef086d53998c2b5d8e165a7aeb0bda66b74a4c53cf36f9023c7925a9a788d0b",
+          "osm-polys.json": "e41813c553cf039da8b00f0f42c475f37d78e52e2bc5345e7128c82cf87b2b70",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Dallas",
+          "Moscow",
+          "North Congress Playground"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:22:27Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "jacksonville-tiger2024",
+      "displayName": "Jacksonville",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-fl",
+      "source": {
+        "url": "census",
+        "file": "jacksonville-tiger2024.geojson",
+        "sha256": "f45addec8dbd40502ee09c387b9d32e84c754915fb5dfc90a54e4b218214a369"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "jacksonville-tiger2024-boundary.geojson",
+        "sha256": "d70f39fbb5bac3c3b967e64f187f5fd98fc6d8fe7aa9a63d8e12a8c5f1034ee0"
+      },
+      "census": {
+        "center": [
+          30.3322,
+          -81.6557
+        ],
+        "cityNames": [
+          "Jacksonville"
+        ],
+        "fetch": {
+          "stateFips": "12",
+          "stateAbbr": "FL",
+          "tigerPlace": "Jacksonville",
+          "tigerLsad": "25",
+          "counties": [
+            "031"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "30.0887,-82.0645,30.6012,-81.3017"
+        },
+        "inputs": {
+          "tracts.geojson": "f55904f96a326cf9f75c0de3fa91a22b25c401cc79d69b61e6cd216f673061fb",
+          "city.geojson": "c1873e2571a1ac053f69092dd501bab3fcfa3905e96f2ea9813fd7b2506a5b11",
+          "gnis.txt": "2683e1d410d1e43024ce5c4932f4f5f31d2988924fc0baab8375aa831f4439a2",
+          "osm-names.json": "423e4bc2333d6a0f79420fbf940edc29d35ff9183961126319919674bd28afa6",
+          "osm-polys.json": "fb0aa6153644f2372361032e508a3df251f9f484bd9d36618cf6358b10a9086c",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Duval",
+          "Town Center"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:27:36Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "columbus-tiger2024",
+      "displayName": "Columbus",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-oh",
+      "source": {
+        "url": "census",
+        "file": "columbus-tiger2024.geojson",
+        "sha256": "d48510af8e4b97f4cc52ac55b4a5ee5d8fd51a208d66f51e858c0f3e2880bb0c"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "columbus-tiger2024-boundary.geojson",
+        "sha256": "e13c5cfd3562eda7e83672b15c45a431fe265a5e4a6f4657465db75cc5db6b75"
+      },
+      "census": {
+        "center": [
+          39.9612,
+          -82.9988
+        ],
+        "cityNames": [
+          "Columbus"
+        ],
+        "fetch": {
+          "stateFips": "39",
+          "stateAbbr": "OH",
+          "tigerPlace": "Columbus",
+          "tigerLsad": "25",
+          "counties": [
+            "041",
+            "045",
+            "049"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "39.7937,-83.2253,40.1723,-82.7564"
+        },
+        "inputs": {
+          "tracts.geojson": "1dce43d5498f17169bed52cf420fea791fabe501cd7c3df1c0e442ba814df479",
+          "city.geojson": "e29e922294610d7e1251b9182d3d407f3cdabc593b892acc37a3895c17a17866",
+          "gnis.txt": "dc4433d0b704878416df28d435a348265e293dc722b21da095745bca415ae3fd",
+          "osm-names.json": "c140929f42e17f8bc654a774975b8baa71a43374535a87cd98f7c31be7ed316c",
+          "osm-polys.json": "9f8f6d526f75746a76b63acfd80d8ab5bd3942076e01623a09f371fd3b4c4a2e",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Engineering Core",
+          "Grandview Yard",
+          "University District District 1",
+          "University District District 2",
+          "University District District 4"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:28:35Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "charlotte-tiger2024",
+      "displayName": "Charlotte",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nc",
+      "source": {
+        "url": "census",
+        "file": "charlotte-tiger2024.geojson",
+        "sha256": "c9bf47fff936c047aa0be203da6a8261b283d54fe37eaabb7f1bfab74884b4d0"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "charlotte-tiger2024-boundary.geojson",
+        "sha256": "2caedf805a91c6dd8e56879b476596663a3d8a71c18d8d2108ebcfd4623d10b4"
+      },
+      "census": {
+        "center": [
+          35.2271,
+          -80.8431
+        ],
+        "cityNames": [
+          "Charlotte"
+        ],
+        "fetch": {
+          "stateFips": "37",
+          "stateAbbr": "NC",
+          "tigerPlace": "Charlotte",
+          "tigerLsad": "25",
+          "counties": [
+            "119"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "34.9955,-81.0246,35.4152,-80.6198"
+        },
+        "inputs": {
+          "tracts.geojson": "33b0693c7abcfb3565514114b05e1e006285ff43944b4ffc923b3f6cec1ee564",
+          "city.geojson": "ffa1a2348cba458276eeb5d6b5532f74f0588df2ef205023470ed389886eace2",
+          "gnis.txt": "266064600b293b78beaa20cec2eefb005911213ef4488d7fec782948133fe9ec",
+          "osm-names.json": "493bdf4e988a68ff571ed9f88adeea99c0810edc01dbb506d12613ec8c8d8aee",
+          "osm-polys.json": "431408c3a00993641e3859162be3500a091acc1d093a62c22bfddc61eb7a5323",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Atando Junction",
+          "Berewick Regional",
+          "Bridgehampton Club",
+          "Hellenic",
+          "Robinson Church",
+          "Thrill Zone"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:32:49Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "raleigh-tiger2024",
+      "displayName": "Raleigh",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nc",
+      "source": {
+        "url": "census",
+        "file": "raleigh-tiger2024.geojson",
+        "sha256": "2b226ec1e3928a6e0829340bf7d914caa0f09e1a16b9e91ebdd88bfa82b723c9"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "raleigh-tiger2024-boundary.geojson",
+        "sha256": "e747fc9ab639dbe9ad56b466bf712cf3c8bdb7a960f00397cf05e7a10e3f1e4d"
+      },
+      "census": {
+        "center": [
+          35.7721,
+          -78.6386
+        ],
+        "cityNames": [
+          "Raleigh"
+        ],
+        "fetch": {
+          "stateFips": "37",
+          "stateAbbr": "NC",
+          "tigerPlace": "Raleigh",
+          "tigerLsad": "25",
+          "counties": [
+            "063",
+            "183"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.6932,-78.8340,35.9859,-78.4558"
+        },
+        "inputs": {
+          "tracts.geojson": "1c573672091ee04a2c41eddfc086b4c7bf318472dce3b9bdf6266f1a16e5bd19",
+          "city.geojson": "925358f65ac4509e56e62cdc9daea781b0c8e34ea52fc08f09843fa1628914ac",
+          "gnis.txt": "266064600b293b78beaa20cec2eefb005911213ef4488d7fec782948133fe9ec",
+          "osm-names.json": "2d44f7c8a6a1905d5e8851c8e9cd88350d5bca167998ad26a1f6627bc546047e",
+          "osm-polys.json": "76ef7a2d09d7db3f79426f80ba3ce9f8f74055bd5c82de5fc5452fff648b871b",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Brier Creek Village Center",
+          "Seaboard Station",
+          "Tower Residential",
+          "Tower Residential Quads"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:33:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "memphis-tiger2024",
+      "displayName": "Memphis",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tn",
+      "source": {
+        "url": "census",
+        "file": "memphis-tiger2024.geojson",
+        "sha256": "3991a4d0470cc1a1ec75ca8aed6731442c17d56d63c9485f058f54fa63095469"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "memphis-tiger2024-boundary.geojson",
+        "sha256": "f8236417750602b6279e139738cd9a49a30de9295f0119dc6d10467f821f82e5"
+      },
+      "census": {
+        "center": [
+          35.1495,
+          -90.049
+        ],
+        "cityNames": [
+          "Memphis"
+        ],
+        "fetch": {
+          "stateFips": "47",
+          "stateAbbr": "TN",
+          "tigerPlace": "Memphis",
+          "tigerLsad": "25",
+          "counties": [
+            "157"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "34.9792,-90.2028,35.2790,-89.6842"
+        },
+        "inputs": {
+          "tracts.geojson": "779574daabe99b2f6f7e1591c9a3640a0f89c388ffc305cb8bbec3054fd93aa5",
+          "city.geojson": "b133b641cdb6e19d72424fe92ae374071d01214a57bff96ad56015e93c6d644f",
+          "gnis.txt": "6ed1934018ff310c6820de78242ddf3858673cd40ccbc5aac015a49707e6e325",
+          "osm-names.json": "2d1b1b4acb5d244c19573547c58c69505e1b07693b9a8669d0ae1abfb3880673",
+          "osm-polys.json": "d753e6c31557631c3f188e18a304250fe327e0477e677f88dcc8854f41e8711e",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "African Veldt",
+          "Animals of the Night",
+          "Asian Garden",
+          "China",
+          "Dixie Homes",
+          "East Junction",
+          "Foote Homes",
+          "Halle",
+          "Herpetarium",
+          "Hunt Village",
+          "Knots Landing",
+          "Lauderdale Courts",
+          "May",
+          "Medal of Honor",
+          "Northwest Passage",
+          "Once Upon A Farm",
+          "Penguin Rock",
+          "Primate Canyon",
+          "Teton Trek",
+          "The Village",
+          "Zambizi River Hippo Camp",
+          "Zodiac"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:35:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "omaha-tiger2024",
+      "displayName": "Omaha",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ne",
+      "source": {
+        "url": "census",
+        "file": "omaha-tiger2024.geojson",
+        "sha256": "f795d79edfa2c0a78e9594db843d35e99bcc82d6c786dbdb3a3a6ff1312efefd"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "omaha-tiger2024-boundary.geojson",
+        "sha256": "884219aa9c4e44cb3b9a544b759a11620f15a654055dbacd3fde67f69d7bd6dc"
+      },
+      "census": {
+        "center": [
+          41.2586,
+          -95.9378
+        ],
+        "cityNames": [
+          "Omaha"
+        ],
+        "fetch": {
+          "stateFips": "31",
+          "stateAbbr": "NE",
+          "tigerPlace": "Omaha",
+          "tigerLsad": "25",
+          "counties": [
+            "055"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "41.1755,-96.2831,41.4082,-95.8561"
+        },
+        "inputs": {
+          "tracts.geojson": "4ce91d5c6380d7e46d805fd98855d2db727026e4a9d218769b640a24fcc91966",
+          "city.geojson": "1efaa6780e92e35e8753b66c8529afcc0f416df46bbe24450ed74fccee246d71",
+          "gnis.txt": "f11a79bea7ee2f92687aab8e889e7c6bc0fda2e141404df9d577e933c27a0a77",
+          "osm-names.json": "518de6db899d4802fa8a91b7542fa3a245d31101d0a3cbd1700be73ddb9ef735",
+          "osm-polys.json": "62a36c115617b0fc348345e1a8bc67de6cd9042c171b67c2591b98c0564b7d27",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Black Elk",
+          "Candlewood II",
+          "Conoco",
+          "Garden Valley Courts",
+          "Holy Cross",
+          "Karen",
+          "Midtown Crossing",
+          "Paddock Road",
+          "Picotte",
+          "Walt Disney",
+          "West Corporate"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:36:50Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "colorado-springs-tiger2024",
+      "displayName": "Colorado Springs",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-co",
+      "source": {
+        "url": "census",
+        "file": "colorado-springs-tiger2024.geojson",
+        "sha256": "e001627a5d19471674761b19618615387022b5b43ee2428896fe03b3aa5d494b"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "colorado-springs-tiger2024-boundary.geojson",
+        "sha256": "1ad4dc1baab75579f5fb09eca4ced2cdf9ae921ba8d0dfbe7cfdf5e46c0e3fe6"
+      },
+      "census": {
+        "center": [
+          38.8339,
+          -104.8214
+        ],
+        "cityNames": [
+          "Colorado Springs"
+        ],
+        "fetch": {
+          "stateFips": "08",
+          "stateAbbr": "CO",
+          "tigerPlace": "Colorado Springs",
+          "tigerLsad": "25",
+          "counties": [
+            "041"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "38.7007,-104.9381,39.0509,-104.5660"
+        },
+        "inputs": {
+          "tracts.geojson": "80f37c508c8de30af5426e47283fa7aad477c82eb09d3316795a2cbedc69176b",
+          "city.geojson": "1e272b4606e04dc1e411d22bfa613c69f9a1675a8213534b9b033d53e4274726",
+          "gnis.txt": "e0ebbd7266169c62ee12c06cdef6479fc5e55500487f06acdc8aa563780255ef",
+          "osm-names.json": "f72c03fa579b46cf153fd2231a577c9d9f23478d651fffd5c5dcf299e9b31f13",
+          "osm-polys.json": "dc588ea2dc3344affe4c1d98999b4bcbc7024370cfd11194595114ed7117c4d4",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Cheyenne Mountain Complex",
+          "Ford Frick",
+          "Franceville Junction",
+          "Frontier",
+          "Garden of the Gods",
+          "Odyssey",
+          "Patriot",
+          "Pioneer",
+          "Sky View Community",
+          "Soaring Eagles",
+          "Woodmen - Roberts"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:38:48Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "virginia-beach-tiger2024",
+      "displayName": "Virginia Beach",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-va",
+      "source": {
+        "url": "census",
+        "file": "virginia-beach-tiger2024.geojson",
+        "sha256": "7772d6ae660ae4f0d94f1f0a82f27624edcd747e65f9f335f63e575790297ac8"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "virginia-beach-tiger2024-boundary.geojson",
+        "sha256": "c0fff053d3c54cf0bfe1b059664cbfb712c2c882d0fed817002df8d896ec3beb"
+      },
+      "census": {
+        "center": [
+          36.8529,
+          -75.978
+        ],
+        "cityNames": [
+          "Virginia Beach"
+        ],
+        "fetch": {
+          "stateFips": "51",
+          "stateAbbr": "VA",
+          "tigerPlace": "Virginia Beach",
+          "tigerLsad": "25",
+          "counties": [
+            "810"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "36.5353,-76.2431,37.0559,-75.7825"
+        },
+        "inputs": {
+          "tracts.geojson": "178911c8cbe6b2af72200792e15c30a8755b5018a4760f9f7ecf54107b0e3790",
+          "city.geojson": "74545782f0c57d77072dd499ea001587050afa406a130918083b48d32377232e",
+          "gnis.txt": "15278b5d504f7f5f09551f2b83a6126769b27e5cdc8ae501a4603add8f30d6f6",
+          "osm-names.json": "098558aacc6ca35c8b163b45967a25282afd24d3cd2f35686c75f39e10cb65a7",
+          "osm-polys.json": "0d71bcb812e02d5d9e19b12f42f36ad7315bf40215d144e240c62ae47c538459",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Virginia Beach Town Center"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:40:52Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "indianapolis-tiger2024",
+      "displayName": "Indianapolis",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-in",
+      "source": {
+        "url": "census",
+        "file": "indianapolis-tiger2024.geojson",
+        "sha256": "b8c4f09632440981a2aeb7ab3f91451617ccd4e19e82976ae0895b0e0223c2d4"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "indianapolis-tiger2024-boundary.geojson",
+        "sha256": "05fbc1bc6d473da913734d971a3315ff70b83213e512f2273036084e8efbccd8"
+      },
+      "census": {
+        "center": [
+          39.7684,
+          -86.158
+        ],
+        "cityNames": [
+          "Indianapolis"
+        ],
+        "fetch": {
+          "stateFips": "18",
+          "stateAbbr": "IN",
+          "tigerPlace": "Indianapolis city (balance)",
+          "tigerLsad": "00",
+          "counties": [
+            "097"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "39.6172,-86.3431,39.9424,-85.9224"
+        },
+        "inputs": {
+          "tracts.geojson": "0d9cb595e5ef1d9985cbacee5699b42c797b0629bc85b729bb4e406bc6117760",
+          "city.geojson": "78d017ba35c218560183348451a855aa2247e31b9363ec5648901f07b28cfe7f",
+          "gnis.txt": "376763c150a7c040eecfc31b9d20b4cb561f5625bb26bd2c8bc0162c05a04523",
+          "osm-names.json": "7d4812d8146f1995d0f3a28439abb4ae7ab232796e77399d0501b70cfcc812d9",
+          "osm-polys.json": "22240c8e201e9d3c1dde8dcdc6b865b20897f44e16ee6eba945752ae3cf47607",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Farleys Addition",
+          "Floro Torrence",
+          "Roche Diagnostics Employee",
+          "Southport"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:42:55Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "nashville-tiger2024",
+      "displayName": "Nashville",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tn",
+      "source": {
+        "url": "census",
+        "file": "nashville-tiger2024.geojson",
+        "sha256": "fcfa79ad18029d28139469304fe1c77f4b9ce00f5f6e6a68af14082c070ef4d5"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "nashville-tiger2024-boundary.geojson",
+        "sha256": "c74c94eea75516362214c71c331cecf661047b4f8678a7febf8375513a2ede81"
+      },
+      "census": {
+        "center": [
+          36.1659,
+          -86.7844
+        ],
+        "cityNames": [
+          "Nashville"
+        ],
+        "fetch": {
+          "stateFips": "47",
+          "stateAbbr": "TN",
+          "tigerPlace": "Nashville-Davidson metropolitan government (balance)",
+          "tigerLsad": "00",
+          "counties": [
+            "037"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.9528,-87.0697,36.4205,-86.5006"
+        },
+        "inputs": {
+          "tracts.geojson": "1da7481c0b101da00b2a32ffbc0a90cd724c5698f6289282f41ffc03ad6ad256",
+          "city.geojson": "2af49907fd8953eb453e6c17b29b6fb68157920e9fcafda4b3b5b58335f7cd99",
+          "gnis.txt": "6ed1934018ff310c6820de78242ddf3858673cd40ccbc5aac015a49707e6e325",
+          "osm-names.json": "3cdf169ee24236b413c6e1291542c5e795ffb9f61788672fcc08815ecd6f5b71",
+          "osm-polys.json": "25f427ea69ba65d64a67fb32c0c5e9344400df9bf2ea75f0777207b45c90d4f9",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Metropolitan Government of Nashville-Davidson (balance)",
+          "Northcrest Commons"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:44:02Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "houston-tiger2024",
+      "displayName": "Houston",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "houston-tiger2024.geojson",
+        "sha256": "d67b0c313853bc1358aea5e7a4241791d30a8360733537a3cbac9855f513367c"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "houston-tiger2024-boundary.geojson",
+        "sha256": "d5c3f4e39670de46d36420d3b812996c83d4b86a71dd7273793433251018f262"
+      },
+      "census": {
+        "center": [
+          29.7633,
+          -95.3633
+        ],
+        "cityNames": [
+          "Houston"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Houston",
+          "tigerLsad": "25",
+          "counties": [
+            "157",
+            "201",
+            "339"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "29.5013,-95.9247,30.1709,-94.9976"
+        },
+        "inputs": {
+          "tracts.geojson": "aee026c7b823878397b5db52bca2c37c41a5f33ff12224eeb8d2c635163c0e5d",
+          "city.geojson": "8d012643a8dc9382d8f4ed8b23418476b974aaf5620e0591f7eb519a2e51ae1b",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "7f407c7a3a388a92d2b757cdaa16280d0122d0a5a899ec2c186eff54814e943f",
+          "osm-polys.json": "ebcd8e56b50e2af8a6890833a5de9d1b9fd391f5614e1c6676e59a1d374b3a58",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Aiuma Court Row",
+          "Almeda Plaza",
+          "Arbors of Gleannloch",
+          "Bellaire Junction",
+          "Candlelight Plaza",
+          "Cobblestone Court",
+          "Cokeberry Court",
+          "College Court Place",
+          "Colquitt Court",
+          "Cypress Creek Plaza",
+          "Cypresswood Court",
+          "Estates of Baker Lane",
+          "Estates of Barkers Branch",
+          "Estates of Highland Creek",
+          "Fondren Center",
+          "Forest West Shopping Center",
+          "Garden Oaks Court",
+          "Garden Oaks Plaza",
+          "Glendower Court",
+          "Humble Acres",
+          "Kelliwood Court",
+          "Kings Court",
+          "Lakemont Court",
+          "Lakes of Avalon Village",
+          "Lakes of Bella Terra",
+          "Lakes of Bridgewater",
+          "Lakes of Buckingham",
+          "Lakes of Parkway",
+          "Lakes of Rosehill",
+          "Lakes of Sterling Gate",
+          "Marble Gate Court",
+          "Meadows of Parkway Lakes",
+          "Memorial Plaza",
+          "Northland Shopping Center",
+          "Oakland Plaza",
+          "Oaks of Atascocita",
+          "Oaks of Green Trails",
+          "Oaks of Inwood",
+          "Pinehurst of Atascocita",
+          "Pinemont Plaza",
+          "Pines of Atascocita",
+          "Scenic Woods Plaza",
+          "Shepherd Park Plaza",
+          "South Main Plaza",
+          "Southmore Plaza",
+          "Stablewood Court",
+          "Stonegate Court",
+          "The Estates of Chesterfield",
+          "The Lakes of Cypress Forest",
+          "The North of Atascocita",
+          "The Oaks of Devonshire",
+          "The Oaks of Woodlake",
+          "The Villages of Bridgestone",
+          "The Villages of Stablewood Farms",
+          "The West of Atascocita",
+          "Timber Grove Manor",
+          "Tower Oaks Plaza",
+          "Town & Country / CityCentre",
+          "Trails of Cypress Lake",
+          "Village of Indian Trails",
+          "Village of Oak Forest",
+          "Villages of Cypress Lakes",
+          "Weslayan Plaza",
+          "Wimbledon Centre Court Estates",
+          "Wimbledon Centre Court Garden Homes",
+          "Woods of Lakeside",
+          "Woodside Plaza",
+          "Yorkridge Center"
+        ]
+      },
+      "retrievedAt": "2026-11-04T07:09:04Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "louisville-tiger2024",
+      "displayName": "Louisville",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ky",
+      "source": {
+        "url": "census",
+        "file": "louisville-tiger2024.geojson",
+        "sha256": "c5c33884714d122c6236af171377b6f19fc31bad6376841fd623045efcd42725"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "louisville-tiger2024-boundary.geojson",
+        "sha256": "227ec3a75f9431c14cab0120f0b5ac16edd1bb16cb7ba2abdd1405a13576d359"
+      },
+      "census": {
+        "center": [
+          38.2542,
+          -85.7594
+        ],
+        "cityNames": [
+          "Louisville"
+        ],
+        "fetch": {
+          "stateFips": "21",
+          "stateAbbr": "KY",
+          "tigerPlace": "Louisville/Jefferson County metro government (balance)|Louisville",
+          "tigerLsad": "00|25",
+          "counties": [
+            "111"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "37.9822,-85.9621,38.3952,-85.3899"
+        },
+        "inputs": {
+          "tracts.geojson": "966874399b5dbb1f522f1d22f0bef05017c6d84cb37c77826927264435bdfa4b",
+          "city.geojson": "f5416425b2050dac4908f848ad9dabbc27f1a76353af40e713954289d2777b3a",
+          "gnis.txt": "e0f4d73ec88564e1ac295e55853e1f3fcee66ac112817e0806f89eb8d6e342df",
+          "osm-names.json": "8602f05ed394380d6878705b92536c558c8d6d33c407650a1639f0481a68af51",
+          "osm-polys.json": "536221446d0d2b5afa24b0d161e34ffdbfce472fb1507f0347e8a298c712deae",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Boston",
+          "Heritage Creek",
+          "Jacobs Addition",
+          "Langdon Place",
+          "Louisville/Jefferson County metro government (balance)",
+          "Manor Creek",
+          "Maryhill Estates",
+          "Old Jeffersonville Historic District",
+          "Orchard Grass Hills",
+          "Saint Denis",
+          "Saint Matthews",
+          "South Park View",
+          "Valley",
+          "Whiskey Row"
+        ]
+      },
+      "retrievedAt": "2026-11-04T19:06:23Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-2C）：名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us2c-census-batch.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "nyc262",
+      "displayName": "New York",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-ny",
+      "source": {
+        "url": "https://data.cityofnewyork.us/resource/9nt8-h7nd.geojson?$limit=5000",
+        "file": "nyc262.geojson",
+        "sha256": "6d8f5ee8654ad1ffd6ea3975d50287102b2e98375c641bcd9dc23705a82edfc8"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%273651000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "nyc262-boundary.geojson",
+        "sha256": "16c074406ccb31c07c392f780418e20b269aa153fda7771f3530e020cb70a7d3"
+      },
+      "idField": "nta2020",
+      "nameField": "ntaname",
+      "filter": {
+        "field": "ntatype",
+        "excludeValues": [
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      "licenceKey": "newYorkNY",
+      "attribution": {
+        "publisher": "NYC Department of City Planning",
+        "licenceName": "NYC Open Data Law (Admin. Code §23-502)"
+      },
+      "note": "US-2D（来源表 docs/design-refs/coverage-us/us2b-sources.md #1，#1066 准则）：市规划局 2020 Neighborhood Tabulation Areas（NYC Open Data 9nt8-h7nd，取数时 Current version 26c），262 块剔 ntatype ≠ 0 的 65 块（公园 40 · 墓地 14 · 特殊区 8 · 机场 2 · Rikers 1），留 197 块住宅 NTA。许可依据：市行政法典 §23-502(d)「without any registration requirement, license requirement or restrictions on their use」；nyc.gov 条款 11-04 重读无赔偿 / 应诉 / 撤销。拼名照原样（准则 4：名字把块里各社区都列了；只取第一个是名不副实），长名不截断归 app 侧（US2B-⑤）。idField nta2020（DCP 的 NTA 代码，262 个唯一）。市界取人口普查局 ACS2025 500K 综合版（同 seattle94）。parked：美国只走索引 v2（#1063 追记二），等模拟器验收与 v2 发布同一步改 active。",
+      "retrievedAt": "2026-11-04T06:23:51Z"
+    },
+    {
+      "slot": "philadelphia159",
+      "displayName": "Philadelphia",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-pa",
+      "source": {
+        "url": "https://raw.githubusercontent.com/opendataphilly/odp-data-storage/cd29c106382ef844f08e3212a82772cea0c9a55e/philadelphia-neighborhoods/philadelphia-neighborhoods.geojson",
+        "file": "philadelphia159.geojson",
+        "sha256": "69c189df692a95d21385e13515c514bebd9e2d3c32ef8a265159d3be7f3f6bab"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%274260000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "philadelphia159-boundary.geojson",
+        "sha256": "3912879bfc0073663f7eb421d67ac648221cab2c81191013abffb951deed1e72"
+      },
+      "idField": "NAME",
+      "nameField": "MAPNAME",
+      "filter": {
+        "field": "MAPNAME",
+        "excludeValues": [
+          "Airport",
+          "Northeast Phila Airport",
+          "Navy Yard",
+          "Industrial",
+          "East Park",
+          "West Park",
+          "Pennypack Park",
+          "Wissahickon Park"
+        ]
+      },
+      "licenceKey": "philadelphiaPA",
+      "attribution": {
+        "publisher": "Robert Cheetham / Abaca Labs (OpenDataPhilly)",
+        "licenceName": "CC BY 4.0"
+      },
+      "note": "US-2D（来源表 #6，#1066 准则 3）：OpenDataPhilly「Philadelphia Neighborhoods」（GitHub opendataphilly/odp-data-storage，source.url 钉在数据文件最后一次提交 cd29c106382e 2024-10-10（仓库日后改文件或改许可不会悄悄换进来，季度刷新时换钉），license.txt 3ad312ba3685 2024-05-24），159 块剔 8 块（两个机场 · Navy Yard · 泛称 Industrial · Fairmount 公园东西两片 · Pennypack Park · Wissahickon Park），留 151。市政府自己没有社区面，这份是费城本地通用的社区边界。许可 CC BY 4.0（license.txt 署名 Abaca Labs、门户页署名 Robert Cheetham，两个都写）；11-04 重读门户 About 页「Terms」节（US-2B 证据漏记）：只有免责、不得暗示背书、使用者自负其责、门户可改自己的条款，无赔偿 / 应诉 / 撤销 ⇒ 收。改动说明在 ATTRIBUTION 段。idField NAME（159 个唯一）。名字照 MAPNAME 原样。市界同 seattle94 那条。parked 理由同 nyc262。",
+      "retrievedAt": "2026-11-04T06:25:22Z"
+    },
+    {
+      "slot": "milwaukee190",
+      "displayName": "Milwaukee",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-wi",
+      "source": {
+        "url": "https://milwaukeemaps.milwaukee.gov/arcgis/rest/services/planning/special_districts/MapServer/4/query?where=1%3D1&outFields=OBJECTID,NEIGHBORHD&outSR=4326&f=geojson",
+        "file": "milwaukee190.geojson",
+        "sha256": "0a139ea1d410069f9f855f06f7e4c8bd8ad107a367d537d9885540226b6bea86"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%275553000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "milwaukee190-boundary.geojson",
+        "sha256": "18ff20951e4a2e52e997c0506dead430bdfd50ffedf2ea9fa246091105affcad"
+      },
+      "idField": "NEIGHBORHD",
+      "nameField": "NEIGHBORHD",
+      "filter": {
+        "field": "NEIGHBORHD",
+        "excludeValues": [
+          "MITCHELL FIELD",
+          "TIMMERMAN AIRPORT",
+          "ZOO",
+          "VETERANS AFFAIRS",
+          "LAND BANK"
+        ]
+      },
+      "licenceKey": "milwaukeeWI",
+      "attribution": {
+        "publisher": "City of Milwaukee Department of City Development",
+        "licenceName": "Creative Commons Attribution (CC BY)"
+      },
+      "renames": {
+        "ALCOTT PARK": "Alcott Park",
+        "ALVERNO": "Alverno",
+        "AMANI": "Amani",
+        "ARLINGTON GARDENS": "Arlington Gardens",
+        "ARLINGTON HEIGHTS": "Arlington Heights",
+        "AVENUES WEST": "Avenues West",
+        "BARAN PARK": "Baran Park",
+        "BAY VIEW": "Bay View",
+        "BLUEMOUND HEIGHTS": "Bluemound Heights",
+        "BORCHERT FIELD": "Borchert Field",
+        "BRADLEY ESTATES": "Bradley Estates",
+        "BREWER'S HILL": "Brewer's Hill",
+        "BROWN DEER PARK": "Brown Deer Park",
+        "BRYNWOOD": "Brynwood",
+        "BUCHEL PARK": "Buchel Park",
+        "BURNHAM PARK": "Burnham Park",
+        "CALUMET FARMS": "Calumet Farms",
+        "CAMBRIDGE HEIGHTS": "Cambridge Heights",
+        "CANNON PARK": "Cannon Park",
+        "CAPITOL HEIGHTS": "Capitol Heights",
+        "CASTLE MANOR": "Castle Manor",
+        "CLARKE SQUARE": "Clarke Square",
+        "CLAYTON CREST": "Clayton Crest",
+        "CLOCK TOWER ACRES": "Clock Tower Acres",
+        "COLD SPRING PARK": "Cold Spring Park",
+        "COLLEGE HEIGHTS": "College Heights",
+        "COLUMBUS PARK": "Columbus Park",
+        "CONCORDIA": "Concordia",
+        "COOPER PARK": "Cooper Park",
+        "COPERNICUS PARK": "Copernicus Park",
+        "DINEEN PARK": "Dineen Park",
+        "DOWNER WOODS": "Downer Woods",
+        "DRETZKA PARK": "Dretzka Park",
+        "ENDERIS PARK": "Enderis Park",
+        "ESTABROOK PARK": "Estabrook Park",
+        "EUCLID PARK": "Euclid Park",
+        "FAIR PARK": "Fair Park",
+        "FAIRFIELD": "Fairfield",
+        "FAIRVIEW": "Fairview",
+        "FERNWOOD": "Fernwood",
+        "FLORIST HIGHLANDS": "Florist Highlands",
+        "FOREST HOME HILLS": "Forest Home Hills",
+        "FRANKLIN HEIGHTS": "Franklin Heights",
+        "FREEDOM VILLAGE": "Freedom Village",
+        "GARDEN HOMES": "Garden Homes",
+        "GOLDEN GATE": "Golden Gate",
+        "GOLDEN VALLEY": "Golden Valley",
+        "GOLDMAN PARK": "Goldman Park",
+        "GRA-RAM": "Gra-Ram",
+        "GRACELAND": "Graceland",
+        "GRANTOSA": "Grantosa",
+        "GRANVILLE STATION": "Granville Station",
+        "GRANVILLE WOODS": "Granville Woods",
+        "GRASSLYN MANOR": "Grasslyn Manor",
+        "GREEN MOOR": "Green Moor",
+        "GROVER HEIGHTS": "Grover Heights",
+        "HALYARD PARK": "Halyard Park",
+        "HAMPTON HEIGHTS": "Hampton Heights",
+        "HARAMBEE": "Harambee",
+        "HARBOR VIEW": "Harbor View",
+        "HARDER'S OAKS": "Harder's Oaks",
+        "HAVENWOODS": "Havenwoods",
+        "HAWLEY FARMS": "Hawley Farms",
+        "HAWTHORNE GLEN": "Hawthorne Glen",
+        "HAYMARKET": "Haymarket",
+        "HERITAGE HEIGHTS": "Heritage Heights",
+        "HIGHWOOD ESTATES": "Highwood Estates",
+        "HILLSIDE": "Hillside",
+        "HILLTOP PARISH": "Hilltop Parish",
+        "HISTORIC MITCHELL STREET": "Historic Mitchell Street",
+        "HISTORIC THIRD WARD": "Historic Third Ward",
+        "HOLLER PARK": "Holler Park",
+        "HONEY CREEK MANOR": "Honey Creek Manor",
+        "HONEY CREEK PARKWAY": "Honey Creek Parkway",
+        "JACKSON PARK": "Jackson Park",
+        "JOHNSON'S WOODS": "Johnson's Woods",
+        "JONES' ISLAND": "Jones' Island",
+        "JUNEAU TOWN": "Juneau Town",
+        "KILBOURN TOWN": "Kilbourn Town",
+        "KING PARK": "King Park",
+        "KOPS PARK": "Kops Park",
+        "LAKE PARK": "Lake Park",
+        "LAYTON PARK": "Layton Park",
+        "LENOX HEIGHTS": "Lenox Heights",
+        "LINCOLN CREEK": "Lincoln Creek",
+        "LINCOLN PARK": "Lincoln Park",
+        "LINCOLN VILLAGE": "Lincoln Village",
+        "LINDSAY PARK": "Lindsay Park",
+        "LITTLE MENOMONEE PARKWAY": "Little Menomonee Parkway",
+        "LONG VIEW": "Long View",
+        "LOWER EAST SIDE": "Lower East Side",
+        "LYONS PARK": "Lyons Park",
+        "MACK ACRES": "Mack Acres",
+        "MAITLAND PARK": "Maitland Park",
+        "MAPLE TREE": "Maple Tree",
+        "MARQUETTE": "Marquette",
+        "MARTIN DRIVE": "Martin Drive",
+        "MCGOVERN PARK": "McGovern Park",
+        "MELODY VIEW": "Melody View",
+        "MENOMONEE RIVER HILLS": "Menomonee River Hills",
+        "MENOMONEE RIVER HILLS EAST": "Menomonee River Hills East",
+        "MENOMONEE RIVER VALLEY": "Menomonee River Valley",
+        "MERRILL PARK": "Merrill Park",
+        "METCALFE PARK": "Metcalfe Park",
+        "MIDTOWN": "Midtown",
+        "MILL VALLEY": "Mill Valley",
+        "MILLER VALLEY": "Miller Valley",
+        "MILWAUKEE RIVER PARKWAY": "Milwaukee River Parkway",
+        "MITCHELL PARK": "Mitchell Park",
+        "MITCHELL WEST": "Mitchell West",
+        "MORGAN HEIGHTS": "Morgan Heights",
+        "MORGANDALE": "Morgandale",
+        "MOUNT MARY": "Mount Mary",
+        "MOUNT OLIVET": "Mount Olivet",
+        "MURRAY HILL": "Murray Hill",
+        "MUSKEGO WAY": "Muskego Way",
+        "NASH PARK": "Nash Park",
+        "NATIONAL PARK": "National Park",
+        "NEW COELN": "New Coeln",
+        "NORTH DIVISION": "North Division",
+        "NORTH GRANVILLE": "North Granville",
+        "NORTHPOINT": "Northpoint",
+        "NORTHRIDGE": "Northridge",
+        "NORTHRIDGE LAKES": "Northridge Lakes",
+        "OLD NORTH MILWAUKEE": "Old North Milwaukee",
+        "PARK KNOLL": "Park Knoll",
+        "PARK PLACE": "Park Place",
+        "PARK VIEW": "Park View",
+        "PARKWAY HILLS": "Parkway Hills",
+        "PHEASANT RUN": "Pheasant Run",
+        "POLLBER HEIGHTS": "Pollber Heights",
+        "POLONIA": "Polonia",
+        "RED OAK HEIGHTS": "Red Oak Heights",
+        "RIDGEVIEW": "Ridgeview",
+        "RIVER BEND": "River Bend",
+        "RIVERSIDE PARK": "Riverside Park",
+        "RIVERTON HEIGHTS": "Riverton Heights",
+        "RIVERWEST": "Riverwest",
+        "ROLLING GREEN": "Rolling Green",
+        "ROOSEVELT GROVE": "Roosevelt Grove",
+        "ROOT CREEK": "Root Creek",
+        "RUFUS KING": "Rufus King",
+        "SAINT JOSEPH": "Saint Joseph",
+        "SAVELAND PARK": "Saveland Park",
+        "SCHLITZ PARK": "Schlitz Park",
+        "SERVITE WOODS": "Servite Woods",
+        "SHERMAN PARK": "Sherman Park",
+        "SILVER CITY": "Silver City",
+        "SILVER SPRING": "Silver Spring",
+        "SILVER SWAN": "Silver Swan",
+        "SOUTHGATE": "Southgate",
+        "SOUTHPOINT": "Southpoint",
+        "ST. AMELIAN'S": "St. Amelian's",
+        "STORY HILL": "Story Hill",
+        "SUNSET HEIGHTS": "Sunset Heights",
+        "THE VALLEY/PIGSVILLE": "The Valley/Pigsville",
+        "THURSTON WOODS": "Thurston Woods",
+        "TIMMERMAN WEST": "Timmerman West",
+        "TIPPECANOE": "Tippecanoe",
+        "TOWN & COUNTRY MANOR": "Town & Country Manor",
+        "TOWN OF LAKE": "Town of Lake",
+        "TRIANGLE": "Triangle",
+        "TRIANGLE NORTH": "Triangle North",
+        "TRIPOLI PARK": "Tripoli Park",
+        "UPPER EAST SIDE": "Upper East Side",
+        "UPTOWN": "Uptown",
+        "VALHALLA": "Valhalla",
+        "VALLEY FORGE": "Valley Forge",
+        "VOGEL PARK": "Vogel Park",
+        "WAHL PARK": "Wahl Park",
+        "WALKER'S POINT": "Walker's Point",
+        "WALNUT HILL": "Walnut Hill",
+        "WASHINGTON HEIGHTS": "Washington Heights",
+        "WASHINGTON PARK": "Washington Park",
+        "WEDGEWOOD": "Wedgewood",
+        "WEST VIEW": "West View",
+        "WHISPERING HILLS": "Whispering Hills",
+        "WHITE MANOR": "White Manor",
+        "WICK FIELD": "Wick Field",
+        "WILLIAMSBURG": "Williamsburg",
+        "WILSON PARK": "Wilson Park",
+        "WOODLAND COURT": "Woodland Court",
+        "WOODLANDS": "Woodlands",
+        "WYRICK PARK": "Wyrick Park",
+        "YANKEE HILL": "Yankee Hill"
+      },
+      "note": "US-2D（来源表 #31，#1066 准则）：市城市发展局 DCD「Neighborhoods」（2000 年 Milwaukee Neighborhood Identification Project 与居民一起划的社区，市方服务器仍发布、不再更新），190 块剔 5 块（Mitchell Field 与 Timmerman 两个机场 · 县动物园 · 退伍军人医疗园区 · 泛称 Land Bank），留 185；Jones' Island（港区，但是有名的历史地名）与 Buchel Park 照来源表留着。许可：CKAN license_id cc-by（没写版本，按 CC BY 履行）；市 2016 开放数据政策写公有领域；11-04 重读：数据门户页脚只链市网站「Web & Email Policies」，其中 Disclaimer of Liability（archive.org 2026-10-12 快照，市站对脚本 403）只有免责，无赔偿 / 应诉 / 撤销 ⇒ 收。idField 用 NEIGHBORHD：源里唯一的数字键是 OBJECTID，换版会变；名字 190 个全唯一。源名全大写 ⇒ renames 只改大小写（撇号后 s 小写、Mc 前缀、Town of Lake 的 of 小写），不改名。市界同 seattle94 那条。parked 理由同 nyc262。",
+      "retrievedAt": "2026-11-04T06:30:45Z"
+    },
+    {
+      "slot": "tampa160",
+      "displayName": "Tampa",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-fl",
+      "source": {
+        "url": "https://arcgis.tampagov.net/arcgis/rest/services/OpenData/Boundary/MapServer/5/query?where=1%3D1&outFields=Neighborhood_ID,Association,AssocLabel,Type,NEIGHSTATUS&outSR=4326&f=geojson",
+        "file": "tampa160.geojson",
+        "sha256": "2958bb38539a91b269dc9101c3b94e6d4de281eee5012b78c7a6bf05f841d152"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%271271000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "tampa160-boundary.geojson",
+        "sha256": "6eac73195ad7300327baafb082c2b8ac7c1d148d54f4119b4dd647b127774b0e"
+      },
+      "idField": "Neighborhood_ID",
+      "nameField": "AssocLabel",
+      "filter": {
+        "field": "Neighborhood_ID",
+        "excludeValues": [
+          "23",
+          "36",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "52",
+          "53",
+          "54",
+          "56",
+          "92",
+          "93",
+          "95",
+          "138",
+          "139",
+          "140",
+          "141",
+          "142",
+          "158",
+          "172",
+          "176",
+          "177",
+          "178",
+          "179",
+          "180",
+          "182",
+          "183",
+          "184",
+          "185",
+          "186",
+          "187",
+          "189",
+          "190",
+          "191",
+          "200",
+          "201",
+          "206",
+          "213",
+          "215",
+          "220",
+          "221",
+          "224",
+          "228",
+          "229"
+        ]
+      },
+      "licenceKey": "tampaFL",
+      "attribution": {
+        "publisher": "City of Tampa GIS",
+        "licenceName": "CC0 1.0"
+      },
+      "renames": {
+        "Hunter's Greene": "Hunter's Green",
+        "Port Tampa City, Inc. Civic Association": "Port Tampa",
+        "Tampa Downtown Partnership": "Downtown",
+        "West Riverfront Neighborhood Crimewatch Association": "West Riverfront",
+        "Ybor Heights Neighborhood Association and Watch Group": "Ybor Heights",
+        "Hampton Terrace Community Association (HTCA)": "Hampton Terrace",
+        "Armenia Terrace | Bour Lands | Al Dana Park": "Armenia Terrace · Bour Lands · Al Dana Park",
+        "Eastern Heights ": "Eastern Heights",
+        "Carver City Lincoln Gardens": "Carver City/Lincoln Gardens"
+      },
+      "note": "US-2D（来源表 #49，#1066 准则 4 / 5）：市 GIS「Neighborhoods」社区协会登记层（近铺满全市），CC0 1.0（ArcGIS 条目 ＋ Hub 结构化许可两处）；11-04 重读 tampa.gov「Conditions and Use」（管 tampagov.net）：数据是公共信息、一般可复制分发，唯一的「revoke」只管外站加链接，无赔偿 ⇒ 收。🔴 原层带协会联系人私人信息 ⇒ source.url 只取 5 列，别改成 outFields=*。160 块逐块结论在 docs/design-refs/coverage-us/us2d-tampa-names.md：剔 54（非居住 / 学校类型里的公园 · 港口 · 空军基地 · 单个设施 15 · 空类型 1 · 占位名 5 · 整块落在别的块里的子业主会与碎块 26 · New Tampa 剩余地 2 · 编号 / 组织名 / 设施名 5），留 106（零格排除 1 后包里 105）；非居住类型里 Westshore 与两所大学校园按来源表 §3 成例留（有真名的片区 / 大学，同 Seattle Industrial District · Minneapolis University），全剔的话 inside 68.4% 过不了 70% 闸——闸不动，这三块留下主线 11-04 已认（来源表 §9），改写 9 条（去组织词、Hunter's Greene 少一个 e 等，理由逐条在名字表）。过滤按 Neighborhood_ID 一个个点名（源里 Type 与名字两格都要判，清单只有单字段过滤）。idField Neighborhood_ID（160 个唯一）。市界同 seattle94 那条。parked 理由同 nyc262。",
+      "retrievedAt": "2026-11-04T06:34:15Z"
+    },
+    {
+      "slot": "miami107",
+      "displayName": "Miami",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "us-fl",
+      "source": {
+        "url": "https://services1.arcgis.com/CvuPhqcTQpZPT9qY/arcgis/rest/services/Miami_Neighborhoods_Shapefile/FeatureServer/0/query?where=1%3D1&outFields=FID,LABEL&outSR=4326&f=geojson",
+        "file": "miami107.geojson",
+        "sha256": "b05ffb7e46ed6b5de65713119d4af61b668686ed0f975b452b4e1006f4147820"
+      },
+      "boundary": {
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10/query?where=GEOID%3D%271245000%27&outFields=GEOID,NAME,BASENAME&outSR=4326&f=geojson",
+        "file": "miami107-boundary.geojson",
+        "sha256": "aecc2efc4b9c986cb1a4845a004164cfe76bbfc1b4c0dd5443630563a2510e50"
+      },
+      "idField": "FID",
+      "nameField": "LABEL",
+      "filter": {
+        "field": "FID",
+        "excludeValues": [
+          "29",
+          "95",
+          "100",
+          "105",
+          "107"
+        ]
+      },
+      "licenceKey": "miamiFL",
+      "attribution": {
+        "publisher": "© City of Miami, Department of Innovation and Technology, GIS Team",
+        "licenceName": "CC BY 4.0"
+      },
+      "renames": {
+        "CBD": "Central Business District",
+        "Omni/PAC": "Omni/Performing Arts Center",
+        "Roads": "The Roads"
+      },
+      "note": "US-2D（来源表 #42，#1066 准则）：市 IT 部 GIS 组「Miami Neighborhoods Shapefile」（ArcGIS 条目 2f54a0cbd67046f2bd100fb735176e6c，CC BY 4.0；**不用**同组织 2026 新版 121bdb71…，那份是 CC BY-SA），107 块剔 5：无名一块（FID 107）· Port of Miami（港口）· MDCC（学院校区缩写）· Bicentennial Park（公园本身）· 小的那块 Baypoint（FID 29）。Baypoint 两块同名不相接、各只占 1 格，包器一块一个 id、不合并 ⇒ 留着会出两次同名解锁，剔小的那块丢 1 格（合并能力记延期 US2D-②）；Fair Isle 两块同样同名，但两块都零格，出包时自动排掉。11-04 重读：数据门户 Terms / Privacy 两个链接仍是占位 #；miami.gov 页脚只有 DMCA 版权政策（archive.org 2026-07-21，市站对脚本 403），无赔偿 / 应诉 / 撤销 ⇒ 收。发布方那格照许可要求原样带 © 声明。renames 只把三个缩写写全（CBD · Omni/PAC · Roads → The Roads，市里就叫 The Roads）。idField FID：源里唯一的唯一键，发布方重导一次可能重排——id 账本（#1066 追记六）在发布时记、之后换版对不上就停。过滤按 FID 点名（要同时剔无名块与一块同名块，单字段过滤只能用 id）。零格排除 7 块（含 Fair Isle 两块）后包里 95 区。市界同 seattle94 那条。parked 理由同 nyc262。",
+      "retrievedAt": "2026-11-04T06:43:06Z"
+    },
+    {
+      "slot": "regina28",
+      "displayName": "Regina",
+      "status": "active",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-sk",
+      "source": {
+        "url": "https://opengis.regina.ca/arcgis/rest/services/OpenData/CommunityAssociations/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "regina28.geojson",
+        "sha256": "c90b49b1ebcb19bef1e00bd3863890fde5c65b13fdacfb72600931cbcc89330b"
+      },
+      "boundary": {
+        "url": "https://opengis.regina.ca/arcgis/rest/services/OpenData/CityLimits/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "regina28-boundary.geojson",
+        "sha256": "81e62e435c975921b433fc7524217ac9b1cfb25ef031618d6658a3670714f765"
+      },
+      "idField": "CODE",
+      "nameField": "NAME",
+      "licenceKey": "reginaSK",
+      "attribution": {
+        "publisher": "City of Regina",
+        "licenceName": "Open Government Licence – City of Regina",
+        "statement": "Contains information licensed under the Open Government Licence – City of Regina."
+      },
+      "note": "COV-1F（用户 11-04 晚准城区分母 · 设计稿 docs/design-refs/coverage-ca/cov-1e-urban-denominator.md）：City of Regina「Community Associations」28 块（openregina.ca，许可 OGL – City of Regina v2，regina.ca 原文强制署名句逐字、破折号是 U+2013；判 A）。市域口径只盖 52 %，城区（统计局 2021 人口中心 Regina）口径过闸。28 条全大写 ⇒ renames 全表（COV-1F 起草、主线过目）：4 条拼名照源分隔符加空格（ROSEMONT/MOUNT ROYAL → Rosemont / Mount Royal，DIEPPE-WESTERRA → Dieppe - Westerra，同 Ottawa 先例）；NORMANVIEW RESIDENTS GROUP → Normanview（源数据自己的 HISTORIC_NAME 就是 NORMANVIEW；准则 8 去掉社团字样）；PRAIRIE VIEW 照 NAME（ALIAS 写 Prairieview，两种拼法都有，取主字段）。id 用 CODE（社区协会编号，不重复）。28 是要素数（槽位版次）。 retrievedAt ＝ 社区层与市界两份 curl 落盘时刻里晚的那个（文件 mtime，UTC）；这一行是 parked，fingerprints.py --refresh 不碰它，所以手抄（评审 P3）。",
+      "retrievedAt": "2026-11-05T02:20:04Z",
+      "renames": {
+        "AL RITCHIE": "Al Ritchie",
+        "ALBERT PARK": "Albert Park",
+        "ARCOLA EAST": "Arcola East",
+        "ARGYLE NORTH": "Argyle North",
+        "BOOTHILL": "Boothill",
+        "CATHEDRAL VILLAGE": "Cathedral Village",
+        "CORONATION PARK": "Coronation Park",
+        "DEWDNEY EAST": "Dewdney East",
+        "DIEPPE-WESTERRA": "Dieppe - Westerra",
+        "DOWNTOWN": "Downtown",
+        "HARBOUR LANDING": "Harbour Landing",
+        "HERITAGE": "Heritage",
+        "HILLSDALE": "Hillsdale",
+        "LAKEVIEW": "Lakeview",
+        "MCNAB": "McNab",
+        "NORMANVIEW RESIDENTS GROUP": "Normanview",
+        "NORMANVIEW WEST": "Normanview West",
+        "NORTH CENTRAL": "North Central",
+        "NORTHEAST": "Northeast",
+        "PRAIRIE VIEW": "Prairie View",
+        "QUEEN CITY EASTVIEW": "Queen City Eastview",
+        "REGENT PARK": "Regent Park",
+        "ROSEMONT/MOUNT ROYAL": "Rosemont / Mount Royal",
+        "SHERWOOD/MCCARTHY": "Sherwood / McCarthy",
+        "TWIN LAKES": "Twin Lakes",
+        "UPLANDS": "Uplands",
+        "WALSH ACRES/LAKERIDGE/GARDEN RIDGE": "Walsh Acres / Lakeridge / Garden Ridge",
+        "WHITMORE PARK": "Whitmore Park"
+      },
+      "coverageDenominator": {
+        "kind": "statcan-pc-2021",
+        "source": {
+          "url": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/7/query?where=1%3D1&outFields=PCUID%2CPCNAME%2CPCTYPE%2CPCCLASS%2CLANDAREA&geometry=-104.77877691556756%2C50.39641312337142%2C-104.49260342056414%2C50.52073974166238&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=geojson",
+          "file": "regina28-urban.geojson",
+          "sha256": "021071329b523f7f0540282182651a5a3cc8b2a916da0fc42334543553391a68"
+        }
+      }
+    },
+    {
+      "slot": "brampton53",
+      "displayName": "Brampton",
+      "status": "parked",
+      "origin": "official",
+      "distribution": "download",
+      "region": "ca-on",
+      "source": {
+        "url": "https://services3.arcgis.com/rl7ACuZkiFsmDA2g/arcgis/rest/services/NNP_Neighbourhood_Layers_OpenData/FeatureServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "brampton53.geojson",
+        "sha256": "9e17b40ffb090184b533dddb05c93586f8254cd9d4e46fd3e7eb61dfef6f02cd"
+      },
+      "boundary": {
+        "url": "https://maps1.brampton.ca/arcgis/rest/services/COB/Common/MapServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "file": "brampton53-boundary.geojson",
+        "sha256": "68b63ced68f6ec0488f62ca94bf0da247490291f9f3eb39e10f371b4fe18e8cd"
+      },
+      "idField": "OBJECTID",
+      "nameField": "NEIGHBOURHOOD_NAME",
+      "licenceKey": "bramptonON",
+      "attribution": {
+        "publisher": "City of Brampton",
+        "licenceName": "CC BY 4.0"
+      },
+      "note": "COV-1F（用户 11-04 晚准城区分母）：City of Brampton「NNP Neighbourhood Boundary Areas」53 块（GeoHub item 404d43d1f5be4e23a3ee421132539379，数据集许可 CC BY 4.0，判 A；COV-1D 记的疑点「Open Data Policy 说按随时可改的 Terms of Use 发布」照旧在册）。市域口径只盖 62.7 %（机场联运区、427 / 410 工业带、西北未开发片没画），城区（统计局 2021 人口中心 Toronto 伸进 Brampton 那一截）口径过闸，余量薄、以 build.sh 读数为准。Bramalea 6 块字母分区（主线按 #1066 准则 4 / 5：当地真这么叫，逐块核与官方 section 对得上才收）：拿市府 COB/Common/MapServer/1 街道层数每块街名首字母，六块各自 82–92 % 的街名落在本块字母上（N 49/53 · G 61/67 · A-B-C-D 87/97 · E-F-K 41/47 · M 48/57 · H 60/73，含干道）（不落的是 Bramalea Rd · Dixie · Williams · Torbram · Queen 一类干道，或边上一小条邻区街）⇒ 六块全收，显示成「A-B-C-D Section (Bramalea)」。53 条全大写 ⇒ renames 全表：Fletcher's ×4 与 Professor's Lake 补撇号（溪名、湖名的通行拼法），Rivers Edge 照源。CENTRE 照收（市府街坊名）。id 用 OBJECTID（这一层没有别的稳定 id，Waterloo 先例；换号由 id 账本拦）。市界那台服务器 curl 能取、Python urllib 回 400（COV-1D 实测），fingerprints.py 走 curl。 retrievedAt ＝ 社区层与市界两份 curl 落盘时刻里晚的那个（文件 mtime，UTC）；这一行是 parked，fingerprints.py --refresh 不碰它，所以手抄（评审 P3）。 🔴 COV-1F 出包实测**卡在原始重叠闸**（主线 11-05 定 A：这一棒不收、行留 parked）：Creditview（OBJECTID 50）× Alloa（52）最深 12.86 m，超 5 m 硬闸，也超单对例外天花板 10 m（PackGates.overlapExceptionCeilingMeters，#1066 追记一）；细条 3 534 m²、平均宽约 2.5 m、里面 0 个格心（切不切每块格子一格不差）；在 scratchpad 切掉细条试量：城区口径 72.3 %（余量 2.3 点）、最大一块 3.8 %。其余 5 对重叠都 < 1 m。提天花板（改闸）或出包前切细条（改「数据原样进包」口径）都要问用户，见 docs/reviews/2026-11-05-cov-1f-closure.md「以后可议」。 COV-1G（11-05，还 COV1F-③）：出包要求城区文件里有清单点名的人口中心；统计局 2021 把 Brampton 并进了 Toronto 人口中心（文件里四个：Bolton · Caledon East · Georgetown · Toronto），没有叫 Brampton 的 ⇒ populationCentre 写 Toronto。",
+      "retrievedAt": "2026-11-05T02:20:10Z",
+      "renames": {
+        "A-B-C-D-SECTION (BRAMALEA)": "A-B-C-D Section (Bramalea)",
+        "ALLOA": "Alloa",
+        "BRAMALEA WOODS": "Bramalea Woods",
+        "CASTLEMORE ESTATES": "Castlemore Estates",
+        "CENTRE": "Centre",
+        "CHURCHVILLE": "Churchville",
+        "COUNTRYSIDE": "Countryside",
+        "COUNTY COURT": "County Court",
+        "CREDIT VALLEY": "Credit Valley",
+        "CREDITVIEW": "Creditview",
+        "DEERFIELD": "Deerfield",
+        "DOWNTOWN": "Downtown",
+        "E-F-K-SECTION (BRAMALEA)": "E-F-K Section (Bramalea)",
+        "EBENEZER EAST": "Ebenezer East",
+        "EBENEZER WEST": "Ebenezer West",
+        "FLETCHERS CREEK VILLAGE / LUNDY VILLAGE": "Fletcher's Creek Village / Lundy Village",
+        "FLETCHERS MEADOW NORTH": "Fletcher's Meadow North",
+        "FLETCHERS MEADOW SOUTH": "Fletcher's Meadow South",
+        "FLETCHERS WEST": "Fletcher's West",
+        "G-SECTION (BRAMALEA)": "G Section (Bramalea)",
+        "H-SECTION (BRAMALEA)": "H Section (Bramalea)",
+        "HEART LAKE NORTH": "Heart Lake North",
+        "HEART LAKE SOUTH": "Heart Lake South",
+        "HICKORY WOODS": "Hickory Woods",
+        "HUTTONVILLE": "Huttonville",
+        "LAKELANDS VILLAGE": "Lakelands Village",
+        "M-SECTION (BRAMALEA)": "M Section (Bramalea)",
+        "MADOC": "Madoc",
+        "MOUNT PLEASANT NORTH": "Mount Pleasant North",
+        "MOUNT PLEASANT VILLAGE": "Mount Pleasant Village",
+        "MOUNT ROYAL": "Mount Royal",
+        "N-SECTION (BRAMALEA)": "N Section (Bramalea)",
+        "NEW SPRINGBROOK": "New Springbrook",
+        "NORTHWOOD PARK": "Northwood Park",
+        "NORTON PARK": "Norton Park",
+        "PEEL VILLAGE": "Peel Village",
+        "PROFESSORS LAKE": "Professor's Lake",
+        "RIDGEHILL / ARMBRO HEIGHTS": "Ridgehill / Armbro Heights",
+        "RIVERS EDGE / CASTLEMORE CROSSING": "Rivers Edge / Castlemore Crossing",
+        "ROSEDALE VILLAGE": "Rosedale Village",
+        "ROYAL ORCHARD": "Royal Orchard",
+        "SANDALWOOD EAST (MOUNTAINASH)": "Sandalwood East (Mountainash)",
+        "SANDALWOOD WEST (SUNNY MEADOW)": "Sandalwood West (Sunny Meadow)",
+        "SHERIDAN": "Sheridan",
+        "SNELGROVE": "Snelgrove",
+        "SPRING VALLEY": "Spring Valley",
+        "SPRINGBROOK": "Springbrook",
+        "SPRINGDALE": "Springdale",
+        "TRINITY COMMONS": "Trinity Commons",
+        "VALES OF CASTLEMORE": "Vales of Castlemore",
+        "VALLEY CREEK": "Valley Creek",
+        "VAN KIRK": "Van Kirk",
+        "WILDFIELD": "Wildfield"
+      },
+      "coverageDenominator": {
+        "kind": "statcan-pc-2021",
+        "populationCentre": "Toronto",
+        "source": {
+          "url": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/7/query?where=1%3D1&outFields=PCUID%2CPCNAME%2CPCTYPE%2CPCCLASS%2CLANDAREA&geometry=-79.88888409985105%2C43.60180947923937%2C-79.63029765124357%2C43.84775759953489&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=geojson",
+          "file": "brampton53-urban.geojson",
+          "sha256": "72e502d4fca2ed833f42187900268a4390f05c63fbaee201e2aba814d42b2e36"
+        }
+      }
+    },
+    {
+      "slot": "reddeer-osm",
+      "displayName": "Red Deer",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-ab",
+      "osm": {
+        "relation": 4166847,
+        "adminLevel": 10,
+        "osmBase": "2026-11-05T03:32:06Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "reddeer-osm.geojson",
+        "sha256": "e63a90ed66501e68bd96614d4c07372c5a720c1bba0ad40c137939a0bbe971d7"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "reddeer-osm-boundary.geojson",
+        "sha256": "7f17b001a5f29f74688ad7d37100b2447a682b50881d9cb57e1e86a79780cbc9"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "filter": {
+        "field": "name",
+        "excludeValues": [
+          "Waste Management Facility"
+        ]
+      },
+      "licenceKey": "osm",
+      "note": "COV-1F（用户 11-04 晚准城区分母）：OSM「City of Red Deer」r4166847 下 admin_level=10 的 84 块，与市府 Neighbourhoods 是同一套（COV-1D：官方层只出 shapefile / KMZ、每月重出，工具读不了；按 COV-1F 来信主线的默认 A 走 OSM，许可 ODbL、ca-ab 不因它升 v4）。市域口径 67.8 % 不过，城区（统计局 2021 人口中心 Red Deer）口径过闸。按准则 8（主线代定⑤）剔 Waste Management Facility 一块（设施分类名，不是地名）；6 个工业 / 商业园、6 个休闲 / 自然区、Red Deer Polytechnic · Westerner Park · Railyards 是当地真名，照 Milton / Hamilton 先例收。",
+      "coverageDenominator": {
+        "kind": "statcan-pc-2021",
+        "source": {
+          "url": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/7/query?where=1%3D1&outFields=PCUID%2CPCNAME%2CPCTYPE%2CPCCLASS%2CLANDAREA&geometry=-113.8977285%2C52.2157411%2C-113.718502%2C52.3429183&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=geojson",
+          "file": "reddeer-osm-urban.geojson",
+          "sha256": "10c9e0fc64aa1ec5efb44925ec5e6f93ed8b5b734a515dcb4ec73df679373dce"
+        }
+      }
+    },
+    {
+      "slot": "saskatoon-osm",
+      "displayName": "Saskatoon",
+      "status": "active",
+      "origin": "osm",
+      "distribution": "download",
+      "region": "ca-sk",
+      "osm": {
+        "relation": 4189345,
+        "adminLevel": 10,
+        "dropBeforeStitch": [
+          {
+            "relation": 19116268,
+            "name": "North Development Area"
+          }
+        ],
+        "osmBase": "2026-11-05T07:52:48Z"
+      },
+      "source": {
+        "url": "overpass",
+        "file": "saskatoon-osm.geojson",
+        "sha256": "9ba744d8320019b990387df7298871860dfefe24e3059304be2dd2d10cf73cb1"
+      },
+      "boundary": {
+        "url": "overpass",
+        "file": "saskatoon-osm-boundary.geojson",
+        "sha256": "8ef5d9f9bcd38d3535be78e50b2854eab5db98e3c700ec8eddadacfdd4f3d544"
+      },
+      "idField": "osm_id",
+      "nameField": "name",
+      "filter": {
+        "field": "name",
+        "excludeValues": [
+          "North West Development Area",
+          "South Development Area",
+          "South West Development Area"
+        ]
+      },
+      "licenceKey": "osm",
+      "note": "COV-1G（11-05，主线按 #1066 代定）：OSM「Saskatoon」r4189345 下 admin_level=10 的 89 块（与市府 neighbourhood 一套同名；市府官方层许可 B、#1064 ④ 不收）。r19116268 North Development Area 有一条 way 的 role 拼成 outre，拼环整城停 ⇒ 清单例外 osm.dropBeforeStitch 在拼环前丢它（开发占位名，准则 5 本来就剔；主线定 A）。另 3 块 X Development Area 按准则 5 剔（filter）。8 块 X Management Area 照收（真实开得到的地方），后缀按准则 4 / 8 去掉、改成块里的主体（改名表主线 11-05 定稿：Diefenbaker Park · SaskPower Lands · Gordie Howe Bowl，不留光秃的姓 / 公司名 / 人名）；Husdson Bay Park 是 OSM 拼错，改回 Hudson Bay Park。市域口径 63 % 不过，城区（统计局 2021 人口中心 Saskatoon，占市域 58 %）口径过闸（探针 89.6 %，以出包那一趟为准）。",
+      "renames": {
+        "C.N. Yards Management Area": "C.N. Yards",
+        "Diefenbaker Management Area": "Diefenbaker Park",
+        "Gordie Howe Management Area": "Gordie Howe Bowl",
+        "Hillcrest Management Area": "Hillcrest",
+        "Husdson Bay Park": "Hudson Bay Park",
+        "Sask Power Management Area": "SaskPower Lands",
+        "U of S Lands Management Area": "U of S Lands",
+        "U of S Lands North Management Area": "U of S Lands North",
+        "U of S Lands South Management Area": "U of S Lands South"
+      },
+      "coverageDenominator": {
+        "kind": "statcan-pc-2021",
+        "source": {
+          "url": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/7/query?where=1%3D1&outFields=PCUID%2CPCNAME%2CPCTYPE%2CPCCLASS%2CLANDAREA&geometry=-106.8249655%2C52.0699245%2C-106.503699%2C52.2311425&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=geojson",
+          "file": "saskatoon-osm-urban.geojson",
+          "sha256": "89cd2ee30f85b57aeaf1947ab2d2db3bc942bb321571577f2bdb79b39ab4a6f6"
+        }
+      }
+    },
+    {
+      "slot": "henderson-tiger2024",
+      "displayName": "Henderson",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nv",
+      "source": {
+        "url": "census",
+        "file": "henderson-tiger2024.geojson",
+        "sha256": "92fc768fb6eb94a73ee3bd1ccda59ebdf73f32b3ab221776a77bd8b4a4447d65"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "henderson-tiger2024-boundary.geojson",
+        "sha256": "ce9808eae7c32930cda62bfb5f7464596c72913368e19a78cb371404fc30ad3d"
+      },
+      "census": {
+        "center": [
+          36.0397,
+          -114.9819
+        ],
+        "cityNames": [
+          "Henderson"
+        ],
+        "fetch": {
+          "stateFips": "32",
+          "stateAbbr": "NV",
+          "tigerPlace": "Henderson",
+          "tigerLsad": "25",
+          "counties": [
+            "003"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.8820,-115.2275,36.1453,-114.8874"
+        },
+        "inputs": {
+          "tracts.geojson": "5902069906892905a7e7e592895b4274a1fcacdeb1fbb36f33bf53eb566b006a",
+          "city.geojson": "00fff8f14945d6ddf69e81f692d3691f36b0f245932920683a1fe4e7112daa34",
+          "gnis.txt": "96950d2737b9cd2ed2da9889ad852f021f1adcb56d22dc78b1e875f43c0a5a62",
+          "osm-names.json": "1ef08a23c77391d96af994d434f58faa981da6b8d16471348ecf398ab88883c0",
+          "osm-polys.json": "f3e5310af3d05fd4f261611e7783ab0fcd5bb438dce9d204385499c4417c1b02",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Aggie Roberts",
+          "Cornerstone",
+          "Estes McDoniel"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:34:44Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "anaheim-tiger2024",
+      "displayName": "Anaheim",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "anaheim-tiger2024.geojson",
+        "sha256": "8eed973a60aaace78af48d558758163350dc6804d568055e8eaa7b25c0f361d9"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "anaheim-tiger2024-boundary.geojson",
+        "sha256": "edf998f824b11f9f7e1b0f46e5a60a1631f17961ef4a8707e1f0ff452348eff7"
+      },
+      "census": {
+        "center": [
+          33.8353,
+          -117.9145
+        ],
+        "cityNames": [
+          "Anaheim"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Anaheim",
+          "tigerLsad": "25",
+          "counties": [
+            "059"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.7738,-118.0324,33.8942,-117.6596"
+        },
+        "inputs": {
+          "tracts.geojson": "6d8c82a0b85e934a4485692757dc473503e2c5b757abd86e7ee3e8f8a1b0781c",
+          "city.geojson": "10c4d7e6f6eab323a7addaaa5b68f7f9440e006954d47c033838b68883c615ae",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "9ab480785e8e27408614f24d002d8472581abfc3e815207ae9e1520b52dc4f0e",
+          "osm-polys.json": "f049980fcf9162d8233bc298f3ccd364f87e45e78b4c7db82bf6a7fc598c1243",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Adventureland",
+          "Avengers Campus",
+          "Bayou Country",
+          "Boardwalk",
+          "Brisa Courtyard",
+          "Buena Vista Street",
+          "Camp Snoopy",
+          "Cars Land",
+          "Catalina",
+          "Disney's Grand Californian Hotel & Spa",
+          "Downtown Disney",
+          "Elephant Bathing Pool",
+          "Fantasyland",
+          "Fort Wilderness",
+          "Frontierland",
+          "Ghost Town",
+          "Grizzly Peak Airfield",
+          "Hippo Pool",
+          "Hollywood Land",
+          "Hyperion Courtyard",
+          "Le Court de Anges",
+          "Lincoln/Glassell",
+          "Main Street U.S.A.",
+          "Manhattan",
+          "Mickey and Friends Parking Structures",
+          "Mickey's Toontown",
+          "New Orleans Square",
+          "OC Vibe",
+          "Old Town Placentia",
+          "Paradise Gardens Park",
+          "Paradise Pier",
+          "Performance Corridor",
+          "Pixar Pier",
+          "Pixar Place Hotel",
+          "Princesses Fantasy Faire",
+          "Rainbow Ridge",
+          "Raymond Retarding Basin",
+          "San Fransokyo Square",
+          "Star Wars: Galaxy’s Edge",
+          "Storybook Land",
+          "The Enchanted Tiki Garden",
+          "The Royal Courtyard",
+          "Tom Sawyer's Island",
+          "Tomorrowland",
+          "Tour Gardens"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:36:45Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "corpus-christi-tiger2024",
+      "displayName": "Corpus Christi",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "corpus-christi-tiger2024.geojson",
+        "sha256": "57ec6131c048d2a569e9e8a9d181a7d76bdae01ee51290b79ce58863ed437950"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "corpus-christi-tiger2024-boundary.geojson",
+        "sha256": "f7c48278b1be6cac35666ac4823700a3ec979a33a415c4d3e4ab1ca3c6c2224f"
+      },
+      "census": {
+        "center": [
+          27.8006,
+          -97.3964
+        ],
+        "cityNames": [
+          "Corpus Christi"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Corpus Christi",
+          "tigerLsad": "25",
+          "counties": [
+            "007",
+            "273",
+            "355",
+            "409"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "27.4686,-97.7525,27.9425,-96.9461"
+        },
+        "inputs": {
+          "tracts.geojson": "e57aad05d6969c8a70d88fddb18f204a8f9329a8e18425ccd27c104eee538e7b",
+          "city.geojson": "3a8706554d9d27dc430463fd4ea11295c9056e3a170ca058a5271c0927bb22ee",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "c432880a8a9e4864d5dd80b0e76068bd1c4a3594393620426303611f42ba7d7e",
+          "osm-polys.json": "a57d3b592b4bae9c647666e809159c29252f44a0228ab25dfc9798d9bb1ae442",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Calk-Wilson",
+          "Captain Falcon",
+          "Christ the King",
+          "Flour Bluff Junction"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:39:44Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "greensboro-tiger2024",
+      "displayName": "Greensboro",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nc",
+      "source": {
+        "url": "census",
+        "file": "greensboro-tiger2024.geojson",
+        "sha256": "df76d5663eea44e3fa1b3f35a071234e004a39cefd06c73c0106829ae06448bd"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "greensboro-tiger2024-boundary.geojson",
+        "sha256": "f6a105e7b79f435569e023dbea58097598c5430c1eda6f886182d5a106f36076"
+      },
+      "census": {
+        "center": [
+          36.0726,
+          -79.792
+        ],
+        "cityNames": [
+          "Greensboro"
+        ],
+        "fetch": {
+          "stateFips": "37",
+          "stateAbbr": "NC",
+          "tigerPlace": "Greensboro",
+          "tigerLsad": "25",
+          "counties": [
+            "081"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.9607,-80.0329,36.2304,-79.5957"
+        },
+        "inputs": {
+          "tracts.geojson": "b120d33afa81fd70c0523582a4b4b18412ebad64a3777aa880b4e30ea7b820c6",
+          "city.geojson": "eca2a4dc747543841a94d4817e644bf456da98764b02ed2fc6851affd934265a",
+          "gnis.txt": "266064600b293b78beaa20cec2eefb005911213ef4488d7fec782948133fe9ec",
+          "osm-names.json": "9239a5e502d21b293b7a1e2ed4a4c17bcfab8662d17b9a6cf50048cdec2bc84b",
+          "osm-polys.json": "442677b309a27a8cd04d8c2189a75b9f4548a9ece50af6e24955546f146278e2",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        }
+      },
+      "retrievedAt": "2026-11-05T19:41:48Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "plano-tiger2024",
+      "displayName": "Plano",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "plano-tiger2024.geojson",
+        "sha256": "c12af5e1568dbecf9d4bdffccf22e3f0ad817e745aceacf7e8e4cb7d58f0a2b8"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "plano-tiger2024-boundary.geojson",
+        "sha256": "a12eec692be6640947bb067428cab31c2ff7be015937652d76de702d5b92e046"
+      },
+      "census": {
+        "center": [
+          33.0198,
+          -96.6989
+        ],
+        "cityNames": [
+          "Plano"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Plano",
+          "tigerLsad": "25",
+          "counties": [
+            "085",
+            "121"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.9823,-96.8751,33.1404,-96.5980"
+        },
+        "inputs": {
+          "tracts.geojson": "e03f5dc0912acef80a7ebc7aff74480f6e97d0c8b0d9b79c2ad8e67d861933c6",
+          "city.geojson": "0064d5c75301d9cc0bb9bc8a3ffb6df38e0cdc0175900925e1cfc78683cf6ddf",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "d7a5f19b73f0443b216fc3a7a4c8fb463654955de10fd81d3dba61bfacb570a1",
+          "osm-polys.json": "1e876154ac412d39f13eed2ba6015b24d95dc9df281e45321a6ac5cc1cf4a72c",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Lieutenant Russell Steindam",
+          "Renner Junction"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:45:49Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "gilbert-tiger2024",
+      "displayName": "Gilbert",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-az",
+      "source": {
+        "url": "census",
+        "file": "gilbert-tiger2024.geojson",
+        "sha256": "81f3ce07eafefbd9b15c1f2afc1adbe68a4b974fd74416ea11ed4e723a47f760"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "gilbert-tiger2024-boundary.geojson",
+        "sha256": "f94e77771f5b79b62645ee8877dbee3800c9dffbabd50ae58f4bd5745769c0d3"
+      },
+      "census": {
+        "center": [
+          33.3528,
+          -111.789
+        ],
+        "cityNames": [
+          "Gilbert"
+        ],
+        "fetch": {
+          "stateFips": "04",
+          "stateAbbr": "AZ",
+          "tigerPlace": "Gilbert",
+          "tigerLsad": "43",
+          "counties": [
+            "013"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.1896,-111.8572,33.4008,-111.6706"
+        },
+        "inputs": {
+          "tracts.geojson": "2fbab34064068f756c15bae8d9e29e09290682b37b5b40023cc667b45a547452",
+          "city.geojson": "4f270e7f5bfaa8717517b46d670af7ad0f8b1e7388d8c770be0eb4d41da8ff84",
+          "gnis.txt": "58e1bb60abd2ac9e443505bf1e66d99849c469afbd875a94be439a07f1cbde69",
+          "osm-names.json": "0696457a5a0f54e0af60181d5d215536b391e914c128ed5a1657266a226b3b13",
+          "osm-polys.json": "55acab529d0f0e2b67cd78bf62f42968daf6aee87acb5801c4c818252312b98b",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Pioneer"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:46:50Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "reno-tiger2024",
+      "displayName": "Reno",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nv",
+      "source": {
+        "url": "census",
+        "file": "reno-tiger2024.geojson",
+        "sha256": "7dce1475374f0e3eec6cf6f49c373e6eba8092a455103548979f2b652009a3d8"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "reno-tiger2024-boundary.geojson",
+        "sha256": "e39525511facc698818d549173d94c26718f63e2f77b34048f1d6e33ccc67b12"
+      },
+      "census": {
+        "center": [
+          39.5296,
+          -119.8138
+        ],
+        "cityNames": [
+          "Reno"
+        ],
+        "fetch": {
+          "stateFips": "32",
+          "stateAbbr": "NV",
+          "tigerPlace": "Reno",
+          "tigerLsad": "25",
+          "counties": [
+            "031"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "39.3644,-120.0173,39.7379,-119.6761"
+        },
+        "inputs": {
+          "tracts.geojson": "31d77757e05683d8db16ebf020c9d15b986ad78ed546a52f52f7e197d63ffa62",
+          "city.geojson": "06718dec3fc8c6701d0f889d30f609274439c7c0aad3328b8e98542c6f9b7ced",
+          "gnis.txt": "96950d2737b9cd2ed2da9889ad852f021f1adcb56d22dc78b1e875f43c0a5a62",
+          "osm-names.json": "e9b09b4e34cf94bca13e05a4fae25ede33c5ea58aff586a5c4bd5b76d3784dfb",
+          "osm-polys.json": "15a08eb546983f1ca0a8d257e05a29d0ad163634f9b2dc7ce612e89e95a0fefe",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Horseman's",
+          "Rancho San Rafael Regional",
+          "Teglia's Paradise"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:48:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "chandler-tiger2024",
+      "displayName": "Chandler",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-az",
+      "source": {
+        "url": "census",
+        "file": "chandler-tiger2024.geojson",
+        "sha256": "9f2c9c41804f0d4ecaf00b962a8bcd9f654dfe43e8d0ad4e9c96b7ee3b39faf2"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "chandler-tiger2024-boundary.geojson",
+        "sha256": "9c72e328d6c127f1e219d5483ad9fb3ae6034d7d026280504279c7f373360a84"
+      },
+      "census": {
+        "center": [
+          33.3062,
+          -111.8413
+        ],
+        "cityNames": [
+          "Chandler"
+        ],
+        "fetch": {
+          "stateFips": "04",
+          "stateAbbr": "AZ",
+          "tigerPlace": "Chandler",
+          "tigerLsad": "25",
+          "counties": [
+            "013"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.1890,-111.9873,33.3763,-111.7404"
+        },
+        "inputs": {
+          "tracts.geojson": "2fbab34064068f756c15bae8d9e29e09290682b37b5b40023cc667b45a547452",
+          "city.geojson": "d58de46b0ba06cef788356443726d85f17719687cec50df85c6eac9773d555f4",
+          "gnis.txt": "58e1bb60abd2ac9e443505bf1e66d99849c469afbd875a94be439a07f1cbde69",
+          "osm-names.json": "664e0e286c39002c59cc20857520f62cdfd017fd1677cb98254e89774079109b",
+          "osm-polys.json": "12aa0f29fac4784cef27c2b2ec94f1b92781649f39f2dbd2e441a974c34f6360",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Hartford Sylvia Encinas",
+          "Suncrest Villas Chandler"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:49:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "lubbock-tiger2024",
+      "displayName": "Lubbock",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "lubbock-tiger2024.geojson",
+        "sha256": "a58fa129d93d6fa3d783ae834efc9b5173fd1a32d0afefc190196188b99a2786"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "lubbock-tiger2024-boundary.geojson",
+        "sha256": "ad3fa6d9eaa2fa83ab4d4b3ccbaa88b138b203101ae414b300b9864de214cd0a"
+      },
+      "census": {
+        "center": [
+          33.5779,
+          -101.8552
+        ],
+        "cityNames": [
+          "Lubbock"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Lubbock",
+          "tigerLsad": "25",
+          "counties": [
+            "303"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.4321,-102.0471,33.7235,-101.7340"
+        },
+        "inputs": {
+          "tracts.geojson": "2b7eb1f4013eb4530ffc90ec8f39e4adf8c3e1c8b8afaa45d22333143bd64009",
+          "city.geojson": "cbe3942e418ba1925b4963651a9100a1ab40f3d48e0d5f8467c075f873da39ba",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "d64f682d78667ce8184856c62e2375d40d01930a985bc43f2cbe6bf50fc29e66",
+          "osm-polys.json": "9b3778e0173d874605c637fb0766267f8fbafee5ef70d22b0b22d6dcb706fd64",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "George C Woods",
+          "Lubbock-Cooper North"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:26:06Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "winston-salem-tiger2024",
+      "displayName": "Winston-Salem",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nc",
+      "source": {
+        "url": "census",
+        "file": "winston-salem-tiger2024.geojson",
+        "sha256": "344c50fe657f26ac97c6393c233a711e117005903b1117f57bb2519b9be82c89"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "winston-salem-tiger2024-boundary.geojson",
+        "sha256": "afce9cbafd1bda486adc2421f986be1a2e60802d4f8044898cadc07367948c53"
+      },
+      "census": {
+        "center": [
+          36.0999,
+          -80.2442
+        ],
+        "cityNames": [
+          "Winston-Salem"
+        ],
+        "fetch": {
+          "stateFips": "37",
+          "stateAbbr": "NC",
+          "tigerPlace": "Winston-Salem",
+          "tigerLsad": "25",
+          "counties": [
+            "067"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.9816,-80.4011,36.2334,-80.0861"
+        },
+        "inputs": {
+          "tracts.geojson": "ea52c0305834c167bb9772ad8b478531f7aeeb4ea1b6d800d92c7d3ff45db1d4",
+          "city.geojson": "71450a5cd35b7eea7158a1aaa4ae4ee77a47eda7c2e5f657a0bbd002816fab8b",
+          "gnis.txt": "266064600b293b78beaa20cec2eefb005911213ef4488d7fec782948133fe9ec",
+          "osm-names.json": "210dd7559cc92e255f91cbcb1f23855c43b642ed3fd444277a550fd6ffda733a",
+          "osm-polys.json": "d3329ee89f77696743bce866a2f2d33727fef4ef6afb65eed83fc27dc4115274",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        }
+      },
+      "retrievedAt": "2026-11-05T19:54:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "scottsdale-tiger2024",
+      "displayName": "Scottsdale",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-az",
+      "source": {
+        "url": "census",
+        "file": "scottsdale-tiger2024.geojson",
+        "sha256": "eded62a9cc0ba61bed318072a4612247285dd9d1aca97095d7ef83d0c35f332b"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "scottsdale-tiger2024-boundary.geojson",
+        "sha256": "8db05e8513385ca2bffd1b14bda6bdf9d060a866c1f06936fd21cff6c80f1bb6"
+      },
+      "census": {
+        "center": [
+          33.5092,
+          -111.899
+        ],
+        "cityNames": [
+          "Scottsdale"
+        ],
+        "fetch": {
+          "stateFips": "04",
+          "stateAbbr": "AZ",
+          "tigerPlace": "Scottsdale",
+          "tigerLsad": "25",
+          "counties": [
+            "013"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.4326,-111.9760,33.9155,-111.7409"
+        },
+        "inputs": {
+          "tracts.geojson": "2fbab34064068f756c15bae8d9e29e09290682b37b5b40023cc667b45a547452",
+          "city.geojson": "72270c9b9c57a1da0fd36f233cdff033bc05834e29cdedd7313b25848edc82fc",
+          "gnis.txt": "58e1bb60abd2ac9e443505bf1e66d99849c469afbd875a94be439a07f1cbde69",
+          "osm-names.json": "202f9eceefc51fdb5faf35a47f5c14d1de564e3e380b0b8868935f117eaa3ea4",
+          "osm-polys.json": "7aea5312a69b641d48637dda57bc6b26b8bb2ec6e103887ddbf66bc14f93b731",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "5th Avenue Shops & Boutiques",
+          "Horizon",
+          "Taliesin West"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:56:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "frisco-tiger2024",
+      "displayName": "Frisco",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "frisco-tiger2024.geojson",
+        "sha256": "0404a33610c92d7c5b028fc0c686589cb9b128ec00ed23828bd37d763127100f"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "frisco-tiger2024-boundary.geojson",
+        "sha256": "fc7bc845d64edb775fa9ded9e895ada739a27b783b40d44fe1b08b552bdc0567"
+      },
+      "census": {
+        "center": [
+          33.1507,
+          -96.8236
+        ],
+        "cityNames": [
+          "Frisco"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Frisco",
+          "tigerLsad": "25",
+          "counties": [
+            "085",
+            "121"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.0661,-96.9378,33.2344,-96.7178"
+        },
+        "inputs": {
+          "tracts.geojson": "e03f5dc0912acef80a7ebc7aff74480f6e97d0c8b0d9b79c2ad8e67d861933c6",
+          "city.geojson": "fba6424122cb7702d8589c93852bf01afa586fa586d282e9c0e6b02b78210ed5",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "17e86636deffe7ea3539b5ca5038ab29a155fe6c4b605627bb80c68836a6590f",
+          "osm-polys.json": "a0078f8388482b5c58a8cdf377feb7f9e101ca5cc7d3d90f25a029d449aae336",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Beavers Bend",
+          "Bi-Centennial",
+          "Coyote Crossing Neighborhood",
+          "Grand",
+          "Hillcrest Neighborhood",
+          "Northeast Community"
+        ]
+      },
+      "retrievedAt": "2026-11-05T19:58:51Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "hialeah-tiger2024",
+      "displayName": "Hialeah",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-fl",
+      "source": {
+        "url": "census",
+        "file": "hialeah-tiger2024.geojson",
+        "sha256": "5ce95f96dab027aadb00eb21c546c7a7eb1f0b0f53307dfdc8df56fbb19047df"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "hialeah-tiger2024-boundary.geojson",
+        "sha256": "d8d396a82627df58bc20527c52810aa2a789d05b462d06a7ca9fb874777e88af"
+      },
+      "census": {
+        "center": [
+          25.8576,
+          -80.2781
+        ],
+        "cityNames": [
+          "Hialeah"
+        ],
+        "fetch": {
+          "stateFips": "12",
+          "stateAbbr": "FL",
+          "tigerPlace": "Hialeah",
+          "tigerLsad": "25",
+          "counties": [
+            "086"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "25.7910,-80.3887,25.9429,-80.2380"
+        },
+        "inputs": {
+          "tracts.geojson": "b47533d28a80ebc686cfac20f6b7e1bd30f3c239805ec2191c5de55a378a70c8",
+          "city.geojson": "00485c83d919657dcafebea006ef29299f8d06161e97d5ee7413bd1bbb2be750",
+          "gnis.txt": "2683e1d410d1e43024ce5c4932f4f5f31d2988924fc0baab8375aa831f4439a2",
+          "osm-names.json": "77ceea6c5778917fce091802ca15723cb88cc51012f15e213ccfa1bb991aa6ac",
+          "osm-polys.json": "e46d89b6b3784b0d216d2bdc5663c28886fb16c4732a3a7a9d01dacbab740c23",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Hialeah Gardens",
+          "Miami Springs"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:02:56Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "santa-clarita-tiger2024",
+      "displayName": "Santa Clarita",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "santa-clarita-tiger2024.geojson",
+        "sha256": "61f78ce5b0434d82f63f0f3a304457d3c4ea7136aca3152d841c89bc253e3657"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "santa-clarita-tiger2024-boundary.geojson",
+        "sha256": "5b8581ba51996bd6f246f0fca6776cbec5fbe00c68e81e3bf0b1c2c09a5feabf"
+      },
+      "census": {
+        "center": [
+          34.3917,
+          -118.5426
+        ],
+        "cityNames": [
+          "Santa Clarita"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Santa Clarita",
+          "tigerLsad": "25",
+          "counties": [
+            "037"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "34.3264,-118.6283,34.5150,-118.3637"
+        },
+        "inputs": {
+          "tracts.geojson": "ea90689efbc33311fa8447b4281b96b9140478b57a64f99223021089fbed8f28",
+          "city.geojson": "748e95c97a5f10138e552e0ad58ab780832a3767b573a3b015fc1a3d0871005c",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "03fbfa26f9766fcf2abacfd7271da5322e7993694fb6a20fa6b7c396ee6d30fe",
+          "osm-polys.json": "dc310f16d438d387aaacf9e0e34c410acdf325e811b39287caba4188b4c848fe",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Bouquet Junction"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:04:55Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "modesto-tiger2024",
+      "displayName": "Modesto",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "modesto-tiger2024.geojson",
+        "sha256": "170a4d34bb36e102139f7d769613a86c892795ed3f16f537615bf5e7815f79d4"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "modesto-tiger2024-boundary.geojson",
+        "sha256": "aab6595bcbc53e10e51fd090d3f59b498a9785e1b5b23c3ebf598eda98abebc7"
+      },
+      "census": {
+        "center": [
+          37.6391,
+          -120.9969
+        ],
+        "cityNames": [
+          "Modesto"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Modesto",
+          "tigerLsad": "25",
+          "counties": [
+            "099"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "37.4638,-121.1280,37.7268,-120.8862"
+        },
+        "inputs": {
+          "tracts.geojson": "1a5eff4e43ac57178d62324e6a20a228199e66161047564a363ac4ce2f04242c",
+          "city.geojson": "f5a8110e33b15e770585c6a46adefff6cb87f627a52b1b160c4d58d1c55e74c0",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "5a5c5b08b3371d9eb534e44b8821e00111d8528ff948d1047b18203f7b8355b1",
+          "osm-polys.json": "abaac5a5f8a4273644040abda750a8bc730b3ab3183d707b1c008a3734a36f64",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Robertson Road",
+          "Sonoma",
+          "Stockard Coffee"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:06:58Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "moreno-valley-tiger2024",
+      "displayName": "Moreno Valley",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ca",
+      "source": {
+        "url": "census",
+        "file": "moreno-valley-tiger2024.geojson",
+        "sha256": "46c4583ad74b5b6f0c215d91ad94823b19cc6406f33460e4e6044022dd0a5482"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "moreno-valley-tiger2024-boundary.geojson",
+        "sha256": "16f9db92df2d998eb723c912ebfd729175724b30c2d7e5f1da5215ebdfa06f8c"
+      },
+      "census": {
+        "center": [
+          33.9375,
+          -117.2306
+        ],
+        "cityNames": [
+          "Moreno Valley"
+        ],
+        "fetch": {
+          "stateFips": "06",
+          "stateAbbr": "CA",
+          "tigerPlace": "Moreno Valley",
+          "tigerLsad": "25",
+          "counties": [
+            "065"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "33.8437,-117.3115,34.0031,-117.0733"
+        },
+        "inputs": {
+          "tracts.geojson": "8efff8fe43872775c1732f842a0ef3d3e842f5fafc5ef177902673909ab35767",
+          "city.geojson": "af691fb2c8596e12d7162a337fd168f76d5cdb5ca40a1f5ad33596535158321d",
+          "gnis.txt": "e5441e366737e0f392aa324d6f962cd51e8bdcea0d2f47ec86638cf2395feec8",
+          "osm-names.json": "09b534f2df0043e3200a7425b351fb5971e17adc6cb05907decaea0bb80a6ca2",
+          "osm-polys.json": "635c69e250f5175e49a2f5eedb24f0d5b8b0177284a926020dbd7781edc33ddf",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Celebration",
+          "Fairway",
+          "Gateway",
+          "Hidden Springs Community",
+          "La Jolla",
+          "Moreno Valley Community"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:07:58Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "yonkers-tiger2024",
+      "displayName": "Yonkers",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ny",
+      "source": {
+        "url": "census",
+        "file": "yonkers-tiger2024.geojson",
+        "sha256": "498e8c2b677a057d7ec56d149e11c1a88e070805aed4f5b66c6a4bdf84cd0259"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "yonkers-tiger2024-boundary.geojson",
+        "sha256": "57398fb4d11c4180a017e935d93f62dd6f63d0f64a4c37f82c4d0985c00110b4"
+      },
+      "census": {
+        "center": [
+          40.9312,
+          -73.8987
+        ],
+        "cityNames": [
+          "Yonkers"
+        ],
+        "fetch": {
+          "stateFips": "36",
+          "stateAbbr": "NY",
+          "tigerPlace": "Yonkers",
+          "tigerLsad": "25",
+          "counties": [
+            "119"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "40.8854,-73.9333,41.0033,-73.7954"
+        },
+        "inputs": {
+          "tracts.geojson": "dca1eb9eba2965eb0f865de490f6fcc9c992150aa76f8dab0f824504b6181b98",
+          "city.geojson": "8541cebb66aab6b095c22155b9b37b38f800456bab54d63f3d93601c7f64239b",
+          "gnis.txt": "e5305cbf7b8ead0a350bedfbecba8cc2d3f25c872f29c7cd24759ba433adecbc",
+          "osm-names.json": "fb77b2326bde7c3882961e4fd512e5c38d02e09a8800648e9387b34e88cba28a",
+          "osm-polys.json": "fd0c453ac4a2a43fd2ae9045c2ac2f1c199abcf4efafcb6af9bfc13bf5294ad1",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        }
+      },
+      "retrievedAt": "2026-11-05T20:27:06Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "grand-prairie-tiger2024",
+      "displayName": "Grand Prairie",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "grand-prairie-tiger2024.geojson",
+        "sha256": "526ae277b8d8cf08e4a3b85a38c7272986ace21741190d0de1ba9f40149d7509"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "grand-prairie-tiger2024-boundary.geojson",
+        "sha256": "51255943e6d69450bf47bbb4f14a3b0192d81213ca38ff3f196e5d57ada268e3"
+      },
+      "census": {
+        "center": [
+          32.746,
+          -96.9978
+        ],
+        "cityNames": [
+          "Grand Prairie"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Grand Prairie",
+          "tigerLsad": "25",
+          "counties": [
+            "113",
+            "139",
+            "439"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.4797,-97.0960,32.8317,-96.9090"
+        },
+        "inputs": {
+          "tracts.geojson": "e097539c5c4afd9e6ab5396859a8c9bf32f50bb9203524062f289f33d1b3b4ef",
+          "city.geojson": "4675cca4cea105870f3a93cf4db74ed43b0acd8b855e1959c847f28419e29d4c",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "d33f5e5de26875fe541ab8b77a4f739dd2e457ed3af48815b67c61a6895624a4",
+          "osm-polys.json": "e024d4e92b32730f95468d80db3ac41a5dfcdf067d35170846badc8f7dedc677",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Boomtown",
+          "France",
+          "Freedom",
+          "Gotham City"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:14:59Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "fayetteville-nc-tiger2024",
+      "displayName": "Fayetteville",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-nc",
+      "source": {
+        "url": "census",
+        "file": "fayetteville-nc-tiger2024.geojson",
+        "sha256": "a6c91a78e53635297917b48b69d7dd76005b9743b15b3c18f628b0c88f97a7c4"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "fayetteville-nc-tiger2024-boundary.geojson",
+        "sha256": "6306656ce7d19f409c1cb33e40f394e64bd5fcd6f423409b605d43822ded61cd"
+      },
+      "census": {
+        "center": [
+          35.0527,
+          -78.8784
+        ],
+        "cityNames": [
+          "Fayetteville"
+        ],
+        "fetch": {
+          "stateFips": "37",
+          "stateAbbr": "NC",
+          "tigerPlace": "Fayetteville",
+          "tigerLsad": "25",
+          "counties": [
+            "051"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "34.9564,-79.1279,35.2237,-78.7585"
+        },
+        "inputs": {
+          "tracts.geojson": "a8d04ca357463789a874d24b250ddd83a6af15acd15e44ccf6dd4dff7381bbe3",
+          "city.geojson": "efd15ca72a93af2bdece56f67d9045754de02b72c8285d3e6f50f31bd3d799b9",
+          "gnis.txt": "266064600b293b78beaa20cec2eefb005911213ef4488d7fec782948133fe9ec",
+          "osm-names.json": "5da5b2832effbd443acbc95a78c602cd879c493f16454bc9a88e185278638092",
+          "osm-polys.json": "5f783b597defa5a47109fdc12e2152b979aacf070ddbd308ac42d6e75108350c",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Drexel / 2773"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:15:59Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "amarillo-tiger2024",
+      "displayName": "Amarillo",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-tx",
+      "source": {
+        "url": "census",
+        "file": "amarillo-tiger2024.geojson",
+        "sha256": "c2b3cb5b9dc9ab918865b7a4f16963ad85a5c6d8b588f2527680008bc9ad0035"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "amarillo-tiger2024-boundary.geojson",
+        "sha256": "2a4a13a50d706e3ad87b425aa45508a4d5627d33f2d8066296a0ac83c73ff1ed"
+      },
+      "census": {
+        "center": [
+          35.222,
+          -101.8313
+        ],
+        "cityNames": [
+          "Amarillo"
+        ],
+        "fetch": {
+          "stateFips": "48",
+          "stateAbbr": "TX",
+          "tigerPlace": "Amarillo",
+          "tigerLsad": "25",
+          "counties": [
+            "375",
+            "381"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "35.0795,-101.9786,35.3095,-101.6387"
+        },
+        "inputs": {
+          "tracts.geojson": "01f6ed1fb9883bb31d3abd630aa242a526caad3c60e73ee54cd5ff4735d25db0",
+          "city.geojson": "a33f1b3b4c663dfa3733317071bb7b32bbbbf1b76d510eff9a1a752c6860e076",
+          "gnis.txt": "beae4f3051307bd1d535839072378e1188ba697180bd15601120c3d4a9f44be2",
+          "osm-names.json": "1ba680c14622a4ab1129b5e143410642b97f148768bceb6916eebf4d9ef18958",
+          "osm-polys.json": "9064c3311a27fa1a48e27b481a4ee083ddd591f2bb1d680c20773a087160d65d",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Dumas Junction",
+          "Hilltop School",
+          "Hines Memorial",
+          "Memorial",
+          "Rock Island Rail Trail",
+          "South Georgia",
+          "South Georgia School",
+          "Sundown Lane"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:17:59Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
+    },
+    {
+      "slot": "columbus-ga-tiger2024",
+      "displayName": "Columbus",
+      "status": "parked",
+      "origin": "census",
+      "distribution": "download",
+      "region": "us-ga",
+      "source": {
+        "url": "census",
+        "file": "columbus-ga-tiger2024.geojson",
+        "sha256": "c8a5a37792785a17f52fda575712a5c4c1b231ec62e3d99c79b22c214eb265c1"
+      },
+      "boundary": {
+        "url": "census",
+        "file": "columbus-ga-tiger2024-boundary.geojson",
+        "sha256": "d0166ebc594e5c46114c7edfb96769a602d362018eba692ca458fe4acda0814a"
+      },
+      "census": {
+        "center": [
+          32.461,
+          -84.9877
+        ],
+        "cityNames": [
+          "Columbus"
+        ],
+        "fetch": {
+          "stateFips": "13",
+          "stateAbbr": "GA",
+          "tigerPlace": "Columbus",
+          "tigerLsad": "25",
+          "counties": [
+            "215"
+          ],
+          "tigerYear": 2024,
+          "bboxPadDeg": 0.015,
+          "bbox": "32.3589,-85.0958,32.6231,-84.6525"
+        },
+        "inputs": {
+          "tracts.geojson": "1fe9696accc7cea009a5dee90c23076dd1dfb9f9e7920e5e5967c039ed77be75",
+          "city.geojson": "17e4824e0de2d8f97f9c2e6b981c3bb0f897ab174841f13cc7837085cf15de8f",
+          "gnis.txt": "1c8deef04bb0314db2702b910704076a8afa753a2938e1f85bb639384bff2d78",
+          "osm-names.json": "8ff51e5b6cbf241e10971aa8fd438301a61eddaa357dc7b3a75f73e1d1cdbfc5",
+          "osm-polys.json": "3b0faf5a8c1756411ae07bc1571d636e2e7a31decab67fbe3a5fef2736af891b",
+          "first-names.txt": "b1753dce66d521d851b2ec8d60ae44b85c2596182c45dec53642ad82c8bd0da8"
+        },
+        "tools": {
+          "shapely": "2.0.7",
+          "geos": "3.11.4"
+        },
+        "dropNames": [
+          "Martin Luther King JR Boulevard / Havenbrook Court"
+        ]
+      },
+      "retrievedAt": "2026-11-05T20:18:59Z",
+      "idField": "id",
+      "nameField": "name",
+      "licenceKey": "census-osm",
+      "attribution": {
+        "publisher": "U.S. Census Bureau · OpenStreetMap contributors",
+        "licenceName": "Public domain · ODbL 1.0"
+      },
+      "note": "美国兜底城（US-3 第一批，2026-11-05）：OSM 没有过闸的社区面、市政府没有可收的社区数据（学术普查 CDND 判无 / 仅 HOA ＋ 车道逐城复核，证据在 docs/design-refs/coverage-us/us3-batch1-recheck.md 与 us3-official-evidence.md）；名字逐个判过（拦下的写在 census.dropNames，理由在 docs/design-refs/coverage-us/us3-cities.md）；模拟器上看过、用户点头才改 active"
     }
   ]
 }

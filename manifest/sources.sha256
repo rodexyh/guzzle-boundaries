@@ -52,12 +52,23 @@ c8852ed1910f9f072d859681dc0299d24c976b3626d7da37f288ba1930391235  ottawa116/otta
 # quebec-osm: osmBase=2026-10-31T21:23:06Z unstitched=0
 36a41896111bc32154b1031e67047b30348f7b236bfc1aa7bed61568c073ae39  quebec-osm/quebec-osm.geojson
 2926bb3a31ab66c8e8f72d86336a61f33655d94462a2643690770f974bbc7340  quebec-osm/quebec-osm-boundary.geojson
+# reddeer-osm: osmBase=2026-11-05T03:32:06Z unstitched=0
+e63a90ed66501e68bd96614d4c07372c5a720c1bba0ad40c137939a0bbe971d7  reddeer-osm/reddeer-osm.geojson
+7f17b001a5f29f74688ad7d37100b2447a682b50881d9cb57e1e86a79780cbc9  reddeer-osm/reddeer-osm-boundary.geojson
+10c9e0fc64aa1ec5efb44925ec5e6f93ed8b5b734a515dcb4ec73df679373dce  reddeer-osm/reddeer-osm-urban.geojson
+c90b49b1ebcb19bef1e00bd3863890fde5c65b13fdacfb72600931cbcc89330b  regina28/regina28.geojson
+81e62e435c975921b433fc7524217ac9b1cfb25ef031618d6658a3670714f765  regina28/regina28-boundary.geojson
+021071329b523f7f0540282182651a5a3cc8b2a916da0fc42334543553391a68  regina28/regina28-urban.geojson
 # richmond-osm: osmBase=2026-09-07T04:36:35Z unstitched=0
 98f2485c536c3940c913514671b253e223ce7e8ea13e29c9c7e5a910f84f001e  richmond-osm/richmond-osm.geojson
 5a2048c0867ed033b74552b4dd1427b1e5989838d2871c7ab2749a2bd7c34e43  richmond-osm/richmond-osm-boundary.geojson
 # saanich-osm: osmBase=2026-10-31T21:23:06Z unstitched=0
 ec3212186264677df5bba389e072c8c0d1bccced4156f0895274fc27ea2e632c  saanich-osm/saanich-osm.geojson
 c9118763f2e0e9466d67792369d9af741df94410db538817b421e8639eba80e1  saanich-osm/saanich-osm-boundary.geojson
+# saskatoon-osm: osmBase=2026-11-05T07:52:48Z unstitched=0
+9ba744d8320019b990387df7298871860dfefe24e3059304be2dd2d10cf73cb1  saskatoon-osm/saskatoon-osm.geojson
+8ef5d9f9bcd38d3535be78e50b2854eab5db98e3c700ec8eddadacfdd4f3d544  saskatoon-osm/saskatoon-osm-boundary.geojson
+89cd2ee30f85b57aeaf1947ab2d2db3bc942bb321571577f2bdb79b39ab4a6f6  saskatoon-osm/saskatoon-osm-urban.geojson
 53f9a3552c747a31766ddefe0a7f6bce49b711104bda6c7f252db94198751997  stcatharines74/stcatharines74.geojson
 870d1baf39a53bde7ad2837154d550c592459e18e228ce185fee19ae50d057e6  stcatharines74/stcatharines74-boundary.geojson
 # surrey-osm: osmBase=2026-09-07T04:37:40Z unstitched=0

@@ -18,6 +18,7 @@ One row per city in this repository (the bundled pack and every province pack). 
 | Calgary | bundled | — | — | [City of Calgary](#city-of-calgary) |
 | London | bundled | — | — | [City of London, Ontario](#city-of-london-ontario) |
 | Edmonton | ca-ab | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
+| Red Deer | ca-ab | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
 | Abbotsford | ca-bc | City of Abbotsford | Open Government Licence – City of Abbotsford | [City of Abbotsford](#city-of-abbotsford) |
 | Burnaby | ca-bc | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
 | Coquitlam | ca-bc | City of Coquitlam | Open Government Licence – Coquitlam | [City of Coquitlam](#city-of-coquitlam) |
@@ -47,6 +48,8 @@ One row per city in this repository (the bundled pack and every province pack). 
 | Montréal | ca-qc | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
 | Québec | ca-qc | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
 | Trois-Rivières | ca-qc | Ville de Trois-Rivières | Creative Commons Attribution 4.0 | [Ville de Trois-Rivières](#ville-de-trois-rivières) |
+| Regina | ca-sk | City of Regina | Open Government Licence – City of Regina | [City of Regina](#city-of-regina) |
+| Saskatoon | ca-sk | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
 
 ## OpenStreetMap
 
@@ -270,6 +273,22 @@ spelling where its website lists the same neighbourhood (`renames` in
 <https://open.ottawa.ca/pages/open-data-licence>.
 This data is governed by that licence, **not** by the ODbL.
 
+## City of Regina
+
+Contains information licensed under the Open Government Licence – City of Regina.
+
+Neighbourhood boundaries come from the City of Regina's "Community Associations"
+data on its open data site, <https://openregina.ca>; the city limit used to check
+coverage comes from the City's "City Limits" data. Service URLs are in
+`manifest/cities.json`. The source data stores names in capitals; they are shown in
+mixed case, with spaces around the slash or hyphen in the four joined names, and one name is shown without the words "Residents Group" (the source's
+own historic name for that area is "Normanview"); `renames` in `manifest/cities.json`
+lists every name as changed.
+
+**Licence:** Open Government Licence – City of Regina, Version 2,
+<https://www.regina.ca/city-government/open-data/open-government-licence>.
+This data is governed by that licence, **not** by the ODbL.
+
 ## Ville de Trois-Rivières
 
 Neighbourhood boundaries: « Quartier (nom populaire) », by the **Ville de
@@ -340,3 +359,23 @@ Those terms permit modification, redistribution and commercial use, and make
 attribution optional; we name the publisher anyway. **They are the terms that
 govern that data** — nothing in this repository's own licence adds restrictions to
 it, and the ODbL does not apply to it.
+
+## Statistics Canada (coverage check only)
+
+Contains information licensed under the Open Government Licence – Canada.
+
+For some Canadian cities whose city limit takes in large areas of farmland, forest or
+water, the check that a city's neighbourhoods cover most of the city was run against
+the part of the city inside a **Statistics Canada 2021 Population Centre** instead of
+the whole city limit. The Population Centres came from Statistics Canada's 2021
+Digital Boundary Files (map service
+<https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/7>);
+the exact query for each city and the fingerprint of what it returned are in
+`manifest/cities.json` and `manifest/sources.sha256`. **None of this data is in the
+packs**: it was used only to decide whether a city's neighbourhood data was complete
+enough to include.
+
+**Licence:** Open Government Licence – Canada, Version 2.0,
+<https://open.canada.ca/en/open-government-licence-canada>.
+This data is governed by that licence, **not** by the ODbL. Its use here does not
+imply endorsement by Statistics Canada.
