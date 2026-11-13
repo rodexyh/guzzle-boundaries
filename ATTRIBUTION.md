@@ -50,6 +50,17 @@ One row per city in this repository (the bundled pack and every province pack). 
 | Trois-Rivières | ca-qc | Ville de Trois-Rivières | Creative Commons Attribution 4.0 | [Ville de Trois-Rivières](#ville-de-trois-rivières) |
 | Regina | ca-sk | City of Regina | Open Government Licence – City of Regina | [City of Regina](#city-of-regina) |
 | Saskatoon | ca-sk | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
+| Phoenix | us-az | OpenStreetMap contributors | Open Database License (ODbL) 1.0 | [OpenStreetMap](#openstreetmap) |
+| Miami | us-fl | © City of Miami, Department of Innovation and Technology, GIS Team | CC BY 4.0 | [City of Miami](#city-of-miami) |
+| Tampa | us-fl | City of Tampa GIS | CC0 1.0 | [City of Tampa](#city-of-tampa) |
+| Boise | us-id | U.S. Census Bureau · OpenStreetMap contributors | Public domain · ODbL 1.0 | [U.S. Census Bureau and OpenStreetMap (U.S. cities without published neighbourhoods)](#us-census-bureau-and-openstreetmap-us-cities-without-published-neighbourhoods) |
+| Boston | us-ma | City of Boston | Open Data Commons PDDL 1.0 | [City of Boston](#city-of-boston) |
+| Baltimore | us-md | Baltimore City Department of Planning | Baltimore City Open Data Program (City Code Art. 1 §9-8) | [Baltimore City Department of Planning](#baltimore-city-department-of-planning) |
+| Minneapolis | us-mn | City of Minneapolis | CC0 1.0 | [City of Minneapolis](#city-of-minneapolis) |
+| New York | us-ny | NYC Department of City Planning | NYC Open Data Law (Admin. Code §23-502) | [NYC Department of City Planning](#nyc-department-of-city-planning) |
+| Philadelphia | us-pa | Robert Cheetham / Abaca Labs (OpenDataPhilly) | CC BY 4.0 | [Philadelphia Neighborhoods (OpenDataPhilly)](#philadelphia-neighborhoods-opendataphilly) |
+| Seattle | us-wa | City of Seattle | Open Data Commons PDDL 1.0 | [City of Seattle](#city-of-seattle) |
+| Milwaukee | us-wi | City of Milwaukee Department of City Development | Creative Commons Attribution (CC BY) | [City of Milwaukee](#city-of-milwaukee) |
 
 ## OpenStreetMap
 
@@ -95,6 +106,34 @@ are not copied from Wikipedia or any other source. The facts in them were checke
 against public references (Wikipedia, Wikidata, official sites) before they were
 included.
 
+## U.S. Census Bureau (counties, towns and places)
+
+The `local` packs for U.S. states (`packs/regions/<code>-local/…`) hold the outlines of counties,
+county subdivisions with their own government (towns and townships in the states that have them),
+and incorporated places and census-designated places, from the U.S. Census Bureau's
+**TIGER/Line Shapefiles 2024**. We simplified the outlines (to within about 50 m, shared borders
+simplified once) and cut them into 1° squares. TIGER/Line data is a work of the U.S. federal
+government and is in the public domain; it is listed here so you know where it came from.
+These packs are not part of the ODbL database in this repository.
+
+## Statistics Canada (municipalities and other census subdivisions)
+
+Contains information licensed under the Open Government Licence – Canada.
+
+The `local` packs for Canadian provinces and territories (`packs/regions/<code>-local/…`) hold the
+outlines of municipalities and other **2021 Census subdivisions**, from Statistics Canada's 2021
+Digital Boundary Files (map service
+<https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/9>).
+We simplified the outlines (to within about 50 m, shared borders simplified once), cut them into
+1° squares, and left out a few placeholder subdivisions (for example the "Unorganized" parts of
+census divisions). The exact files we started from and their fingerprints are in
+`tools/boundary-pack/local.json` in the app's repository.
+
+**Licence:** Open Government Licence – Canada, Version 2.0,
+<https://open.canada.ca/en/open-government-licence-canada>.
+This data is governed by that licence, **not** by the ODbL. Its use here does not
+imply endorsement by Statistics Canada.
+
 ## City of Abbotsford
 
 Contains information licenced under the Open Government Licence – City of Abbotsford.
@@ -125,6 +164,31 @@ that section).
 It does not require credit; we give it in the wording the licence asks for when
 credit is given. This data is governed by that licence, **not** by the ODbL.
 
+## Baltimore City Department of Planning
+
+Neighbourhood boundaries are the Neighborhood Statistical Areas published by the
+Baltimore City Department of Planning on Open Baltimore (service URL in
+`manifest/cities.json`).
+
+**Licence:** Baltimore City's open data programme, Baltimore City Code Article 1,
+§9-8(b): open data is made available with no restrictions on copying, publishing,
+further distributing, modifying, or using it for any non-commercial or commercial
+purpose. This data is governed by those terms, **not** by the ODbL.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
+## City of Boston
+
+Neighbourhood boundaries come from the Boston Planning Department's
+"BPDA Neighborhoods" layer (also listed on <https://data.boston.gov>; service URL in
+`manifest/cities.json`). The Harbor Islands area is left out.
+
+**Licence:** Open Data Commons Public Domain Dedication and License (PDDL) 1.0,
+<https://opendatacommons.org/licenses/pddl/1-0/>.
+This data is governed by that licence, **not** by the ODbL.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
 ## City of Cambridge
 
 Contains information licensed under the Open Government Licence – City of Cambridge.
@@ -139,6 +203,25 @@ changed), and the area named "Industrial Park" is left out.
 **Licence:** Open Government Licence – City of Cambridge, Version 2.0,
 <https://maps.cambridge.ca/images/opendata/Open%20data%20licence.pdf>.
 This data is governed by that licence, **not** by the ODbL.
+
+## U.S. Census Bureau and OpenStreetMap (U.S. cities without published neighbourhoods)
+
+Cities whose `licenceKey` is `census-osm` have no neighbourhood boundaries from their
+own city that we can use: either the city publishes none, or its published boundaries
+come with terms that do not allow this kind of use. Their areas are U.S. Census Bureau TIGER/Line census tracts,
+clipped to the Census Bureau's city limit; tracts that share a name are joined into
+one area. TIGER/Line data is a work of the U.S. federal government and is in the
+public domain.
+
+The names given to those areas come partly from OpenStreetMap (© OpenStreetMap
+contributors, under the ODbL — see the OpenStreetMap section) and partly from the
+U.S. Geological Survey's Geographic Names Information System (public domain). Where
+no name fits, an area is named after where it lies in the city (for example
+"South Boise"). These cities are part of the ODbL database in this repository.
+
+The Guzzle app shows this as: *"Neighbourhood outlines from the U.S. Census Bureau.
+Some neighbourhood names © OpenStreetMap contributors, available under the Open
+Database License."*
 
 ## City of Coquitlam
 
@@ -229,6 +312,21 @@ published on Données Québec,
 This data is governed by CC BY 4.0, **not** by the ODbL. No endorsement by the
 Ville de Longueuil is implied.
 
+## City of Miami
+
+© City of Miami, Department of Innovation and Technology, GIS Team.
+
+Neighbourhood boundaries: "Miami Neighborhoods Shapefile", by the **City of Miami,
+Department of Innovation and Technology, GIS Team**, published on ArcGIS Online,
+<https://www.arcgis.com/home/item.html?id=2f54a0cbd67046f2bd100fb735176e6c> (service
+URL in `manifest/cities.json`), under the
+[Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; five areas left out — one unnamed area, "Port of Miami", "MDCC", "Bicentennial Park", and the smaller of the two separate areas both named "Baypoint" (so that "Baypoint" is one neighbourhood, not two); three abbreviated names written out ("CBD" as "Central Business District", "Omni/PAC" as "Omni/Performing Arts Center", "Roads" as "The Roads"); other names as published; areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
+This data is governed by CC BY 4.0, **not** by the ODbL. No endorsement by the City
+of Miami is implied.
+
 ## Town of Milton
 
 Contains information licensed under the Open Government Licence – Milton.
@@ -241,6 +339,51 @@ services. Service URLs are in `manifest/cities.json`.
 **Licence:** Open Government Licence – Milton, Version 2.0,
 <https://discover-milton.hub.arcgis.com/pages/disclaimer-and-terms-of-use>.
 This data is governed by that licence, **not** by the ODbL.
+
+## City of Milwaukee
+
+Neighbourhood boundaries: "Neighborhoods", by the **City of Milwaukee Department of
+City Development**, from its 2000 Milwaukee Neighborhood Identification Project,
+published on the City's open data portal, <https://data.milwaukee.gov/dataset/neighborhoods>
+(service URL in `manifest/cities.json`), under the
+[Creative Commons Attribution licence (CC BY)](https://creativecommons.org/licenses/by/4.0/)
+(the portal names no version; we follow CC BY 4.0). The City notes these boundaries
+are not used for official purposes and are not updated.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; five areas left out — the two airports ("MITCHELL FIELD", "TIMMERMAN AIRPORT"), "ZOO", "VETERANS AFFAIRS" and "LAND BANK"; names, written in capitals in the source, shown in ordinary capitalisation (for example "BREWER'S HILL" as "Brewer's Hill"; `renames` in `manifest/cities.json` lists every one); areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
+This data is governed by CC BY, **not** by the ODbL. No endorsement by the City of
+Milwaukee is implied.
+
+## City of Minneapolis
+
+Neighbourhood boundaries come from the City of Minneapolis's official neighborhoods
+layer (service URL in `manifest/cities.json`). Eleven names written in the source as
+"A - B" are shown as "A-B" (two of them, "Near North" and "Bryn Mawr", without the
+hyphen); `renames` in `manifest/cities.json` lists every one.
+
+**Licence:** the City of Minneapolis waives all copyright in this layer; its open data
+portal publishes it under Creative Commons Zero (CC0) 1.0,
+<https://creativecommons.org/publicdomain/zero/1.0/>.
+This data is governed by that dedication, **not** by the ODbL.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
+## NYC Department of City Planning
+
+Neighbourhood boundaries are the 2020 Neighborhood Tabulation Areas (NTAs) published
+by the NYC Department of City Planning on NYC Open Data,
+<https://data.cityofnewyork.us/City-Government/2020-Neighborhood-Tabulation-Areas-NTAs-/9nt8-h7nd>
+(version 26c, retrieved 2026-11-04; service URL in `manifest/cities.json`). The
+Department notes that NTAs roughly correspond to neighbourhoods New Yorkers recognise
+but are not meant to define them.
+
+**Licence:** NYC Open Data Law, New York City Administrative Code §23-502(d): public
+data sets are made available without any registration requirement, license
+requirement or restrictions on their use. This data is governed by those terms,
+**not** by the ODbL.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; the 65 areas the source marks as parks, cemeteries, airports or other special areas (NTA type other than 0) left out; names as published, including areas named after several neighbourhoods (such as "Downtown Brooklyn-DUMBO-Boerum Hill"); areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
 
 ## Niagara Region
 
@@ -273,6 +416,20 @@ spelling where its website lists the same neighbourhood (`renames` in
 <https://open.ottawa.ca/pages/open-data-licence>.
 This data is governed by that licence, **not** by the ODbL.
 
+## Philadelphia Neighborhoods (OpenDataPhilly)
+
+Neighbourhood boundaries: "Philadelphia Neighborhoods", by **Robert Cheetham / Abaca
+Labs**, published on OpenDataPhilly,
+<https://opendataphilly.org/datasets/philadelphia-neighborhoods/> (the file in
+`opendataphilly/odp-data-storage` at commit `cd29c106382e`; URL in
+`manifest/cities.json`), under the
+[Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; eight areas left out — the two airports ("Airport", "Northeast Phila Airport"), "Navy Yard", "Industrial", and the park areas "East Park", "West Park", "Pennypack Park" and "Wissahickon Park"; other names as published; areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
+This data is governed by CC BY 4.0, **not** by the ODbL. No endorsement by Robert
+Cheetham, Abaca Labs or OpenDataPhilly is implied.
+
 ## City of Regina
 
 Contains information licensed under the Open Government Licence – City of Regina.
@@ -288,6 +445,32 @@ lists every name as changed.
 **Licence:** Open Government Licence – City of Regina, Version 2,
 <https://www.regina.ca/city-government/open-data/open-government-licence>.
 This data is governed by that licence, **not** by the ODbL.
+
+## City of Seattle
+
+Neighbourhood boundaries come from the City of Seattle's neighbourhood map atlas
+(`nma_nhoods_sub`, published by the Office of the City Clerk on the city's open data
+services; service URL in `manifest/cities.json`).
+
+**Licence:** Open Data Commons Public Domain Dedication and License (PDDL) 1.0,
+<https://opendatacommons.org/licenses/pddl/1-0/>. The City of Seattle's open data terms
+do not require attribution; we credit the city anyway.
+This data is governed by that licence, **not** by the ODbL.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
+
+## City of Tampa
+
+Neighbourhood boundaries come from the City of Tampa GIS "Neighborhoods" layer (the
+City's registry of neighbourhood areas; service URL in `manifest/cities.json`). Only
+the area ID, label, association name, type and status are read; the layer's contact
+details are not downloaded.
+
+**Licence:** Creative Commons Zero (CC0) 1.0,
+<https://creativecommons.org/publicdomain/zero/1.0/>. CC0 asks for no attribution; we
+credit the city anyway. This data is governed by that dedication, **not** by the ODbL.
+
+**Changes:** outlines simplified to about 20 m and stored as grid cells for on-device matching; 54 areas left out — parks, the port, the air force base, single facilities, placeholder or unnamed areas, sub-areas that lie wholly inside a larger area (such as the 21 sections of Hunter's Green), and areas whose label is an organisation name or a number; nine labels rewritten as place names (for example "Hampton Terrace Community Association (HTCA)" as "Hampton Terrace"; `renames` in `manifest/cities.json` lists every one); areas checked against the U.S. Census Bureau's generalized city limit (public domain), which is not part of this city's data.
 
 ## Ville de Trois-Rivières
 
